@@ -1,310 +1,167 @@
 {
-"gnb" :[
+  "gnb": [
     {
-        "text": "펫시터가 와요",
-        "href": "/petsitter.html",
-        "cls" : {  
-                    "li" : " d1_li position-relative ", 
-                    "a" :"d1_a",
-                    "ul" : " d2 position-absolute ps-0 "
-         },      
-        "d2_li": [
-            {
-                "text": "방문 돌봄",
-                "href": "/homecare.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "집중 호스피스",
-                "href": "/pethos.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "펫 플래닛",
-                "href": "/longcare.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "웨딩케어",
-                "href": "/weddingcare.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "안심 픽업 & 드랍",
-                "href": "/pickupndrop.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            }
-        ]
-    },
-    {
-        "text": "훈련사",
-        "href": "/petrainer.html",
-        "cls" : {  
-            "li" : " d1_li position-relative ", 
-            "a" :"d1_a",
-            "ul" : " d2 position-absolute ps-0 "
- },      
-        "d2_li": [
-            {
-                "text": "훈련사 소개",
-                "href": "/whopetrainer.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "훈련사에게 물어봐",
-                "href": "/qnapetrainer.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            }
-        ]
-    },
-    {
-        "text": "플레이스",
-        "href": "/petplace.html",
-        "cls" : {  
-            "li" : " d1_li position-relative ", 
-            "a" :"d1_a",
-            "ul" : " d2 position-absolute ps-0 "
- },      
-        "d2_li": [
-            {
-                "text": "입점 문의",
-                "href": "/askpartnership.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "매장 찾기",
-                "href": "/findshop.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            }
-        ]
-    },
-    {
-        "text": "사회공헌",
-        "href": "/petsocial.html",
-        "cls" : {  
-            "li" : " d1_li position-relative ", 
-            "a" :"d1_a",
-            "ul" : " d2 position-absolute ps-0 "
- },      
-        "d2_li": [
-            {
-                "text": "봉사활동",
-                "href": "/volunteer.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "지식나눔",
-                "href": "/sharing.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "심리상담",
-                "href": "/mindcare.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            }
-        ]
-    },
-    {
-        "text": "커뮤니티",
-        "href": "/community.html",
-        "cls" : {  
-            "li" : " d1_li position-relative ", 
-            "a" :"d1_a",
-            "ul" : " d2 position-absolute ps-0 "
- },      
-        "d2_li": [
-            {
-                "text": "실시간 후기",
-                "href": "/review.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "구독 서비스",
-                "href": "/subscription.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            }
-        ]
-    },
-    {
-        "text": "펫트너",
-        "href": "/pettner.html",
-         "cls" : {  
-                    "li" : " d1_li position-relative ", 
-                    "a" :"d1_a",
-                    "ul" : " d2 position-absolute ps-0 "
-         },      
-        "d2_li": [
-            {
-                "text": "펫시터 지원",
-                "href": "/petsitterapply.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "훈련사 지원",
-                "href": "/pettrainerapply.html",
-                "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            },
-            {
-                "text": "산책케어 지원",
-                "href": "/petwalkapply.html"
-                , "cls" : {  
-                    "li" : "d2_li", 
-                    "a" :""
-                }
-            }
-        ]
-    },
-    {
-        "text": "훈련사 지원하기",
-        "href": "/pettner.html",
-         "cls" : {  
-                    "li" : " d1_li position-relative projectpoint", 
-                    "a" :"d1_a",
-                    "ul" : ""
-         },      
-        "d2_li": [
-           
-        ]
-    }
-]
-,  
-  "mainservice"  : [   
-    {
-        "btcls" : "col-lg-3 col-6 mb-3",
-        "cls": "ms_div",
-        "src" : "//tpgus2.github.io/hyuntopia/img/img_sh/service1.jpg",
-        "text" : "방문돌봄",
-        "alt" : "돌봄"
-    },
-    {
-        "btcls" : "col-lg-3 col-6 mt-lg-5 mb-3",
-        "cls": "ms_div",
-        "src" : "//tpgus2.github.io/hyuntopia/img/img_sh/service2.jpg",
-        "text" : "방문산책",
-        "alt" : "산책"
-    },
-    {
-        "btcls" : "col-lg-3 col-6",
-        "cls": "ms_div",
-        "src" : "//tpgus2.github.io/hyuntopia/img/img_sh/service3.jpg",
-        "text" : "방문훈련",
-        "alt" : "훈련"
-    },
-    {
-        "btcls" : "col-lg-3 col-6 mt-lg-5",
-        "cls": "ms_div",
-        "src" : "//tpgus2.github.io/hyuntopia/img/img_sh/service4.jpg",
-        "text" : "더보기",
-        "alt" : "더보기"
-    }
-    ]
-,
-    "swiper" : [
-    {
-        "cls" : ["swiper-wrapper","swiper-slide", "slide-overlay", "sp_text"],
-        "text" : "유기견 봉사활동",
-        "src" : "/petopia/img/img_je/sp_volunteer.jpg"
+      "text": "펫시터가 와요",
+      "href": "/petsitter.html",
+      "d2_li": [
+        {
+          "text": "방문 돌봄",
+          "href": "/homecare.html"
         },
         {
-         "cls" : ["swiper-wrapper","swiper-slide", "slide-overlay", "sp_text"],
-        "text" : "배우 김효진x와요 특별한 인터뷰",
-        "src" : "/petopia/img/img_je/sp_interview.jpg"
+          "text": "집중 호스피스",
+          "href": "/pethos.html"
         },
         {
-         "cls" : ["swiper-wrapper","swiper-slide", "slide-overlay", "sp_text"],
-        "text" : "유기동물 보호소 산책봉사",
-        "src" : "/petopia/img/img_je/sp_walkingvolunteer.jpg"
+          "text": "펫 플래닛",
+          "href": "/longcare.html"
+        },
+        {
+          "text": "웨딩케어",
+          "href": "/weddingcare.html"
+        },
+        {
+          "text": "안심 픽업 & 드랍",
+          "href": "/pickupndrop.html"
         }
-        ],
-      "schedule": [
-       {
-        "href" :"javascript:void(0)",
-        "date": "2024.03.12",
-        "event": "국제 강아지의 날 봉사활동자 모집",
-        "cls": [
-          "libox ps-4 d-flex justify-content-between align-items-center",
-          "sp-text",
-          "me-5 sp-style",
-          "px-2" ]
-       
-       },
-       {
-        "date": "2024.04.06",
-        "event": "서울시 유기견 보호소 봉사활동",
-        "cls": [
-         "libox ps-4 d-flex justify-content-between align-items-center",
-          "sp-text",
-          "me-5 sp-style",
-          "px-2" ]
-       
-       },
-       {
-        "date": "2024.04.28",
-        "event": "반려동물 인식 교육 프로그램 안내",
-        "cls": [
-          "libox ps-4 d-flex justify-content-between align-items-center",
-          "sp-text",
-          "me-5 sp-style",
-          "px-2" ]
-       
-       },
-       {
-        "date": "2024.04.04",
-        "event": "동물 용품 기부에 관한 공지사항",
-        "cls": [
-          "libox ps-4 d-flex justify-content-between align-items-center",
-          "sp-text",
-          "me-5 sp-style",
-          "px-2" ]
-       
-       }
       ]
+    },
+    {
+      "text": "훈련사",
+      "href": "/petrainer.html",
+      "d2_li": [
+        {
+          "text": "훈련사 소개",
+          "href": "/whopetrainer.html"
+        },
+        {
+          "text": "훈련사에게 물어봐",
+          "href": "/qnapetrainer.html"
+        }
+      ]
+    },
+    {
+      "text": "플레이스",
+      "href": "/petplace.html",
+      "d2_li": [
+        {
+          "text": "입점 문의",
+          "href": "/askpartnership.html"
+        },
+        {
+          "text": "매장 찾기",
+          "href": "/findshop.html"
+        }
+      ]
+    },
+    {
+      "text": "사회공헌",
+      "href": "/petsocial.html",
+      "d2_li": [
+        {
+          "text": "봉사활동",
+          "href": "/volunteer.html"
+        },
+        {
+          "text": "지식나눔",
+          "href": "/sharing.html"
+        },
+        {
+          "text": "심리상담",
+          "href": "/mindcare.html"
+        }
+      ]
+    },
+    {
+      "text": "커뮤니티",
+      "href": "/community.html",
+      "d2_li": [
+        {
+          "text": "실시간 후기",
+          "href": "/review.html"
+        },
+        {
+          "text": "구독 서비스",
+          "href": "/subscription.html"
+        }
+      ]
+    },
+    {
+      "text": "펫트너",
+      "href": "/pettner.html",
+      "d2_li": [
+        {
+          "text": "펫시터 지원",
+          "href": "/petsitterapply.html"
+        },
+        {
+          "text": "훈련사 지원",
+          "href": "/pettrainerapply.html"
+        },
+        {
+          "text": "산책케어 지원",
+          "href": "/petwalkapply.html"
+        }
+      ]
+    },
+    {
+      "text": "훈련사 지원하기",
+      "href": "/pettner.html"
+    }
+  ],
+  "mainservice": [
+    {
+      "text": "방문돌봄",
+      "alt": "돌봄",
+      "src": "//tpgus2.github.io/hyuntopia/img/img_sh/service1.jpg"
+    },
+    {
+      "text": "방문산책",
+      "alt": "산책",
+      "src": "//tpgus2.github.io/hyuntopia/img/img_sh/service2.jpg"
+    },
+    {
+      "text": "방문훈련",
+      "alt": "훈련",
+      "src": "//tpgus2.github.io/hyuntopia/img/img_sh/service3.jpg"
+    },
+    {
+      "text": "더보기",
+      "alt": "더보기",
+      "src": "//tpgus2.github.io/hyuntopia/img/img_sh/service4.jpg"
+    }
+  ],
+  "swiper": [
+    {
+      "text": "유기견 봉사활동",
+      "src": "/petopia/img/img_je/sp_volunteer.jpg"
+    },
+    {
+      "text": "배우 김효진x와요 특별한 인터뷰",
+      "src": "/petopia/img/img_je/sp_interview.jpg"
+    },
+    {
+      "text": "유기동물 보호소 산책봉사",
+      "src": "/petopia/img/img_je/sp_walkingvolunteer.jpg"
+    }
+  ],
+  "schedule": [
+    {
+      "href": "javascript:void(0)",
+      "date": "2024.03.12",
+      "event": "국제 강아지의 날 봉사활동자 모집"
+    },
+    {
+      "date": "2024.04.06",
+      "event": "서울시 유기견 보호소 봉사활동"
+    },
+    {
+      "date": "2024.04.28",
+      "event": "반려동물 인식 교육 프로그램 안내"
+    },
+    {
+      "date": "2024.04.04",
+      "event": "동물 용품 기부에 관한 공지사항"
+    }
+  ]
 }
