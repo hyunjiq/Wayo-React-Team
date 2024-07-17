@@ -9,8 +9,12 @@ import './scss/hj.scss';
 import './scss/je.scss';
 import './scss/sh.scss';
 
-//부트스트랩, 스와이퍼 플러그인 연결해야함!
+//부트스트랩, 아이콘, 스와이퍼
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import 'swiper/swiper-bundle.css';
 
+//
 import App from './App';
 
 
