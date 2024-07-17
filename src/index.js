@@ -13,6 +13,7 @@ import './scss/sh.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'swiper/swiper-bundle.css';
+import 'swiper/css'; 
 
 //
 import App from './App';
