@@ -136,7 +136,7 @@
         {
             "cls" : "thumimg",
             "img" : "./img/hj_img/hotel/hotel_grang.jpg",
-            "src" : "그랑모던풀빌라 사진",
+            "alt" : "그랑모던풀빌라 사진",
             "p":{
                 "title" : "그랑모던풀빌라",
                 "adress" : "경북 포항시",
@@ -147,7 +147,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hotel/hotel_petclass2.jpg",
-            "src" : "펫클라스펜션 사진",
+            "alt" : "펫클라스펜션 사진",
             "p":{
                 "title" : "펫클라스펜션",
                 "adress" : "강원 고성군",
@@ -158,7 +158,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hotel/hotel_daeng.jpg",
-            "src" : "댕숲애견펜션 사진",
+            "alt" : "댕숲애견펜션 사진",
             "p":{
                 "title" : "댕숲애견펜션",
                 "adress" : "강원 평창군",
@@ -169,7 +169,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hotel/hotel_thepetel.jpg",
-            "src" : "더펫텔 사진",
+            "alt" : "더펫텔 사진",
             "p":{
                 "title" : "더펫텔",
                 "adress" : "부산 해운대구",
@@ -180,7 +180,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hotel/hotel_ocean2you.jpg",
-            "src" : "오션투유 사진",
+            "alt" : "오션투유 사진",
             "p":{
                 "title" : "오션투유",
                 "adress" : "강원 고성군",
@@ -191,7 +191,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hotel/hotel_theweek.jpg",
-            "src" : "더위크 사진",
+            "alt" : "더위크 사진",
             "p":{
                 "title" : "더위크",
                 "adress" : "인천 중구",
@@ -202,7 +202,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hotel/hotel_gout.jpg",
-            "src" : "곳스테이 사진",
+            "alt" : "곳스테이 사진",
             "p":{
                 "title" : "곳스테이",
                 "adress" : "대구 동구",
@@ -213,7 +213,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hotel/hotel_sono.jpg",
-            "src" : "소노호텔 사진",
+            "alt" : "소노호텔 사진",
             "p":{
                 "title" : "소노호텔",
                 "adress" : "강원 홍천",
@@ -224,7 +224,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hotel/hotel_kensington.jpg",
-            "src" : "켄싱턴리조트 사진",
+            "alt" : "켄싱턴리조트 사진",
             "p":{
                 "title" : "켄싱턴리조트",
                 "adress" : "충북 충주",
@@ -237,7 +237,7 @@
         {
             "cls" : "thumimg",
             "img" : "./img/hj_img/cafe/cafe_pawseason.jpg",
-            "src" : "포시즌 카페 사진",
+            "alt" : "포시즌 카페 사진",
             "p":{
                 "title" : "포시즌",
                 "adress" : "경기 고양시",
@@ -249,7 +249,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/cafe/cafe_pumpkin.jpg",
-            "src" : "펌킨 펫하우스 카페 사진",
+            "alt" : "펌킨 펫하우스 카페 사진",
             "p":{
                 "title" : "펌킨 펫하우스",
                 "adress" : "서울 성동구",
@@ -261,7 +261,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/cafe/cafe_mung.jpg",
-            "src" : "멍카페 사진",
+            "alt" : "멍카페 사진",
             "p":{
                 "title" : "멍카페",
                 "adress" : "서울 구로구",
@@ -273,7 +273,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/cafe/cafe_shfaus.jpg",
-            "src" : "놀면뭐하개 카페 사진",
+            "alt" : "놀면뭐하개 카페 사진",
             "p":{
                 "title" : "놀면뭐하개",
                 "adress" : "서울 금천구",
@@ -285,7 +285,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/cafe/cafe_staywinter.jpg",
-            "src" : "겨울이 머무는집 카페 사진",
+            "alt" : "겨울이 머무는집 카페 사진",
             "p":{
                 "title" : "겨울이머무는집",
                 "adress" : "서울 마포구",
@@ -297,7 +297,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/cafe/cafe_ijoa.jpg",
-            "src" : "아이조아펫파크 사진",
+            "alt" : "아이조아펫파크 사진",
             "p":{
                 "title" : "아이조아펫파크",
                 "adress" : "서울 용산",
@@ -311,7 +311,7 @@
         {
             "cls" : "thumimg",
             "img" : "./img/hj_img/hospital/hospital_24guro.jpg",
-            "src" : "24시지구촌동물메디컬센터 사진",
+            "alt" : "24시지구촌동물메디컬센터 사진",
             "p":{
                 "title" : "24시지구촌동물메디컬센터",
                 "adress" : "서울 구로구",
@@ -323,7 +323,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hospital/hospital_sol.jpg",
-            "src" : "솔동물의료센터 사진",
+            "alt" : "솔동물의료센터 사진",
             "p":{
                 "title" : "솔동물의료센터",
                 "adress" : "경기 군포시",
@@ -335,7 +335,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hospital/hospital_royal.jpg",
-            "src" : "로얄동물메디컬센터 사진",
+            "alt" : "로얄동물메디컬센터 사진",
             "p":{
                 "title" : "로얄동물메디컬센터",
                 "adress" : "서울 중랑구",
@@ -347,7 +347,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hospital/hospital_bareun.jpg",
-            "src" : "바른동물의료센터 사진",
+            "alt" : "바른동물의료센터 사진",
             "p":{
                 "title" : "바른동물의료센터",
                 "adress" : "대구 달서구",
@@ -359,7 +359,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hospital/hospital_topcare.jpg",
-            "src" : "탑케어동물의료원 사진",
+            "alt" : "탑케어동물의료원 사진",
             "p":{
                 "title" : "탑케어동물의료원",
                 "adress" : "경기 고양시",
@@ -371,7 +371,7 @@
         ,{
             "cls" : "thumimg",
             "img" : "./img/hj_img/hospital/hospital_24noa.jpg",
-            "src" : "24시노아동물메디컬센터 사진",
+            "alt" : "24시노아동물메디컬센터 사진",
             "p":{
                 "title" : "24시노아동물메디컬센터",
                 "adress" : "광주 동구",
