@@ -1,4 +1,4 @@
-#hd{
+.hd{
     width: 100vw;
     z-index: 100;
     background-color: #ffffffc0;
@@ -75,11 +75,7 @@
             font-size: 1.3rem;
             line-height: 1.85;
             .form-show{
-                right: 7rem;
-                .a-search{                    
-                display: block;
-                padding-left:.5rem;
-                }
+                right: 7rem;                
                 .search-pc{
                     border:0;
                     &:focus{                        
@@ -88,6 +84,13 @@
                     }
                 }
             }
+            .btncls{                    
+                display: block;
+                padding-left:.5rem;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                }
         }
         .personIcon{
             font-size: 1.6rem;
