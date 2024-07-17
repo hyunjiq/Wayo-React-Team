@@ -2,140 +2,140 @@
   "gnb": [
     {
       "text": "펫시터가 와요",
-      "href": "/petsitter.html",
+      "href": "petsitter",
       "d2_li": [
         {
           "text": "방문 돌봄",
-          "href": "/homecare.html"
+          "href": "homecare"
         },
         {
           "text": "집중 호스피스",
-          "href": "/pethos.html"
+          "href": "pethos"
         },
         {
           "text": "펫 플래닛",
-          "href": "/longcare.html"
+          "href": "longcare"
         },
         {
           "text": "웨딩케어",
-          "href": "/weddingcare.html"
+          "href": "weddingcare"
         },
         {
           "text": "안심 픽업 & 드랍",
-          "href": "/pickupndrop.html"
+          "href": "pickupndrop"
         }
       ]
     },
     {
       "text": "훈련사",
-      "href": "/petrainer.html",
+      "href": "petrainer",
       "d2_li": [
         {
           "text": "훈련사 소개",
-          "href": "/whopetrainer.html"
+          "href": "whopetrainer"
         },
         {
           "text": "훈련사에게 물어봐",
-          "href": "/qnapetrainer.html"
+          "href": "qnapetrainer"
         }
       ]
     },
     {
       "text": "플레이스",
-      "href": "/petplace.html",
+      "href": "petplace",
       "d2_li": [
         {
           "text": "입점 문의",
-          "href": "/askpartnership.html"
+          "href": "askpartnership"
         },
         {
           "text": "매장 찾기",
-          "href": "/findshop.html"
+          "href": "findshop"
         }
       ]
     },
     {
       "text": "사회공헌",
-      "href": "/petsocial.html",
+      "href": "petsocial",
       "d2_li": [
         {
           "text": "봉사활동",
-          "href": "/volunteer.html"
+          "href": "volunteer"
         },
         {
           "text": "지식나눔",
-          "href": "/sharing.html"
+          "href": "sharing"
         },
         {
           "text": "심리상담",
-          "href": "/mindcare.html"
+          "href": "mindcare"
         }
       ]
     },
     {
       "text": "커뮤니티",
-      "href": "/community.html",
+      "href": "community",
       "d2_li": [
         {
           "text": "실시간 후기",
-          "href": "/review.html"
+          "href": "review"
         },
         {
           "text": "구독 서비스",
-          "href": "/subscription.html"
+          "href": "subscription"
         }
       ]
     },
     {
       "text": "펫트너",
-      "href": "/pettner.html",
+      "href": "pettner",
       "d2_li": [
         {
           "text": "펫시터 지원",
-          "href": "/petsitterapply.html"
+          "href": "petsitterapply"
         },
         {
           "text": "훈련사 지원",
-          "href": "/pettrainerapply.html"
+          "href": "pettrainerapply"
         },
         {
           "text": "산책케어 지원",
-          "href": "/petwalkapply.html"
+          "href": "petwalkapply"
         }
       ]
     },
     {
       "text": "훈련사 지원하기",
-      "href": "/pettner.html"
+      "href": "pettner"
     }
   ],
   "mainservice": [
     {
       "text": "방문돌봄",
       "alt": "돌봄",
-      "src": "//tpgus2.github.io/hyuntopia/img/img_sh/service1.jpg"
+      "src": "/img/img_sh/service1.jpg"
     },
     {
       "text": "방문산책",
       "alt": "산책",
-      "src": "//tpgus2.github.io/hyuntopia/img/img_sh/service2.jpg"
+      "src": "/img/img_sh/service2.jpg"
     },
     {
       "text": "방문훈련",
       "alt": "훈련",
-      "src": "//tpgus2.github.io/hyuntopia/img/img_sh/service3.jpg"
+      "src": "/img/img_sh/service3.jpg"
     },
     {
       "text": "더보기",
       "alt": "더보기",
-      "src": "//tpgus2.github.io/hyuntopia/img/img_sh/service4.jpg"
+      "src": "/img/img_sh/service4.jpg"
     }
   ],
   "placeswiper":{
     "hotel":[
         {
            
-            "img" : "./img/hj_img/hotel/hotel_grang.jpg",
+            "img" : "/img/hj_img/hotel/hotel_grang.jpg",
             "alt" : "그랑모던풀빌라 사진",
             "p":{
                 "title" : "그랑모던풀빌라",
@@ -146,7 +146,7 @@
         }
         ,{
            
-            "img" : "./img/hj_img/hotel/hotel_petclass2.jpg",
+            "img" : "/img/hj_img/hotel/hotel_petclass2.jpg",
             "alt" : "펫클라스펜션 사진",
             "p":{
                 "title" : "펫클라스펜션",
@@ -157,7 +157,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/hotel/hotel_daeng.jpg",
+            "img" : "/img/hj_img/hotel/hotel_daeng.jpg",
             "alt" : "댕숲애견펜션 사진",
             "p":{
                 "title" : "댕숲애견펜션",
@@ -168,7 +168,7 @@
         }
         ,{
            
-            "img" : "./img/hj_img/hotel/hotel_thepetel.jpg",
+            "img" : "/img/hj_img/hotel/hotel_thepetel.jpg",
             "alt" : "더펫텔 사진",
             "p":{
                 "title" : "더펫텔",
@@ -179,7 +179,7 @@
         }
         ,{
             
-            "img" : "./img/hj_img/hotel/hotel_ocean2you.jpg",
+            "img" : "/img/hj_img/hotel/hotel_ocean2you.jpg",
             "alt" : "오션투유 사진",
             "p":{
                 "title" : "오션투유",
@@ -190,7 +190,7 @@
         }
         ,{
            
-            "img" : "./img/hj_img/hotel/hotel_theweek.jpg",
+            "img" : "/img/hj_img/hotel/hotel_theweek.jpg",
             "alt" : "더위크 사진",
             "p":{
                 "title" : "더위크",
@@ -201,7 +201,7 @@
         }
         ,{
            
-            "img" : "./img/hj_img/hotel/hotel_gout.jpg",
+            "img" : "/img/hj_img/hotel/hotel_gout.jpg",
             "alt" : "곳스테이 사진",
             "p":{
                 "title" : "곳스테이",
@@ -212,7 +212,7 @@
         }
         ,{
         
-            "img" : "./img/hj_img/hotel/hotel_sono.jpg",
+            "img" : "/img/hj_img/hotel/hotel_sono.jpg",
             "alt" : "소노호텔 사진",
             "p":{
                 "title" : "소노호텔",
@@ -223,7 +223,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/hotel/hotel_kensington.jpg",
+            "img" : "/img/hj_img/hotel/hotel_kensington.jpg",
             "alt" : "켄싱턴리조트 사진",
             "p":{
                 "title" : "켄싱턴리조트",
@@ -236,7 +236,7 @@
     "cafe":[
         {
           
-            "img" : "./img/hj_img/cafe/cafe_pawseason.jpg",
+            "img" : "/img/hj_img/cafe/cafe_pawseason.jpg",
             "alt" : "포시즌 카페 사진",
             "p":{
                 "title" : "포시즌",
@@ -248,7 +248,7 @@
         }
         ,{
            
-            "img" : "./img/hj_img/cafe/cafe_pumpkin.jpg",
+            "img" : "/img/hj_img/cafe/cafe_pumpkin.jpg",
             "alt" : "펌킨 펫하우스 카페 사진",
             "p":{
                 "title" : "펌킨 펫하우스",
@@ -260,7 +260,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/cafe/cafe_mung.jpg",
+            "img" : "/img/hj_img/cafe/cafe_mung.jpg",
             "alt" : "멍카페 사진",
             "p":{
                 "title" : "멍카페",
@@ -272,7 +272,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/cafe/cafe_shfaus.jpg",
+            "img" : "/img/hj_img/cafe/cafe_shfaus.jpg",
             "alt" : "놀면뭐하개 카페 사진",
             "p":{
                 "title" : "놀면뭐하개",
@@ -284,7 +284,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/cafe/cafe_staywinter.jpg",
+            "img" : "/img/hj_img/cafe/cafe_staywinter.jpg",
             "alt" : "겨울이 머무는집 카페 사진",
             "p":{
                 "title" : "겨울이머무는집",
@@ -296,7 +296,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/cafe/cafe_ijoa.jpg",
+            "img" : "/img/hj_img/cafe/cafe_ijoa.jpg",
             "alt" : "아이조아펫파크 사진",
             "p":{
                 "title" : "아이조아펫파크",
@@ -310,7 +310,7 @@
     "clinic":[
         {
           
-            "img" : "./img/hj_img/hospital/hospital_24guro.jpg",
+            "img" : "/img/hj_img/hospital/hospital_24guro.jpg",
             "alt" : "24시지구촌동물메디컬센터 사진",
             "p":{
                 "title" : "24시지구촌동물메디컬센터",
@@ -322,7 +322,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/hospital/hospital_sol.jpg",
+            "img" : "/img/hj_img/hospital/hospital_sol.jpg",
             "alt" : "솔동물의료센터 사진",
             "p":{
                 "title" : "솔동물의료센터",
@@ -334,7 +334,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/hospital/hospital_royal.jpg",
+            "img" : "/img/hj_img/hospital/hospital_royal.jpg",
             "alt" : "로얄동물메디컬센터 사진",
             "p":{
                 "title" : "로얄동물메디컬센터",
@@ -346,7 +346,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/hospital/hospital_bareun.jpg",
+            "img" : "/img/hj_img/hospital/hospital_bareun.jpg",
             "alt" : "바른동물의료센터 사진",
             "p":{
                 "title" : "바른동물의료센터",
@@ -358,7 +358,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/hospital/hospital_topcare.jpg",
+            "img" : "/img/hj_img/hospital/hospital_topcare.jpg",
             "alt" : "탑케어동물의료원 사진",
             "p":{
                 "title" : "탑케어동물의료원",
@@ -370,7 +370,7 @@
         }
         ,{
           
-            "img" : "./img/hj_img/hospital/hospital_24noa.jpg",
+            "img" : "/img/hj_img/hospital/hospital_24noa.jpg",
             "alt" : "24시노아동물메디컬센터 사진",
             "p":{
                 "title" : "24시노아동물메디컬센터",
@@ -381,20 +381,23 @@
         }
     ]
 },
-  "socialswiper": [
-    {
-      "text": "유기견 봉사활동",
-      "src": "/petopia/img/img_je/sp_volunteer.jpg"
-    },
-    {
-      "text": "배우 김효진x와요 특별한 인터뷰",
-      "src": "/petopia/img/img_je/sp_interview.jpg"
-    },
-    {
-      "text": "유기동물 보호소 산책봉사",
-      "src": "/petopia/img/img_je/sp_walkingvolunteer.jpg"
-    }
-  ],
+"socialswiper" : [
+   {
+        "text" : "유기견 봉사활동",
+        "alt" : "유기견 봉사활동 이미지",
+        "src" : "/img/sp_volunteer.jpg"
+        },
+      {
+        "text" : "배우 김효진x와요 특별한 인터뷰",
+        "alt" : "배우 김효진x와요 특별한 인터뷰 이미지",
+        "src" : "/img/sp_interview.jpg"
+      },
+        {
+        "text" : "유기동물 보호소 산책봉사",
+        "alt" : "유기동물 보호소 산책봉사 이미지",
+        "src" : "/img/sp_walkingvolunteer.jpg"
+        }
+      ],
   "schedule": [
     {
       "date": "2024.03.12",
