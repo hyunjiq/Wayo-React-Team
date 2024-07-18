@@ -82,7 +82,7 @@ const BannerSlider = () => {
                         <Mainswiper>
                             <Mswiper>
                                 <div className="mb-4">
-                                    <img src="/img/main_collabo_txt.png" alt="콜라보로고" />
+                                    <img src="/img/img_je/main_collabo_txt.png" alt="콜라보로고" />
                                 </div>
                                 <div className="mb-5">
                                     <Ptext01 className="mb-3">{b.text}</Ptext01>
@@ -93,7 +93,7 @@ const BannerSlider = () => {
                             </Mswiper>
                             <div>
                                 <img
-                                    src="/img/main_collabo.jpg"
+                                    src="/img/img_je/main_collabo.jpg"
                                     alt="콜라보상품"
                                     className="maincollabo"
                                 />
