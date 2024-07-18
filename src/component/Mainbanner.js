@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css'; 
-import '../css/mainb.css';
-import mainbDB from '../data/mainbDB.json'
-import {Mainswiper, Mswiper, Ptext01,Ptext02,Ptext03,Ptext04 } from '../commonui/mainbui'
+import '../scss/je.scss';
+import mainbDB from '../data/db.json'
+import {Mainswiper, Mswiper, Ptext01,Ptext02,Ptext03,Ptext04 } from '../component/style'
 
 const BannerSlider = () => {
     return (
