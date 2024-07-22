@@ -18,30 +18,18 @@ function Hd() {
         </h1>
         <ul className="d1 d-flex mb-0 p-0 ">
             {
-                gnb.map((v, i)=>{
-                    return(
-                        <li className="d1_li position-relative" key={"gnbnavi"+i}>
-                            <Link className="d1_a" to={`/${v.href}`}>{v.text}</Link>
-                            
-                                {
-                                    v.d2_li  &&   v.d2_li.length > 0 ? 
-                                    <ul class="d2 position-absolute ps-0">
-                                    {
-                                        v.d2_li.map((vv, ii)=>{
-                                            return(
-                                                <li class="d2_li">
-                                                    <Link to={`/${vv.href}`}>{vv.text}</Link>
-                                                </li>
-                                            )   
-                                        })
-                                    }
-                                    </ul>
-                                    : null
-                                }
-                        </li>
-                        
-                    )
+                gnb.filter().map((v, i)=>{
+                    return({v})
+                        // depth가 한 자리 숫자인 요소들만 필터링
+                        //const filteredGNB = gnb.filter(v => v.depth.split('|').length === 1);
+
+                        // filteredGNB를 사용하여 map 함수 실행
+                        //filteredGNB.map((v, i) => {
+                        // 각 요소에 대한 작업 수행
                 })
+                    
+                   
+                
             }            
         </ul>
         <ul className="d-flex lnb mb-0 p-0">
