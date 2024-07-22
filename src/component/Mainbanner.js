@@ -8,16 +8,17 @@ import {Mainswiper, Mswiper, Ptext01,Ptext02,Ptext03,Ptext04 } from '../componen
 const BannerSlider = () => {
     return (
         <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-            modules={[Autoplay, Pagination]}
-            autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-            }}
-        >
+        spaceBetween={50}
+        slidesPerView={1}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+        modules={[Autoplay, Pagination]}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }} 
+      >
             {mainbDB["banner01"].map((v, i) => {
                 const textArray = v.text.split('|');
                 const subtextArray = v.subtext.split('|');
