@@ -60,3 +60,38 @@ export const Ptext04 = styled.p`
     line-height: 19px;
     color: #666666;
 `;
+
+
+
+///////// 세현 스타일 컴포넌트 /////////////
+
+
+export const StyleIcon =styled.i`
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+
+    &:before{
+        content: "${(props) => props.content || 'error'}"
+    }
+`
+export const Msimg = styled.img`
+    width:100%;
+    border-radius: 12px 12px 0 0;
+`
+
+export const Msspan = styled.span`
+        text-align: center;
+        font-size: 1.45rem;
+        color: white;
+        background-color: #6a92fe;
+        padding: 2.5rem;
+        display: block;
+        border-radius: 0 0 12px 12px;
+`
