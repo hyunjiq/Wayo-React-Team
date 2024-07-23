@@ -3,107 +3,76 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css'; 
 import '../scss/je.scss';
 import mainbDB from '../data/db.json'
-import {Mainswiper, Mswiper, Ptext01,Ptext02,Ptext03,Ptext04 } from '../component/style'
+import {Mainswiper, Mswiper, Ptext02,Ptext03 } from '../component/style'
+import { Link } from 'react-router-dom';
 
 const BannerSlider = () => {
     return (
         <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-        modules={[Autoplay, Pagination]}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }} 
-      >
+            spaceBetween={50}
+            slidesPerView={1}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            modules={[Autoplay, Pagination]}
+            autoplay={{
+                delay: 50000,
+                disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }} 
+        >
             {mainbDB["banner01"].map((v, i) => {
                 const textArray = v.text.split('|');
                 const subtextArray = v.subtext.split('|');
-
+    
                 return (
                     <SwiperSlide key={`banner01${i}`}>
                         <Mainswiper>
                             <Mswiper>
                                 <div className="mb-4">
+                                    {subtextArray.length === 3 ? ( <img src="/img/img_je/main_collabo_txt.png" alt="콜라보로고" />) : null}
                                     <Ptext02>{textArray[0]}</Ptext02>
                                     <Ptext02>{textArray[1]}</Ptext02>
                                 </div>
                                 <div className="mb-5">
                                     <Ptext03>{subtextArray[0]}</Ptext03>
-                                    <Ptext03>{subtextArray[1]}</Ptext03>
-                                </div>
-                                <div><a href="javascript:void(0)" className="mainActing">{v.btn}</a></div>
-                            </Mswiper>
-                            <div className="main_back"></div>
-                        </Mainswiper>
-                    </SwiperSlide>
-                );
-            })}
-            {mainbDB["banner02"].map((e, idx) => {
-                const textArray = e.text.split('|');
 
-                return (
-                    <SwiperSlide key={`banner02${idx}`}>
-                        <Mainswiper>
-                            <Mswiper>
-                                <div className="mb-4">
-                                    <Ptext01>{textArray[0]}</Ptext01>
-                                    <Ptext01>{textArray[1]}</Ptext01>
+                                   {subtextArray.length === 2 ? (
+                                    <Ptext03>{subtextArray[1]}</Ptext03>) : subtextArray.length > 1 && subtextArray[2] 
+                                    ? (<><Ptext03>{subtextArray[1]}</Ptext03> <Ptext03>{subtextArray[2]}</Ptext03></>) : null}
+   
                                 </div>
-                                <div className="mb-5">
-                                    <Ptext03>{e.subtext}</Ptext03>
-                                </div>
-                                <div><a href="javascript:void(0)" className="mainvideo">{e.btn}</a></div>
+                                {v.btn ? (
+                                    <div>
+                                        <Link to={"javascript:void(0)"} className="mainActing">
+                                            {v.btn}
+                                        </Link>
+                                    </div>
+                                ) : null}
                             </Mswiper>
-                            <div>
-                                <iframe
-                                    width="1242"
-                                    height="700"
-                                    className="mainbanner_Video"
-                                    src="https://www.youtube.com/embed/RWRm1vHZN8A?si=KUt8OAz0PFLwfhsb"
-                                    title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                ></iframe>
-                            </div>
+                            {i === 0 && textArray[0] ? (
+                                        <div className="main_back"></div>
+                                    ) : i === 1 && textArray.length > 1 ? (
+                                        <div>
+                                            <iframe
+                                                width="1242"
+                                                height="700"
+                                                className="mainbanner_Video"
+                                                src="https://www.youtube.com/embed/RWRm1vHZN8A?si=KUt8OAz0PFLwfhsb"
+                                                title="YouTube video player"
+                                                frameBorder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerPolicy="strict-origin-when-cross-origin"
+                                                allowFullScreen
+                                            ></iframe>
+                                        </div>
+                                    ) : i === 2 && subtextArray.length > 2 ? (
+                                        <div className="maincollabo"> </div>
+                                    ) : null}
                         </Mainswiper>
                     </SwiperSlide>
                 );
             })}
-            {mainbDB.banner03.map((b, index) => {
-                const subtextArray = b.subtext.split('|');
-
-                return (
-                    <SwiperSlide key={`banner03${index}`}>
-                        <Mainswiper>
-                            <Mswiper>
-                                <div className="mb-4">
-                                    <img src="/img/img_je/main_collabo_txt.png" alt="콜라보로고" />
-                                </div>
-                                <div className="mb-5">
-                                    <Ptext01 className="mb-3">{b.text}</Ptext01>
-                                    <Ptext04>{subtextArray[0]}</Ptext04>
-                                    <Ptext04>{subtextArray[1]}</Ptext04>
-                                    <Ptext04>{subtextArray[2]}</Ptext04>
-                                </div>
-                            </Mswiper>
-                            <div>
-                                <img
-                                    src="/img/img_je/main_collabo.jpg"
-                                    alt="콜라보상품"
-                                    className="maincollabo"
-                                />
-                            </div>
-                        </Mainswiper>
-                    </SwiperSlide>
-                );
-            })}
-            
+          
         </Swiper>
     );
 }
