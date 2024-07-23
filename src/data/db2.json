@@ -29,6 +29,12 @@
       "text": "안심 픽업 & 드랍",
       "href": "pickupndrop",
       "depth" : "0|4"
+    }
+    ,
+    {
+      "text": "산책케어 지원",
+      "href": "petwalkapply",
+      "depth" : "0|5"
     },
     {
       "text": "훈련사",
@@ -99,21 +105,6 @@
       "text": "펫트너 지원하기",
       "href": "pettner",
       "depth" : "5"
-    },
-    {
-      "text": "펫시터 지원",
-      "href": "petsitterapply",
-      "depth" : "5|0"
-    },
-    {
-      "text": "훈련사 지원",
-      "href": "pettrainerapply",
-      "depth" : "5|1"
-    },
-    {
-      "text": "산책케어 지원",
-      "href": "petwalkapply",
-      "depth" : "5|2"
     }
       
     

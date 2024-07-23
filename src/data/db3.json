@@ -37,6 +37,12 @@
         "cateno" : "4"
       },
       {
+        "text": "산책케어 지원",
+        "href": "petwalkapply",
+        "prnum" : "0",
+        "cateno" : "5"
+      },
+      {
         "text": "훈련사",
         "href": "petrainer",
         "prnum" : "",
@@ -125,19 +131,8 @@
         "href": "petsitterapply",
         "prnum" : "5",
         "cateno" : "0"
-      },
-      {
-        "text": "훈련사 지원",
-        "href": "pettrainerapply",
-        "prnum" : "5",
-        "cateno" : "1"
-      },
-      {
-        "text": "산책케어 지원",
-        "href": "petwalkapply",
-        "prnum" : "5",
-        "cateno" : "2"
       }
+      
         
       
     ],
