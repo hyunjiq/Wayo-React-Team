@@ -14,6 +14,7 @@
         h1{
             img{
                 height: 2.5rem;
+                transition: .5s;
             }
         }
         .mobilemenu{
@@ -22,16 +23,18 @@
         .d1{
             display: flex;
             flex-direction: row;
+            transition: .5s;
             .m-d-none{display: none;}
             .d1_li{
                 padding:1rem 2rem;           
                 .d1_a{
-                    font-size: 1.2rem;
+                    font-size: 1.05rem;
+                    font-weight: 500;
                 }
                 .d2{
                     top:100%;
-                    transform: translateX(-50%);
-                    left: 50%;
+                    right: 0;
+                    left: 0;
                     max-height: 0;
                     overflow: hidden;
                     transition: .5s;
@@ -41,7 +44,8 @@
                         margin: 0.5rem 0;
                         letter-spacing: 0.085rem;
                         a{
-                            font-size: 1.05rem;
+                            font-size: 0.95rem;
+                            
                         }
                     }
                 }
@@ -51,10 +55,13 @@
             .searchIcon{
                 display: flex;
                 font-size: 1.3rem;
-                line-height: 1.85;
-                .form-show{
-                    right: 7rem;                
+                line-height: 1.88;
+                .form-show{      
+                    right: 100%;   
+                    width: auto;   
+                    transition: .5s;   
                     .search-pc{
+                        width: auto;
                         border:0;
                         &:focus{                        
                         outline: none !important;
@@ -146,6 +153,18 @@
 @media (min-width:1221px){
     .hd{
         .d1{
+            z-index: 95;
+            .d1_li{
+                .d2{
+                    top:100%;
+                    right: 0;
+                    left: 0;
+                    max-height: 0;
+                    transition: .5s;
+                    z-index: 90;
+                    overflow: hidden;
+                }
+            }
             &:hover{
                 &:before{
                     content: "";
@@ -161,6 +180,7 @@
                         .d1_a{color: #6A92FE;}
                     }
                     .d2{
+                        
                         .d2_li{
                             &:hover{
                                 a{
@@ -183,6 +203,7 @@
                 transition: .5s;
                 border-top: 1px solid transparent;
             }
+            
         }
     }
 }
@@ -196,8 +217,8 @@
         }
         
         .d1{
-            background: #77f;
-            width: 100vw;
+            background: #fff;
+            width: 70vw;
             height: 100vh;
             position: fixed;
             right: 0;
@@ -205,32 +226,35 @@
             flex-direction: column;
             z-index: 10000;
             display: none;
+            border-left: 1px solid #eee;
+            
             &:before{
                 content: none;
             }
             .m-d-none{display: block;}
             .d1_li{
-                padding:1rem 2rem;           
+                padding:1rem 2rem;  
+                
                 .d1_a{
-                    font-size: 1.2rem;
-                }
-                .d2{
-                    top:100%;
-                    transform: translateX(-50%);
-                    left: 50%;
-                    max-height: 0;
-                    overflow: hidden;
-                    transition: .5s;
-                    .d2_li{
-                        white-space: nowrap;
-                        text-align: center;
-                        margin: 0.5rem 0;
-                        letter-spacing: 0.085rem;
-                        a{
-                            font-size: 1.05rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }         
+                .m-search{
+                    background: #D3DFFF;
+                    border-radius: 100px;
+                    .btncls{
+                        padding: 0 0 0 0.7rem;
+                    }
+                    input{
+                        background: transparent;
+                        border: none;
+                        
+                        &:focus{
+                            box-shadow: none;
                         }
                     }
-                }
+                }                
             }
         }
         .lnb{
@@ -251,6 +275,10 @@
 @media (max-width: 768px) {
     .hd{
         padding: 0 0.5rem;
+        .d1{
+            width: 100vw;
+            border-left: none;
+        }
     }
 }
 

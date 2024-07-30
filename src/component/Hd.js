@@ -33,13 +33,13 @@ function Hd() {
         </h1>
         
         <ul className={`d1 mb-0 p-0 ${mobiletoggle? 'd-flex' : ''}`}>
-            <li className='m-d-none '>
-                <button className={`btncls xBtn  ${mobiletoggle? '' : 'd-none'}`} onClick={() => setMobiletoggle(false)}>                
+            <li className='m-d-none d1_li position-relative'>
+                <button className={`btncls xBtn position-absolute end-0 ${mobiletoggle? '' : 'd-none'}`} onClick={() => setMobiletoggle(false)}>                
                     <Styleicon content='\f659'><span className="visually-hidden">닫기</span></Styleicon> 
                 </button>
             </li>
-            <li className='m-d-none'>
-                <form className={`d-flex`}>
+            <li className='m-d-none d1_li position-relative'>
+                <form className='d-flex m-search p-1'>
                     <button className="btncls" href="#">                        
                         <Styleicon content='\f52a'><span className="visually-hidden">검색</span></Styleicon>   
                     </button>
@@ -49,13 +49,19 @@ function Hd() {
             {
                 d1info  && d1info.map((v, i)=>
                 <li key={`gnb${i}`} className='d1_li position-relative'>
-                    <Link className='d1_a' to={v.href}>{v.text}</Link>
+                    <Link className='d1_a' to={v.href}>{v.text}{
+                        submenus[v.cateno] && submenus[v.cateno].length > 0 && (
+                            <Styleicon className='m-d-none' content='\F282'></Styleicon> 
+                        )
+                    }
+                        
+                    </Link>
                     {
                        submenus[v.cateno] && submenus[v.cateno].length > 0 && (
                         <ul className=" d2 position-absolute ps-0 ">
                             {
                                 submenus[v.cateno].map((vv, ii) => (
-                                    <li key={`submenu${ii}`} className='d2_li'>
+                                    <li key={`submenu${ii}`} className='d2_li d-flex justify-content-center'>
                                         <Link className='submenu_a' to={vv.href}>{vv.text}</Link>
                                     </li>
                                 ))
@@ -69,20 +75,19 @@ function Hd() {
             }      
         </ul>        
         <ul className="d-flex lnb mb-0 p-0 ">
-            <li className="mx-2 searchIcon">
-                <form className={`${searchtoggle ? 'd-flex' : 'd-none'} form-show border me-3 position-absolute`}>
+            <li className="mx-2 searchIcon position-relative">
+                 <form className={`form-show ${searchtoggle ? 'd-flex' : 'd-none'} border position-absolute bg-white`}>
                     <button className="btncls" href="#">                        
                         <Styleicon content='\f52a'><span className="visually-hidden">검색</span></Styleicon>   
                     </button>
                     <input type="text" className="form-control search-pc" placeholder="검색어 입력"/>
                 </form>
-                <button className={`btncls searchBtn ${searchtoggle ? 'd-none' : ''}`} onClick={() => setSearchtoggle(true)}>
+                <button className={`btncls ${searchtoggle ? 'searchBtn' : 'xBtn'}`} onClick={() => setSearchtoggle(!searchtoggle)}>
+                    <Styleicon content={searchtoggle ? '\\f659' : '\\f52a'}>
+                        <span className="visually-hidden">{searchtoggle ? '닫기' : '검색'}</span>
+                    </Styleicon>
+                </button>
 
-                    <Styleicon content='\f52a'><span className="visually-hidden">검색</span></Styleicon>   
-                </button>
-                <button className={`btncls xBtn ${searchtoggle ? '' : 'd-none'}`} onClick={() => setSearchtoggle(false)}>
-                    <Styleicon content='\f659'><span className="visually-hidden">닫기</span></Styleicon> 
-                </button>
             </li>
             <li className="mx-2 personIcon">
                 <Link to="#">

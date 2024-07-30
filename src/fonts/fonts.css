@@ -1,31 +1,31 @@
 /* Noto Sans KR */
 @font-face {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     src: url('./NotoSansKR-Thin.ttf') format('truetype');
     font-weight: 100;
   }
   @font-face {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     src: url('./NotoSansKR-Light.ttf') format('truetype');
     font-weight: 300;
   }
   @font-face {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     src: url('./NotoSansKR-Regular.ttf') format('truetype');
     font-weight: 400;
   }
   @font-face {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     src: url('./NotoSansKR-Medium.ttf') format('truetype');
     font-weight: 500;
   }
   @font-face {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     src: url('./NotoSansKR-Bold.ttf') format('truetype');
     font-weight: 700;
   }
   @font-face {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     src: url('./NotoSansKR-Black.ttf') format('truetype');
     font-weight: 900;
   }
@@ -59,27 +59,27 @@
   
   /* 특정 굵기를 지정하여 사용하기 */
   .notoSansKR100 {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     font-weight: 100;
   }
   .notoSansKR300 {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     font-weight: 300;
   }
   .notoSansKR400 {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     font-weight: 400;
   }
   .notoSansKR500 {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     font-weight: 500;
   }
   .notoSansKR700 {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     font-weight: 700;
   }
   .notoSansKR900 {
-    font-family: 'NotoSansKR';
+    font-family: 'Noto Sans KR';
     font-weight: 900;
   }
   
