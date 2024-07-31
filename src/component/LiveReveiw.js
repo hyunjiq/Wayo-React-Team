@@ -3,6 +3,7 @@ import SwiperCore from 'swiper';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import reviewData from '../data/review.json'
+import { Link } from 'react-router-dom';
 
 SwiperCore.use([Autoplay]);
 
@@ -75,6 +76,9 @@ const Review = () => {
       <div className="container overflow-hidden d-flex justify-content-between align-items-center">
         <div id="map" className="rv1 mx-2"></div>
         <div className="rv2">
+          <Link to="javascript:void(0)">
+            <p className='text-end'>지역별 더보기 +</p>
+          </Link>
           <Swiper
             loop={true}
             autoplay={{

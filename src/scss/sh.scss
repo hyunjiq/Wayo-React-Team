@@ -84,6 +84,11 @@ $lightgray:#f7f8fa;
 #live_reivew{
     .rv2{
         width: calc( 50% + 200px );
+        a{
+            p{
+                font-weight: 600;
+            }
+        }
     }
     .review{
 
@@ -122,7 +127,7 @@ $lightgray:#f7f8fa;
             -webkit-box-orient: vertical;
         }
         .nm{
-            font-size: 15px;
+            font-size: 14px;
             line-height: 0;
         }
         .star{
