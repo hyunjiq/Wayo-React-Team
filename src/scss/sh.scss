@@ -76,8 +76,58 @@ $lightgray:#f7f8fa;
      }
  }
 }
-#live_review{
-    img{
-        width: 122%;
+#map{
+    background-color: #6A92FE;
+    width: calc( 50% - 200px );
+    height: 380px;
+}
+#live_reivew{
+    .rv2{
+        width: calc( 50% + 200px );
+    }
+    .review{
+
+        height: 280px;
+        border: 1px solid #000;
+        margin: 0 10px;
+        padding: 1rem;
+
+        .img{
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .morebtn{
+            display: block;
+            color: #fff;
+            background-color: #6A92FE; 
+            text-align: center;
+            width: 240px;
+            height: 30px;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-top: 2rem;
+            line-height: 1.8;
+            &:hover{
+                background-color: $hovercolor;
+            }
+        }
+        .review_txt{
+            font-size: 14px;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        .nm{
+            font-size: 15px;
+            line-height: 0;
+        }
+        .star{
+            display: block;
+            width: 70px;
+        }
     }
 }
