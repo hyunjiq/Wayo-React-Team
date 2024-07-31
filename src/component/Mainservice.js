@@ -36,7 +36,7 @@ function Ms(props) {
                             <li className="col-lg-3 col-6 mb-3">
                                 <Link to="#" className="d-block">
                                     <Msimg src={v.src} alt={v.alt}/>
-                                    <Msspan>{v.text}</Msspan>
+                                    <Msspan className="ms_div">{v.text}</Msspan>
                                 </Link>
                             </li>
                         )

@@ -64,7 +64,7 @@ const Review = () => {
       loadMap();
     } else {
       const script = document.createElement('script');
-      script.src = 'https://dapi.kakao.com/v2/maps/sdk.js?appkey=cbf43aca99602e13060b091b108f14dc'; // 자신의 Kakao Maps API 키로 교체하세요
+      script.src = 'https://dapi.kakao.com/v2/maps/sdk.js?appkey=cbf43aca99602e13060b091b108f14dc';
       script.onload = loadMap;
       document.head.appendChild(script);
     }
@@ -72,9 +72,10 @@ const Review = () => {
 
 
   return (
-    <section id="live_reivew" class="margin container overflow-hidden d-flex justify-content-between align-items-center">
+    <section id="live_reivew">
+      <h2 className="container">실시간 후기</h2>
       <div className="container overflow-hidden d-flex justify-content-between align-items-center">
-        <div id="map" className="rv1 mx-2"></div>
+        <div id="map" className="rv1 me-3"></div>
         <div className="rv2">
           <Link to="javascript:void(0)">
             <p className='text-end'>지역별 더보기 +</p>
@@ -104,7 +105,7 @@ const Review = () => {
                   <p>{review.region}</p>
                   <p className="review_txt">{review.review}</p>
                 </div>
-                <a href="/" className="morebtn">더보기</a>
+                <Link to="javascript:void(0)" className="morebtn">더보기</Link>
               </SwiperSlide>
             ))}
           </Swiper>
