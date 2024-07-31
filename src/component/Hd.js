@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Styleicon } from './style';
 import logo from "../svg/logo.svg"
-import gnbdata from "../data/db3.json"
+import gnbdata from "../data/db.json"
 
 function Hd() {    
     const { gnb } = gnbdata;
