@@ -1,4 +1,4 @@
-import data from './data/db.json';
+
 import Hd from "./component/Hd";
 import Mainb from "./layout/Mainb"
 import Mainservice from './component/Mainservice';
