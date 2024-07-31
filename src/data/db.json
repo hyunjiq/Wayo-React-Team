@@ -426,17 +426,17 @@
      {
           "text" : "유기견 봉사활동",
           "alt" : "유기견 봉사활동 이미지",
-          "src" : "/img/sp_volunteer.jpg"
+          "src" : "/img/img_je/sp_volunteer.jpg"
           },
         {
           "text" : "배우 김효진x와요 특별한 인터뷰",
           "alt" : "배우 김효진x와요 특별한 인터뷰 이미지",
-          "src" : "/img/sp_interview.jpg"
+          "src" : "/img/img_je/sp_interview.jpg"
         },
           {
           "text" : "유기동물 보호소 산책봉사",
           "alt" : "유기동물 보호소 산책봉사 이미지",
-          "src" : "/img/sp_walkingvolunteer.jpg"
+          "src" : "/img/img_je/sp_walkingvolunteer.jpg"
           }
         ],
     "schedule": [

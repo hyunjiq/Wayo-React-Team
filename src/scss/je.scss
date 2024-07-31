@@ -124,79 +124,43 @@ section{padding-top: 65px !important;}
             }
         }
         
-
-#social_program {
-    .sp_je {
-        width: 700px;
-    }
-
-    #jeSwiper {
-        border-radius: 12px;
-        margin-right: 20px;
-        height: 346px;
-        margin-bottom: 180px;
-    }
-
-    .sp_text {
-        position: absolute;
-        left: 20px;
-        bottom: 10px;
-        color: white;
-        font-size: 30px;
-    }
-
-    .slide-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 700px;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* 검정색에 투명도 조절 */
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        position: absolute;
-        color: white;
-        margin-top: 120px;
-    }
-
-    .swiper-button-prev {
-        left: 590px;
-    }
-
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-        font-size: 2rem;
-    }
-}
-
-.box {
-    border-radius: 12px;
-    background-color: #b5c9ff;
-    padding: 8px 0;
-    margin-bottom: 13px;
-}
-
-.spNews {
-    list-style: none;
-}
-
-.libox {
-    height: 60px;
-    margin-bottom: 13px;
-    background-color: #f7f8fa;
-    border-radius: 12px;
-    padding-right: 10px;
-}
-
-.libox .sp-text {
-    font-size: 10px;
-}
-
-.libox .sp-style:hover {
-    text-decoration: underline;
-}
+        #social_program {
+                  section{font-family: Noto+Sans+KR;}
+        a{
+             text-decoration: none;
+             color: black;
+         }
+         
+         .sp_je {
+             width: 700px;
+         }
+     
+         .jeSwiper {
+             font-family: Noto+Sans+KR;
+             border-radius: 12px;
+             margin-right: 20px;
+             height: 346px;
+             margin-bottom: 180px;
+         }
+         .swiper-button-next,
+         .swiper-button-prev {
+             position: absolute;
+             color: white;
+             margin-top: 50px;
+         }
+     
+         .swiper-button-prev {
+             left: 580px;
+         }
+         .swiper-button-next{
+             left:630px;
+         }
+     
+         .swiper-button-next::after,
+         .swiper-button-prev::after {
+             font-size: 2rem;
+         }
+        }
 
 #form_tag {
     height: 868px;
@@ -213,12 +177,43 @@ section{padding-top: 65px !important;}
     }
 }
 
+
 #app_download {
+    section{font-family: Noto+Sans+KR;}
+
     position: relative;
     background-color: #6A92FE;
     padding: 3.7rem 0;
+    background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_animal.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;}
+    
+    #app_download:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 300px;
+        top: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
+    }
 
-    #jeAppbanner {
+    #app_download:after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        top: 0;
+        bottom: 0px;
+        background-size: 400px 300px;
+        background-repeat: no-repeat;
+        background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
+        transform: scaleX(-1);
+    }
+
         .app_come {
             font-weight: bold;
             font-size: 38px;
@@ -237,93 +232,26 @@ section{padding-top: 65px !important;}
             font-size: 24px;
             font-weight: bold;
         }
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 300px;
-        top: 0;
-        bottom: 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
-    }
-    background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_animal.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    &:after {
-        content: "";
-        position: absolute;
-        right: 0px;
-        width: 300px;
-        top: 0;
-        bottom: 0px;
-        background-size: 400px 300px;
-        background-repeat: no-repeat;
-        background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
-        transform: scaleX(-1);
-    }
-}
-@media (max-width: 576px) {
-    #app_download:before,
-    #app_download:after {
-        display: none; 
-    }
-    #app_download {
-        background-image: none; 
-    }
-    #jeAppbanner {
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center;
-    }
-    .app_down {
-        margin-top: 1rem; 
-    }
-}
-.je_main1 {
-    z-index: 10001;
-    border: 5px solid #92ff5d;
-    width: 100px;
-    height: 50px;
-    top: 60%;
-    left: 5%;
-    p {
-        color: #92ff5d;
-        bottom: 70%;
-        font-size: 1.5rem;
-        width: 500px;
-    }
-}
-.je_main2 {
-    z-index: 10001;
-    border: 5px solid #92ff5d;
-    width: 1242px;
-    height: 700px;
-    top: 7%;
-    right: 0;
-    p {
-        color: #92ff5d;
-        bottom: -7%;
-        font-size: 1.5rem;
-        width: 500px;
-    }
-}
-.je_app {
-    z-index: 10001;
-    border: 5px solid #92ff5d;
-    width: 220px;
-    height: 50px;
-    top: 40%;
-    right: 18%;
-    p {
-        color: #92ff5d;
-        bottom: 70%;
-        font-size: 1.5rem;
-    }
-}
+        @media (max-width: 576px) {
+            #app_download:before,
+            #app_download:after {
+                display: none; 
+            }
+            #app_download {
+                background-image: none; 
+            }
+            #jeAppbanner {
+                flex-direction: column; 
+                align-items: center; 
+                text-align: center;
+            }
+            .app_down {
+                margin-top: 1rem; 
+            }
+        }
+    
+
+
 .je_form1 {
     z-index: 10001;
     border: 5px solid #92ff5d;
