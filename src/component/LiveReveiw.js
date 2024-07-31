@@ -42,10 +42,10 @@ const Review = () => {
         }
       ];
 
-      const imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+      const imageSrc = "/img/img_sh/catndog2.png";
 
       positions.forEach(position => {
-        const imageSize = new kakao.maps.Size(24, 35);
+        const imageSize = new kakao.maps.Size(50, 50);
         const markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
         const marker = new kakao.maps.Marker({
           map: map,
