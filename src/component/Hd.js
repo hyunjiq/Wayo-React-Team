@@ -23,6 +23,39 @@ function Hd() {
     const [searchtoggle, setSearchtoggle] = useState(false);
     const [mobiletoggle, setMobiletoggle] = useState(false);
 
+
+    useEffect(() => {
+
+        const d1leng =  document.querySelectorAll('.gnb_li');
+
+        d1leng.forEach((v, i)=>{
+          v.addEventListener('click', (event)=> {
+                event.preventDefault(); 
+                
+                // if(v.classList.contains('showdiv')){
+                //     v.classList.remove('showdiv');
+                // } else{
+                //     v.classList.toggle('showdiv')
+                // }
+
+
+                d1leng.forEach((vv, ii)=>{
+                    vv.classList.remove('showdiv');
+                     
+                });
+                 
+                if (v.classList.contains('showdiv')) {
+                    v.classList.remove('showdiv');
+                } else {
+                    v.classList.toggle('showdiv');
+                }
+                                         
+          }) 
+        })
+        
+        }, []);
+  
+
     return (
         
         <header className="hd d-flex justify-content-between position-fixed align-items-center">
@@ -32,9 +65,9 @@ function Hd() {
           </a>
         </h1>
         
-        <ul className={`d1 mb-0 p-0 ${mobiletoggle? 'd-flex' : ''}`}>
-            <li className='m-d-none d1_li position-relative'>
-                <button className={`btncls xBtn position-absolute end-0 ${mobiletoggle? '' : 'd-none'}`} onClick={() => setMobiletoggle(false)}>                
+        <ul className={`d1 mb-0 p-0 ${mobiletoggle? 'd-flex' : ''}  gnbd1`}>
+            <li className='m-d-none d1_li position-relative py-4 fs-1rem6 border-bottom'>
+                <button className={`btncls xBtn position-absolute ${mobiletoggle? '' : 'd-none'}`} onClick={() => setMobiletoggle(false)}>                
                     <Styleicon content='\f659'><span className="visually-hidden">닫기</span></Styleicon> 
                 </button>
             </li>
@@ -48,7 +81,7 @@ function Hd() {
             </li>
             {
                 d1info  && d1info.map((v, i)=>
-                <li key={`gnb${i}`} className='d1_li position-relative'>
+                <li key={`gnb${i}`}  data-num={i} className={`d1_li position-relative gnb_li gnb_li_${i}`}>
                     <Link className='d1_a' to={v.href}>{v.text}{
                         submenus[v.cateno] && submenus[v.cateno].length > 0 && (
                             <Styleicon className='m-d-none' content='\F282'></Styleicon> 
@@ -58,10 +91,10 @@ function Hd() {
                     </Link>
                     {
                        submenus[v.cateno] && submenus[v.cateno].length > 0 && (
-                        <ul className=" d2 position-absolute ps-0 ">
+                        <ul className=" d2 ps-0 ">
                             {
                                 submenus[v.cateno].map((vv, ii) => (
-                                    <li key={`submenu${ii}`} className='d2_li d-flex justify-content-center'>
+                                    <li key={`submenu${ii}`} className='d2_li d-flex'>
                                         <Link className='submenu_a' to={vv.href}>{vv.text}</Link>
                                     </li>
                                 ))
@@ -89,7 +122,7 @@ function Hd() {
                 </button>
 
             </li>
-            <li className="mx-2 personIcon">
+            <li className="mx-2 fs-1rem6">
                 <Link to="#">
                     <Styleicon content='\f4e1'><span className="visually-hidden">로그인</span></Styleicon>
                 </Link>
