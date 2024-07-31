@@ -72,9 +72,9 @@ const Review = () => {
 
 
   return (
-    <section id="live_reivew">
+    <section id="live_reivew" className="overflow-hidden">
       <h2 className="container">실시간 후기</h2>
-      <div className="container overflow-hidden d-flex justify-content-between align-items-center">
+      <div className="d-flex justify-content-between align-items-center">
         <div id="map" className="rv1 me-3"></div>
         <div className="rv2">
           <Link to="javascript:void(0)">

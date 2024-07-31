@@ -77,9 +77,9 @@ $lightgray:#f7f8fa;
  }
 }
 #map{
-    background-color: #6A92FE;
     width: calc( 50% - 200px );
     height: 380px;
+    margin-left: 300px;
 }
 #live_reivew{
     .rv2{
@@ -95,7 +95,7 @@ $lightgray:#f7f8fa;
         height: 280px;
         border: 1px solid #000;
         margin: 0 10px;
-        padding: 1rem;
+        padding: 2rem;
 
         .img{
             display: block;
@@ -108,11 +108,10 @@ $lightgray:#f7f8fa;
             color: #fff;
             background-color: #6A92FE; 
             text-align: center;
-            max-width: 240px;
+            max-width: 330px;
             height: 30px;
-            text-decoration: none;
             border-radius: 20px;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             line-height: 1.8;
             &:hover{
                 background-color: $hovercolor;
