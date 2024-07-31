@@ -31,13 +31,6 @@ function Hd() {
         d1leng.forEach((v, i)=>{
           v.addEventListener('click', (event)=> {
                 event.preventDefault(); 
-                
-                // if(v.classList.contains('showdiv')){
-                //     v.classList.remove('showdiv');
-                // } else{
-                //     v.classList.toggle('showdiv')
-                // }
-
 
                 d1leng.forEach((vv, ii)=>{
                     vv.classList.remove('showdiv');

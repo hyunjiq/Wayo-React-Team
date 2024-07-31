@@ -117,12 +117,19 @@
     }
 
 }
-#ft{
+.ft{
+    justify-content:space-between;
+    transition: .5s;
     .ft_right{
+        .ft_menu, .ft_info, .ft_copy {
+            transition: .5s;
+        }
         .ft_menu{
             .ft_menu_li{
                 border-right: 1px solid #666;
                 line-height: 1;
+                transition: .5s;
+
             }
         }
         .ft-icon{
@@ -132,6 +139,7 @@
                 line-height: 1;
                 border-radius: .5rem;
                 padding: .3rem;
+                
                 a{
                     color: #999;
                 }
@@ -142,6 +150,7 @@
         h1{
             img{
                 height: 4rem;
+                transition: 5s;
             }
         }
     }
@@ -171,7 +180,7 @@
                     position: absolute;
                     top: 100%;
                     left: 0; right: 0;
-                    height: 205px;
+                    height: 230px;
                 }
                 .d1_li{ 
                     &:hover{
@@ -283,6 +292,37 @@
         }
     }
 }
+@media (max-width: 992px) {
+    .ft{
+        .ft_right{
+            .ft_menu{
+                .ft_menu_li{
+                    
+                }
+            }
+            .ft_info{
+                li{
+                    span{
+                        display: block
+                    };
+                }
+            }
+            .ft-icon{
+                li{
+                    a{
+                    }
+                }
+            }
+        }
+        .ft_left{
+            h1{
+                img{
+                    height: 4rem;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 768px) {
     .hd{
         padding: 0 0.5rem;
@@ -291,5 +331,33 @@
             border-left: none;
         }
     }
+    .ft{
+        flex-direction: column;
+        align-items: center;
+        .ft_right{
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+            .ft_info{
+                display: flex;
+                align-items:center;
+                flex-direction: column;
+            }
+        }
+    }
 }
-
+@media (max-width: 576px) {
+    .ft{
+        .ft_menu, .ft_info, .ft_copy {
+            font-size: .9rem;
+        }
+        .ft_left{
+            h1{
+                img{
+                    height: 3rem;
+                }
+            }
+        }
+    }
+    
+}   
