@@ -7,11 +7,12 @@ import {Swieprdiv01,Swieprdiv02} from '../component/style'
 
 const Banner = () => {
     return (
-        <Swiper
-            spaceBetween={50}
+        <div className="col d-flex p-0 sp_je me-3">
+        <Swiper className='jeSwiper'
+            //spaceBetween={50}
             slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
             modules={[Autoplay, Pagination, Navigation]}
             autoplay={{
                 delay: 3000,
@@ -35,6 +36,11 @@ const Banner = () => {
             }
             
         </Swiper>
+         {/* <!-- 스와이퍼 이동버튼 --> */}
+        <div className="swiper-button-next"></div>
+        <div className="swiper-button-prev"></div>
+                            
+        </div>  
     );
 }
 
