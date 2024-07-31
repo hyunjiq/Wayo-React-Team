@@ -1,7 +1,6 @@
 import React from 'react';
 import socialDB from '../data/db.json'
 import Socialswiper from '../component/Socialswiper'
-import '../scss/je.scss'
 import {Socialdiv, Socialul, Sociala, Socialspan01,Socialspan02,Socialspan03} from '../component/style'
 
 function Social() {
@@ -11,18 +10,12 @@ function Social() {
             <div className="container position-relative">
                 <h2>사회 공헌 프로그램</h2>
                 <div className="row">
-                    <div className="col d-flex p-0 sp_je me-3">
-                        {/* <!-- Swiper --> */}
-                        <div className="swiper mySwiper jeSwiper">
-                            <div class="swiper-wrapper">
-                                <Socialswiper></Socialswiper>
-                            </div>
-                        </div>
-                            {/* <!-- 스와이퍼 이동버튼 --> */}
-                        <div className="swiper-button-next"></div>
-                        <div className="swiper-button-prev"></div>
-                            
-                    </div>                    
+                 
+                    {/* <!-- Swiper --> */}
+              
+                    <Socialswiper></Socialswiper>
+                         
+                   
                     {/* <!-- 프로그램 일정 --> */}
                     <div className="col ps-0 sp_je" >
                         <Socialdiv>
