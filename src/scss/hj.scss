@@ -74,28 +74,32 @@
 #with_place{
     background: #D3DFFF;
 }
-#quik{
-    position: fixed;
+.quikMenu{
+    
     z-index: 100;
     bottom: 2rem;
     right: 1rem;   
-    #quikBtn{
+    .quikBtn{
+        background: url(../../public/img/hj_img/fixed_dog.png) no-repeat;
+        background-size: contain;
+        border: none;
+        background-color: unset;
         transform: translateY(.9rem);
-        z-index: 1;        
-        img{
-            height: 5rem;
-        }
+        z-index: 1;
+        width: 6.5rem;        
+        height: 6rem;
+        
     }
-    #quikMenu{
+    .quikul{
+        background: #3D71FF;
+        border-radius: 0 0 3rem 3rem;
         &::before{
             content: "";
             display: block;
             background: #3D71FF;
             height: .5rem;
-        }
-        background: #3D71FF;
-        border-radius: 0 0 3rem 3rem;
-        .qIcon{
+        }        
+        .quikli{
             background: #6A92FE;
             border-radius: 50%;
             box-shadow: 3px 3px 3px #00000030;
@@ -108,12 +112,13 @@
     }
     .top_btn{
         background: #eee; 
-        padding: 0.7rem; 
+        padding: 0.8rem; 
         border-radius: 50%; 
         margin-top: 1rem; 
         box-shadow: 3px 3px 3px #aaa;
         line-height: 1;
-        a{font-size: 2rem; color: #666;}
+        font-size: 1.4rem; 
+        color: #666;
     }
 
 }
@@ -295,22 +300,11 @@
 @media (max-width: 992px) {
     .ft{
         .ft_right{
-            .ft_menu{
-                .ft_menu_li{
-                    
-                }
-            }
             .ft_info{
                 li{
                     span{
                         display: block
                     };
-                }
-            }
-            .ft-icon{
-                li{
-                    a{
-                    }
                 }
             }
         }
@@ -343,6 +337,9 @@
                 align-items:center;
                 flex-direction: column;
             }
+        }
+        .ft_left{
+            padding-top: 1rem;
         }
     }
 }
