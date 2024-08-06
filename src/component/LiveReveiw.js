@@ -101,9 +101,9 @@ const Review = () => {
         </Link>
       </div>
     
-      <div className="d-lg-inline-flex d-lg-flex flex-md-column flex-lg-row img-fluid w-auto  align-items-center">
-        <div id="map" className="rv1 me-3 d-none d-md-block"></div>
-        <div className="rv2  d-none d-md-block">
+      <div className="d-lg-inline-flex flex-md-column flex-lg-row img-fluid w-auto  align-items-center">
+        <div id="map" className="rv1 me-3"></div>
+        <div className="rv2 d-none d-md-block">
           <Swiper className="reviewswiper"
             loop={true}
             autoplay={{

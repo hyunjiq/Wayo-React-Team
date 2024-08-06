@@ -27,7 +27,7 @@ function Ms(props) {
   
   return (
     <section className="margin" id={props.keyid}>
-        <div className="container position-relative ">
+        <div className="container-lg position-relative">
         <h2>주요 서비스</h2>
             <ul className="row px-0">
                 { loading ? <p>Loading...</p> :

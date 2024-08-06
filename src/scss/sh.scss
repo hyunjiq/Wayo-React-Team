@@ -87,7 +87,9 @@ $lightgray:#f7f8fa;
 }
 
 #live_reivew{
-   
+   *p{
+        margin-bottom: 10px;
+   }
     .rv2{
         flex-shrink: 0;
         max-width: calc(100vw - 450px);
@@ -219,7 +221,12 @@ $lightgray:#f7f8fa;
         }
     }
     @media (max-width:375px) {
-  
+        #map{
+            height: 350px;
+        }
+        .m_review{
+            height: 230px;
+        }
     }
    
 }
