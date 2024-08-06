@@ -37,19 +37,10 @@ const Review = () => {
       map.setZoomable(false);
 
       const adjustMapCenter = () => {
-        const width = window.innerWidth;
-
-        // 너비에 따라 중심 좌표 조정
-        if (width > 700) {
-          const adjustedLng = 127.02580217910766; // 수동으로 설정한 중심 좌표
-          const adjustedCenter = new kakao.maps.LatLng(37.52917322710707, adjustedLng);
-          map.setCenter(adjustedCenter);
-        } else {
-          map.setCenter(centerLatLng);
-        }
+        map.setCenter(centerLatLng);
       };
 
-      // 초기 중심 조정
+      // 초기 중심 위치 조정
       adjustMapCenter();
 
       // 윈도우 리사이즈 이벤트에 대응하여 중심 조정
