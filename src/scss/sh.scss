@@ -77,22 +77,25 @@ $lightgray:#f7f8fa;
  }
 }
 #map{
-    width: calc( 50% - 200px );
-    height: 380px;
-    margin-left: 300px;
-}
-#live_reivew{
-    .rv2{
-        width: calc( 50% + 200px );
-        a{
-            p{
-                font-weight: 600;
-                padding-right: 19rem;
-            }
-        }
+    @media (max-width:992px) {
+        width: 100%;
+        height: 400px;
     }
-    .review{
+    width: 450px;
+    height: 380px;  
+    flex-shrink: 0;
+}
 
+#live_reivew{
+   
+    .rv2{
+        flex-shrink: 0;
+        max-width: calc(100vw - 450px);
+
+    }
+
+    .review{
+        width: 355px;
         height: 280px;
         border: 1px solid #000;
         margin: 0 10px;
@@ -114,6 +117,8 @@ $lightgray:#f7f8fa;
             border-radius: 20px;
             margin-top: 1.5rem;
             line-height: 1.8;
+            margin: 0 auto;
+
             &:hover{
                 background-color: $hovercolor;
             }
@@ -134,5 +139,87 @@ $lightgray:#f7f8fa;
             display: block;
             width: 70px;
         }
+    }   
+  
+   
+    @media (max-width:1440px) {
+        .review{
+            width: 300px;
+        }
     }
+    @media (max-width:1199px) {
+        .review{
+            width: 270px;
+        }
+    }
+    @media (max-width:991px) {
+        .rv2{
+            max-width: unset;
+            margin-top: 20px;
+        }
+        .review{
+           width:calc(33.333vw - 27px); 
+        }  
+         .swiper-wrapper{
+           margin-left: -10px;
+        }
+            
+    }
+    @media (max-width:767px) {
+        
+    .m_review{
+        width: 100%;
+        height: 250px;
+        border: 1px solid #000;
+        margin: 10px 0;
+        padding: 1.5rem;
+        
+        .img{
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        .review_txt{
+            font-size: 14px;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .nm{
+            font-size: 14px;
+            line-height: 0;
+        }
+        .star{
+            display: block;
+            width: 70px;
+        }
+        .more_txt{
+            font-size: 13px;
+            color: #666666;
+        }
+        } 
+    }
+    .morebtn{
+        display: block;
+        color: #fff;
+        background-color: #6A92FE; 
+        text-align: center;
+        max-width: 220px;
+        height: 30px;
+        border-radius: 20px;
+        line-height: 2;
+        margin: 0 auto;
+
+        &:hover{
+            background-color: $hovercolor;
+        }
+    }
+    @media (max-width:375px) {
+  
+    }
+   
 }
