@@ -77,8 +77,8 @@ function Form() {
             </div>
             <div className={`d-flex align-items-center form_box`}>
                 {/* 희망시간 */}
-                <label htmlFor="hourSelectStart" className="forLabel">희망시간</label> {/* 수정된 부분 */}
-                <select className="for_input" id="hourSelectStart" name="hourSelect">
+                <label htmlFor="hourSelectStart" className="forLabel m-0">희망시간</label> {/* 수정된 부분 */}
+                <select className="for_input ms-1" id="hourSelectStart" name="hourSelect">
                     <option value="10">10</option>
                     <option value="11">11</option>
                     <option value="12">12</option>
