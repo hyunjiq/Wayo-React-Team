@@ -1,4 +1,4 @@
-section{padding-top: 65px !important;}
+.main_slide_je{padding-top: 65px !important;}
 
 .je_Mainswiper {
     background-color: #F7F8FA;
@@ -58,70 +58,22 @@ section{padding-top: 65px !important;}
         z-index: 10;}
         
         @media (max-width: 1200px) {
-            #je_Mainswiper {
-                height: 600px; /* 높이 조정 */
+            .je_Mainswiper {
+                height: 600px; 
                 .main_back {
-                    width: 1000px; /* 너비 조정 */
-                    height: 600px; /* 높이 조정 */
+                    width: 1000px;
+                    height: 600px; 
                 }
                 .mainbannerText_en {
-                    font-size: 50px; /* 폰트 크기 조정 */
+                    font-size: 50px; 
                 }
                 .mainbannerText {
-                    font-size: 2.5rem; /* 폰트 크기 조정 */
+                    font-size: 2.5rem; 
                 }
             }
         }
-        
-        @media (max-width: 992px) {
-            #je_Mainswiper {
-                height: 500px; /* 높이 조정 */
-                .main_back {
-                    width: 800px; /* 너비 조정 */
-                    height: 500px; /* 높이 조정 */
-                }
-                .mainbannerText_en {
-                    font-size: 40px; /* 폰트 크기 조정 */
-                }
-                .mainbannerText {
-                    font-size: 2rem; /* 폰트 크기 조정 */
-                }
-            }
-        }
-        
-        @media (max-width: 768px) {
-            #je_Mainswiper {
-                height: 400px; /* 높이 조정 */
-                .main_back {
-                    width: 600px; /* 너비 조정 */
-                    height: 400px; /* 높이 조정 */
-                }
-                .mainbannerText_en {
-                    font-size: 30px; /* 폰트 크기 조정 */
-                }
-                .mainbannerText {
-                    font-size: 1.8rem; /* 폰트 크기 조정 */
-                }
-            }
-        }
-        
-        @media (max-width: 576px) {
-            #je_Mainswiper {
-                height: 300px; /* 높이 조정 */
-                .main_back {
-                    width: 100%; /* 너비 조정 */
-                    height: 300px; /* 높이 조정 */
-                }
-                .mainbannerText_en {
-                    font-size: 20px; /* 폰트 크기 조정 */
-                }
-                .mainbannerText {
-                    font-size: 1.5rem; /* 폰트 크기 조정 */
-                }
-            }
-        }
-        
-        #social_program {
+
+        .social_program {
         a{
              text-decoration: none;
              color: black;
@@ -157,7 +109,7 @@ section{padding-top: 65px !important;}
          }
         }
         @media (max-width: 1200px) {
-            #social_program .col {
+            .social_program .col {
                 width: 50%;
             }
             .swiper-button-next,
@@ -275,8 +227,6 @@ section{padding-top: 65px !important;}
                 border-radius: 50px;
                 background-color: #d0d0d0;
             }
-        
-            /* ./style.css */
 
           .serviceform {
             display: flex;
@@ -657,7 +607,7 @@ section{padding-top: 65px !important;}
 
 
 
-  #app_download {
+  .app_download {
     background-color: #6A92FE;
     padding: 3.7rem 0;
     position: relative;
@@ -667,7 +617,7 @@ section{padding-top: 65px !important;}
     background-position: center;}
 
     
-    #app_download:before {
+    .app_download:before {
         content: "";
         position: absolute;
         left: 0;
@@ -679,7 +629,7 @@ section{padding-top: 65px !important;}
         background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
     }
 
-    #app_download:after {
+    .app_download:after {
         content: "";
         position: absolute;
         right: 0px;
@@ -712,12 +662,12 @@ section{padding-top: 65px !important;}
         }
 
         @media (max-width: 1200px) {
-            #jeAppbanner {
+            .jeAppbanner {
                 justify-content: center;
                 text-align: center;
                 width: 700px;
             }
-            #app_download{
+            .app_download{
                 background-image: none;
             }
           }
