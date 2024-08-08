@@ -6,7 +6,7 @@ import {Socialdiv, Socialul, Sociala, Socialspan01,Socialspan02,Socialspan03} fr
 function Social() {
 
     return (
-    <section id="social_program" className="margin">
+    <section className="margin social_program">
             <div className="container position-relative">
                 <h2>사회 공헌 프로그램</h2>
                 <div className="row">
