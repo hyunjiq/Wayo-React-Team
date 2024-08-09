@@ -4,6 +4,7 @@ import Hd from "./component/Hd";
 import Mainb from "./layout/Mainb"
 import Mainservice from './component/Mainservice';
 import Livereview from './component/LiveReveiw';
+import Withplace from './component/Withplace';
 import Social from "./layout/Social";
 import Appbanner from "./layout/Appbanner"
 import Quik from './component/Quik';
@@ -15,12 +16,13 @@ function Header() {
     return (
         <>
             <Hd/>
-            <Mainb/>
+            {/* <Mainb/>
             <Mainservice msdata={data.mainservice} keyid='main_service'></Mainservice>
-            <Livereview></Livereview>
-            <Social />
+            <Livereview></Livereview> */}
+            <Withplace></Withplace>
+            {/* <Social />
             <Appbanner />
-            <Quik></Quik>
+            <Quik></Quik> */}
             <Ft></Ft>
         </>
     )

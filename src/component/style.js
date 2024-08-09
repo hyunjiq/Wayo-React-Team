@@ -15,7 +15,6 @@ export const Styleicon = styled.i`
         content:  "${(props) => (props.content ? props.content : '')}";
        
     }
-
 `
 
 // 메인배너

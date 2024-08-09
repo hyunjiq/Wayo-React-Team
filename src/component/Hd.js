@@ -74,7 +74,8 @@ function Hd() {
             </li>
             {
                 d1info  && d1info.map((v, i)=>
-                <li key={`gnb${i}`}  data-num={i} className={`d1_li position-relative gnb_li gnb_li_${i}`}>
+                <li key={`gnb${i}`}  data-num={i} className={`d1_li position-relative gnb_li gnb_li_${i}`} >
+                    
                     <Link className='d1_a' to={v.href}>{v.text}{
                         submenus[v.cateno] && submenus[v.cateno].length > 0 && (
                             <Styleicon className='m-d-none' content='\F282'></Styleicon> 
