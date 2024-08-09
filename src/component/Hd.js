@@ -31,13 +31,6 @@ function Hd() {
         d1leng.forEach((v, i)=>{
           v.addEventListener('click', (event)=> {
                 event.preventDefault(); 
-                
-                // if(v.classList.contains('showdiv')){
-                //     v.classList.remove('showdiv');
-                // } else{
-                //     v.classList.toggle('showdiv')
-                // }
-
 
                 d1leng.forEach((vv, ii)=>{
                     vv.classList.remove('showdiv');
@@ -81,7 +74,8 @@ function Hd() {
             </li>
             {
                 d1info  && d1info.map((v, i)=>
-                <li key={`gnb${i}`}  data-num={i} className={`d1_li position-relative gnb_li gnb_li_${i}`}>
+                <li key={`gnb${i}`}  data-num={i} className={`d1_li position-relative gnb_li gnb_li_${i}`} >
+                    
                     <Link className='d1_a' to={v.href}>{v.text}{
                         submenus[v.cateno] && submenus[v.cateno].length > 0 && (
                             <Styleicon className='m-d-none' content='\F282'></Styleicon> 

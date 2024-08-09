@@ -172,256 +172,204 @@
       }
     ],
   
-    "place":{
-      "hotel":[
+    "place":[
+      [
           {
-             
-              "img" : "/img/hj_img/hotel/hotel_grang.jpg",
-              "alt" : "그랑모던풀빌라 사진",
-              "p":{
-                  "title" : "그랑모던풀빌라",
-                  "adress" : "경북 포항시",
-                  "text" : "#모던 #그랑모던풀빌라 #반려견동반 #포항 #포항여행"
-             
-              }
+            "img" : "/img/hj_img/hotel/hotel_grang.jpg",
+            "alt" : "그랑모던풀빌라 사진",
+            "p":{
+                "title" : "그랑모던풀빌라",
+                "adress" : "경북 포항시",
+                "text" : "#모던 #그랑모던풀빌라 #반려견동반 #포항 #포항여행"
+            }
           }
           ,{
-             
-              "img" : "/img/hj_img/hotel/hotel_petclass2.jpg",
-              "alt" : "펫클라스펜션 사진",
-              "p":{
-                  "title" : "펫클라스펜션",
-                  "adress" : "강원 고성군",
-                  "text" : "#펜션 #펫클라스펜션 #반려견동반 #강원도 #고성군"
-                 
-              }
+            "img" : "/img/hj_img/hotel/hotel_petclass2.jpg",
+            "alt" : "펫클라스펜션 사진",
+            "p":{
+                "title" : "펫클라스펜션",
+                "adress" : "강원 고성군",
+                "text" : "#펜션 #펫클라스펜션 #반려견동반 #강원도 #고성군"
+            }
           }
           ,{
-            
-              "img" : "/img/hj_img/hotel/hotel_daeng.jpg",
-              "alt" : "댕숲애견펜션 사진",
-              "p":{
-                  "title" : "댕숲애견펜션",
-                  "adress" : "강원 평창군",
-                  "text" : "#펜션 #댕숲애견펜션 #반려견동반 #평창 #평창여행"
+            "img" : "/img/hj_img/hotel/hotel_daeng.jpg",
+            "alt" : "댕숲애견펜션 사진",
+            "p":{
+                "title" : "댕숲애견펜션",
+                "adress" : "강원 평창군",
+                "text" : "#펜션 #댕숲애견펜션 #반려견동반 #평창 #평창여행"              
+            }
+          }
+          ,{             
+            "img" : "/img/hj_img/hotel/hotel_thepetel.jpg",
+            "alt" : "더펫텔 사진",
+            "p":{
+                "title" : "더펫텔",
+                "adress" : "부산 해운대구",
+                "text" : "#호텔 #더펫텔 #반려견동반 #해운대 #부산여행"                
+            }
+          }
+          ,{              
+            "img" : "/img/hj_img/hotel/hotel_ocean2you.jpg",
+            "alt" : "오션투유 사진",
+            "p":{
+                "title" : "오션투유",
+                "adress" : "강원 고성군",
+                "text" : "#오션투유 #반려견동반 #강원 #강원여행 #고성군"              
+            }
+          }
+          ,{             
+            "img" : "/img/hj_img/hotel/hotel_theweek.jpg",
+            "alt" : "더위크 사진",
+            "p":{
+                "title" : "더위크",
+                "adress" : "인천 중구",
+                "text" : "#더위크 #반려견동반 #인천 #인천여행"              
+            }
+          }
+          ,{             
+            "img" : "/img/hj_img/hotel/hotel_gout.jpg",
+            "alt" : "곳스테이 사진",
+            "p":{
+                "title" : "곳스테이",
+                "adress" : "대구 동구",
+                "text" : "#곳스테이 #반려견동반 #대구 #대구여행"              
+            }
+          }
+          ,{          
+            "img" : "/img/hj_img/hotel/hotel_sono.jpg",
+            "alt" : "소노호텔 사진",
+            "p":{
+                "title" : "소노호텔",
+                "adress" : "강원 홍천",
+                "text" : "#소노호텔 #반려견동반 #강원 #강원여행 #홍천"               
+            }
+          }
+          ,{            
+            "img" : "/img/hj_img/hotel/hotel_kensington.jpg",
+            "alt" : "켄싱턴리조트 사진",
+            "p":{
+                "title" : "켄싱턴리조트",
+                "adress" : "충북 충주",
+                "text" : "#리조트 #켄싱턴리조트 #반려견동반 #충주 #충주여행"            
+            }
+          }
+        ],
+      [
+          {            
+            "img" : "/img/hj_img/cafe/cafe_pawseason.jpg",
+            "alt" : "포시즌 카페 사진",
+            "p":{
+                "title" : "포시즌",
+                "adress" : "경기 고양시",
+                "text" : "#카페 #포시즌 #반려견동반 #고양시 #고양시카페"              
+            }              
+          }
+          ,{             
+            "img" : "/img/hj_img/cafe/cafe_pumpkin.jpg",
+            "alt" : "펌킨 펫하우스 카페 사진",
+            "p":{
+                "title" : "펌킨 펫하우스",
+                "adress" : "서울 성동구",
+                "text" : "#카페 #펌킨 펫하우스 #반려견동반 #서울 #서울카페"               
+            }              
+          }
+          ,{            
+            "img" : "/img/hj_img/cafe/cafe_mung.jpg",
+            "alt" : "멍카페 사진",
+            "p":{
+                "title" : "멍카페",
+                "adress" : "서울 구로구",
+                "text" : "#카페 #멍카페 #반려견동반 #서울 #서울카페"              
+            }              
+          }
+          ,{            
+            "img" : "/img/hj_img/cafe/cafe_shfaus.jpg",
+            "alt" : "놀면뭐하개 카페 사진",
+            "p":{
+                "title" : "놀면뭐하개",
+                "adress" : "서울 금천구",
+                "text" : "#카페 #놀면뭐하개 #반려견동반 #서울 #서울카페"              
+            }              
+          }
+          ,{            
+            "img" : "/img/hj_img/cafe/cafe_staywinter.jpg",
+            "alt" : "겨울이 머무는집 카페 사진",
+            "p":{
+                "title" : "겨울이머무는집",
+                "adress" : "서울 마포구",
+                "text" : "#카페 #겨울이머무는집 #반려견동반 #서울 #서울카페"              
+            }              
+          }
+          ,{            
+            "img" : "/img/hj_img/cafe/cafe_ijoa.jpg",
+            "alt" : "아이조아펫파크 사진",
+            "p":{
+                "title" : "아이조아펫파크",
+                "adress" : "서울 용산",
+                "text" : "#카페 #아이조아펫파크 #반려견동반 #서울 #서울카페"              
+            }              
+          }
+        ],
+      [
+          {            
+            "img" : "/img/hj_img/hospital/hospital_24guro.jpg",
+            "alt" : "24시지구촌동물메디컬센터 사진",
+            "p":{
+                "title" : "24시지구촌동물메디컬센터",
+                "adress" : "서울 구로구",
+                "text" : "#24시 #동물병원 #24시지구촌동물메디컬센터 #서울동물병원"              
+            }              
+          }
+          ,{            
+            "img" : "/img/hj_img/hospital/hospital_sol.jpg",
+            "alt" : "솔동물의료센터 사진",
+            "p":{
+                "title" : "솔동물의료센터",
+                "adress" : "경기 군포시",
+                "text" : "#동물병원 #솔동물의료센터 #경기동물병원 #군포시동물병원"              
+            }              
+          }
+          ,{            
+            "img" : "/img/hj_img/hospital/hospital_royal.jpg",
+            "alt" : "로얄동물메디컬센터 사진",
+            "p":{
+                "title" : "로얄동물메디컬센터",
+                "adress" : "서울 중랑구",
+                "text" : "#동물병원 #로얄동물메디컬센터 #서울동물병원 #중랑구동물병원"              
+            }              
+          }
+          ,{            
+            "img" : "/img/hj_img/hospital/hospital_bareun.jpg",
+            "alt" : "바른동물의료센터 사진",
+            "p":{
+                "title" : "바른동물의료센터",
+                "adress" : "대구 달서구",
+                "text" : "#동물병원 #바른동물의료센터 #대구동물병원 #달서구동물병원"              
+            }              
+          }
+          ,{            
+            "img" : "/img/hj_img/hospital/hospital_topcare.jpg",
+            "alt" : "탑케어동물의료원 사진",
+            "p":{
+                "title" : "탑케어동물의료원",
+                "adress" : "경기 고양시",
+                "text" : "#동물병원 #탑케어동물의료원 #경기동물병원 #고양시동물병원"              
+            }              
+          }
+          ,{            
+            "img" : "/img/hj_img/hospital/hospital_24noa.jpg",
+            "alt" : "24시노아동물메디컬센터 사진",
+            "p":{
+                "title" : "24시노아동물메디컬센터",
+                "adress" : "광주 동구",
+                "text" : "#24시 #동물병원 #24시노아동물메디컬센터 #광주동물병원"
+            }
               
-              }
           }
-          ,{
-             
-              "img" : "/img/hj_img/hotel/hotel_thepetel.jpg",
-              "alt" : "더펫텔 사진",
-              "p":{
-                  "title" : "더펫텔",
-                  "adress" : "부산 해운대구",
-                  "text" : "#호텔 #더펫텔 #반려견동반 #해운대 #부산여행"
-                
-              }
-          }
-          ,{
-              
-              "img" : "/img/hj_img/hotel/hotel_ocean2you.jpg",
-              "alt" : "오션투유 사진",
-              "p":{
-                  "title" : "오션투유",
-                  "adress" : "강원 고성군",
-                  "text" : "#오션투유 #반려견동반 #강원 #강원여행 #고성군"
-                
-              }
-          }
-          ,{
-             
-              "img" : "/img/hj_img/hotel/hotel_theweek.jpg",
-              "alt" : "더위크 사진",
-              "p":{
-                  "title" : "더위크",
-                  "adress" : "인천 중구",
-                  "text" : "#더위크 #반려견동반 #인천 #인천여행"
-              
-              }
-          }
-          ,{
-             
-              "img" : "/img/hj_img/hotel/hotel_gout.jpg",
-              "alt" : "곳스테이 사진",
-              "p":{
-                  "title" : "곳스테이",
-                  "adress" : "대구 동구",
-                  "text" : "#곳스테이 #반려견동반 #대구 #대구여행"
-              
-              }
-          }
-          ,{
-          
-              "img" : "/img/hj_img/hotel/hotel_sono.jpg",
-              "alt" : "소노호텔 사진",
-              "p":{
-                  "title" : "소노호텔",
-                  "adress" : "강원 홍천",
-                  "text" : "#소노호텔 #반려견동반 #강원 #강원여행 #홍천"
-               
-              }
-          }
-          ,{
-            
-              "img" : "/img/hj_img/hotel/hotel_kensington.jpg",
-              "alt" : "켄싱턴리조트 사진",
-              "p":{
-                  "title" : "켄싱턴리조트",
-                  "adress" : "충북 충주",
-                  "text" : "#리조트 #켄싱턴리조트 #반려견동반 #충주 #충주여행"
-            
-              }
-          }
+        ]
       ],
-      "cafe":[
-          {
-            
-              "img" : "/img/hj_img/cafe/cafe_pawseason.jpg",
-              "alt" : "포시즌 카페 사진",
-              "p":{
-                  "title" : "포시즌",
-                  "adress" : "경기 고양시",
-                  "text" : "#카페 #포시즌 #반려견동반 #고양시 #고양시카페"
-              
-              }
-              
-          }
-          ,{
-             
-              "img" : "/img/hj_img/cafe/cafe_pumpkin.jpg",
-              "alt" : "펌킨 펫하우스 카페 사진",
-              "p":{
-                  "title" : "펌킨 펫하우스",
-                  "adress" : "서울 성동구",
-                  "text" : "#카페 #펌킨 펫하우스 #반려견동반 #서울 #서울카페"
-               
-              }
-              
-          }
-          ,{
-            
-              "img" : "/img/hj_img/cafe/cafe_mung.jpg",
-              "alt" : "멍카페 사진",
-              "p":{
-                  "title" : "멍카페",
-                  "adress" : "서울 구로구",
-                  "text" : "#카페 #멍카페 #반려견동반 #서울 #서울카페"
-              
-              }
-              
-          }
-          ,{
-            
-              "img" : "/img/hj_img/cafe/cafe_shfaus.jpg",
-              "alt" : "놀면뭐하개 카페 사진",
-              "p":{
-                  "title" : "놀면뭐하개",
-                  "adress" : "서울 금천구",
-                  "text" : "#카페 #놀면뭐하개 #반려견동반 #서울 #서울카페"
-              
-              }
-              
-          }
-          ,{
-            
-              "img" : "/img/hj_img/cafe/cafe_staywinter.jpg",
-              "alt" : "겨울이 머무는집 카페 사진",
-              "p":{
-                  "title" : "겨울이머무는집",
-                  "adress" : "서울 마포구",
-                  "text" : "#카페 #겨울이머무는집 #반려견동반 #서울 #서울카페"
-              
-              }
-              
-          }
-          ,{
-            
-              "img" : "/img/hj_img/cafe/cafe_ijoa.jpg",
-              "alt" : "아이조아펫파크 사진",
-              "p":{
-                  "title" : "아이조아펫파크",
-                  "adress" : "서울 용산",
-                  "text" : "#카페 #아이조아펫파크 #반려견동반 #서울 #서울카페"
-              
-              }
-              
-          }
-      ],
-      "clinic":[
-          {
-            
-              "img" : "/img/hj_img/hospital/hospital_24guro.jpg",
-              "alt" : "24시지구촌동물메디컬센터 사진",
-              "p":{
-                  "title" : "24시지구촌동물메디컬센터",
-                  "adress" : "서울 구로구",
-                  "text" : "#24시 #동물병원 #24시지구촌동물메디컬센터 #서울동물병원"
-              
-              }
-              
-          }
-          ,{
-            
-              "img" : "/img/hj_img/hospital/hospital_sol.jpg",
-              "alt" : "솔동물의료센터 사진",
-              "p":{
-                  "title" : "솔동물의료센터",
-                  "adress" : "경기 군포시",
-                  "text" : "#동물병원 #솔동물의료센터 #경기동물병원 #군포시동물병원"
-              
-              }
-              
-          }
-          ,{
-            
-              "img" : "/img/hj_img/hospital/hospital_royal.jpg",
-              "alt" : "로얄동물메디컬센터 사진",
-              "p":{
-                  "title" : "로얄동물메디컬센터",
-                  "adress" : "서울 중랑구",
-                  "text" : "#동물병원 #로얄동물메디컬센터 #서울동물병원 #중랑구동물병원"
-              
-              }
-              
-          }
-          ,{
-            
-              "img" : "/img/hj_img/hospital/hospital_bareun.jpg",
-              "alt" : "바른동물의료센터 사진",
-              "p":{
-                  "title" : "바른동물의료센터",
-                  "adress" : "대구 달서구",
-                  "text" : "#동물병원 #바른동물의료센터 #대구동물병원 #달서구동물병원"
-              
-              }
-              
-          }
-          ,{
-            
-              "img" : "/img/hj_img/hospital/hospital_topcare.jpg",
-              "alt" : "탑케어동물의료원 사진",
-              "p":{
-                  "title" : "탑케어동물의료원",
-                  "adress" : "경기 고양시",
-                  "text" : "#동물병원 #탑케어동물의료원 #경기동물병원 #고양시동물병원"
-              
-              }
-              
-          }
-          ,{
-            
-              "img" : "/img/hj_img/hospital/hospital_24noa.jpg",
-              "alt" : "24시노아동물메디컬센터 사진",
-              "p":{
-                  "title" : "24시노아동물메디컬센터",
-                  "adress" : "광주 동구",
-                  "text" : "#24시 #동물병원 #24시노아동물메디컬센터 #광주동물병원"
-              }
-              
-          }
-      ]
-  },
   "socialswiper" : [
      {
           "text" : "유기견 봉사활동",

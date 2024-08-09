@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+//부트스트랩 아이콘
 export const Styleicon = styled.i`
     display: inline-block;
     font-family: bootstrap-icons !important;
@@ -14,7 +15,6 @@ export const Styleicon = styled.i`
         content:  "${(props) => (props.content ? props.content : '')}";
        
     }
-
 `
 
 // 메인배너
