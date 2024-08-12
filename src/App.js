@@ -17,14 +17,14 @@ function Header() {
     return (
         <>
             <Hd/>
-            <Mainb/>
+            {/* <Mainb/>
             <Mainservice msdata={data.mainservice} keyid='main_service'></Mainservice>
-            <Livereview></Livereview>
+            <Livereview></Livereview> */}
             <Withplace></Withplace>
-            <Social />
+            {/* <Social />
             <Form />
             <Appbanner />
-            <Quik></Quik>
+            <Quik></Quik> */}
             <Ft></Ft>
         </>
     )

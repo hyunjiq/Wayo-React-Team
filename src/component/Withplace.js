@@ -22,7 +22,7 @@ function Withplace() {
 
   return (
     <section className="margin with_place">
-      <div className="place-bg container px-0 d-flex justify-content-end position-relative">
+      <div className="place-bg container-md px-0 d-flex justify-content-end position-relative">
         <Swiper
           allowTouchMove={false}
           modules={[Pagination]}
@@ -47,12 +47,25 @@ function Withplace() {
                 loop={true}
                 key={`imgSwiper${i}`}                
                 modules={[FreeMode, Thumbs]}                
-                className="c_swiper2"
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}                
-                thumbs={{ swiper: thumbsSwipers[i] }}  // 메인 스와이퍼가 썸네일 스와이퍼를 참조하도록 설정
+                className="c_swiper2"              
+                thumbs={{ swiper: thumbsSwipers[i] }} 
+                // autoplay={{
+                //   delay: 4000,
+                //   disableOnInteraction: false,
+                // }}
+                breakpoints={{
+                  0: {
+                    // autoplay: false,
+                    loop:false
+                  },
+                  768: {
+                    // autoplay: {
+                    //   delay: 4000,
+                    //   disableOnInteraction: false,
+                    //   loop:true
+                    // }
+                  }
+                }}
               >
                 {v.map((vv, ii) => (
                   <SwiperSlide key={`SwiperSlidee${ii}`}>
@@ -73,9 +86,9 @@ function Withplace() {
                 allowTouchMove={false}
                 spaceBetween={10}
                 slidesPerView={3}
-                freeMode={true}
-                watchSlidesProgress={true} 
                 loop={true}
+                freeMode={true}
+                watchSlidesProgress={true}                 
                 navigation={{                 
                   nextEl: '.pagiBtn .swiper-button-next',
                   prevEl: '.pagiBtn .swiper-button-prev',                     
@@ -83,12 +96,51 @@ function Withplace() {
                 pagination={{
                   el: ".pagiBtn .swiper-pagination",
                   type: 'fraction'
-                }}                   
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}            
-                className="c_swiper col-6 d-flex flex-column-reverse align-items-end"
+                }}
+                breakpoints={{
+                  0:{
+                    slidesPerView: 1.5, 
+                    centeredSlides: true,
+                    //autoplay: false,
+                    loop:false,
+                    allowTouchMove:true
+                  },
+                  576: {
+                    slidesPerView: 2, 
+                    centeredSlides: true,
+                    //autoplay: false,
+                    loop:false,
+                    allowTouchMove:true
+                  },
+                  768: {
+                    slidesPerView: 1, 
+                    centeredSlides: false,
+                    // autoplay: {
+                    //   delay: 4000,
+                    //   disableOnInteraction: false,
+                    // },
+                    loop:true
+                  },
+                  991: {
+                    slidesPerView: 2, 
+                    centeredSlides: false,
+                    // autoplay: {
+                    //   delay: 4000,
+                    //   disableOnInteraction: false,
+                    // },
+                    loop:true
+                  },
+                  1400: {
+                    slidesPerView: 3, 
+                    centeredSlides: false,
+                    // autoplay: {
+                    //   delay: 4000,
+                    //   disableOnInteraction: false,
+                    // },
+                    loop:true
+                  }
+                }}                           
+                className="c_swiper col-md-6 d-flex"
               >
                 {v.map((vvv, iii) => (
                   <SwiperSlide key={`SwiperSlideee${iii}`} className="thumbsSlider">
@@ -100,35 +152,6 @@ function Withplace() {
                     <p className="thumtext">{vvv.p.text}</p>                                 
                   </SwiperSlide>
                 ))} 
-                {
-                  // <>
-                  //   <SwiperSlide className="thumbsSlider" key={`thumbSlide1`}>
-                  //     <p className="thumtitle">1</p>
-                  //     <p className="thumadress">1</p>
-                  //     <p className="thumtext">1</p>     
-                  //   </SwiperSlide>
-                  //   <SwiperSlide className="thumbsSlider" key={`thumbSlide2`}>
-                  //     <p className="thumtitle">2</p>
-                  //     <p className="thumadress">2</p>
-                  //     <p className="thumtext">2</p>     
-                  //   </SwiperSlide>
-                  //   <SwiperSlide className="thumbsSlider" key={`thumbSlide3`}>
-                  //     <p className="thumtitle">3</p>
-                  //     <p className="thumadress">3</p>
-                  //     <p className="thumtext">3</p>     
-                  //   </SwiperSlide>
-                  //   <SwiperSlide className="thumbsSlider" key={`thumbSlide4`}>
-                  //     <p className="thumtitle">4</p>
-                  //     <p className="thumadress">4</p>
-                  //     <p className="thumtext">4</p>     
-                  //   </SwiperSlide>
-                  //   <SwiperSlide className="thumbsSlider" key={`thumbSlide5`}>
-                  //     <p className="thumtitle">5</p>
-                  //     <p className="thumadress">5</p>
-                  //     <p className="thumtext">5</p>     
-                  //   </SwiperSlide>
-                  // </>
-                }
                 <div className="pagiBtn d-flex justify-content-center align-items-center col-2">    
                   <div className="swiper-button-prev"></div>
                   <div className="swiper-pagination"></div>
@@ -137,8 +160,8 @@ function Withplace() {
               </Swiper>
             </SwiperSlide>
           ))}
-          <div className="p-pagination-wrap d-flex flex-column justify-content-center position-absolute">
-            <div className="placeSwiper-pagination d-flex flex-column justify-content-center"></div>              
+          <div className="p-pagination-wrap d-flex justify-content-center">
+            <div className="placeSwiper-pagination d-flex justify-content-center"></div>              
             <Link to="#" className="swiper-pagination-bullet"><span>매장찾기</span></Link>  
           </div> 
         </Swiper>

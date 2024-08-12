@@ -10,6 +10,11 @@ $quickcolor: #3D71FF;
 .fs-1rem6{
     font-size: 1.6rem;
 }
+.hidden{
+    height: 0;
+    overflow:hidden;
+    font-size: 0;
+}
 .hd{
     width: 100vw;
     z-index: 100;
@@ -88,10 +93,12 @@ $quickcolor: #3D71FF;
             >.swiper-slide {
                 text-align: center;
                 font-size: 18px;
-                background-color: #D3DFFF;;
+                background-color: #D3DFFF;
                 .c_swiper{
                     margin: 0;
                     padding: 8.5rem 0;
+                    align-items:end;
+                    flex-direction: column-reverse;
                     .swiper-slide{
                         background: #fff;
                         padding: 2rem 0;
@@ -122,6 +129,7 @@ $quickcolor: #3D71FF;
                 }
                 .c_swiper2{                            
                     position: absolute;
+                    max-height: 600px;
                     max-width: 500px;
                     margin: 0;
                     left: 200px;
@@ -130,8 +138,14 @@ $quickcolor: #3D71FF;
                     border: 3px solid #6a92fe;
                 }
                 .pagiBtn{
-                    
+                    .swiper-button-disabled {
+                        opacity: 1 !important;
+                        pointer-events: auto !important;
+                        cursor: pointer !important;
+                    }
                     div{
+                        display: flex;
+                        justify-content: center;
                         font-size: 1rem;
                         position: unset;
                         margin: 0;
@@ -145,12 +159,15 @@ $quickcolor: #3D71FF;
             }
         }
         .p-pagination-wrap{
+            flex-direction: column;
+            position: absolute;
             top: 0;
             bottom: 0;       
             left: 0;   
-            z-index: 100;    
+            z-index: 100;                
             .placeSwiper-pagination{
                 width: auto;
+                flex-direction: column;
                 position: unset;
                 .swiper-pagination-bullet-active {
                     color: #fff;
@@ -342,7 +359,7 @@ $quickcolor: #3D71FF;
     }
 }
 @media (max-width: 1200px) {
-.xBtn{
+    .xBtn{
     top: 0;
     right: 1rem;
     bottom: 0;}
@@ -419,6 +436,75 @@ $quickcolor: #3D71FF;
             display: block;
         }
     }
+    .with_place{
+        
+        .placeSwiper{
+            
+            p{}
+            .swiper-wrapper{
+                
+                >.swiper-slide {
+                    
+                    .c_swiper{
+                        padding: 5.7rem 0;
+                        .swiper-slide{
+                            
+                            .thumimg{
+                                
+                                img{
+                                }
+                            }
+                            
+                        }
+                    }
+                    .c_swiper2{                            
+                        left: 160px;
+                        .swiper-slide{
+                            text-align: start;
+                            img{height: 500px;}                            
+                        }
+                    }
+                    .thumbsSlider.swiper-slide-thumb-active{
+                        
+                    }
+                    .pagiBtn{
+                        
+                        div{
+                            
+                            &::after{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .p-pagination-wrap{
+                 
+                .placeSwiper-pagination{
+                    
+                    .swiper-pagination-bullet-active {
+                        
+                        span{
+                            
+                        }
+                        i{  
+                                        
+                        }
+                    }
+                }
+                .swiper-pagination-bullet {
+                    
+                    span{
+                        width: 160px;
+                    }
+                    i{
+                        
+                    }
+                }
+            }
+              
+        }
+    }
 }
 @media (max-width: 992px) {
     .ft{
@@ -448,6 +534,109 @@ $quickcolor: #3D71FF;
             border-left: none;
         }
     }
+    .with_place{
+        
+        .placeSwiper{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            p{}
+            .swiper-wrapper{
+                .place-slide{
+                    background-color: #9EB9FF;
+                    
+                }
+                >.swiper-slide {
+                    
+                    .c_swiper{
+                        align-items: center;
+                        flex-direction: column;
+                        .swiper-slide{
+                            
+                            .thumimg{
+                                
+                                img{
+                                    width: calc(100% + 15px);
+                                    display: block;
+                                    margin-left: -7.5px;
+                                    margin-top: -15px;
+                                }
+                            }
+                            .thumtitle{font-size: 1.2rem;font-weight:900; margin-top: .5rem;}
+                            .thumadress{font-size: 1rem;font-weight:500;}
+                            .thumtext{font-size: 0.8rem; color: #666; 
+                                }
+                        }
+                    }
+                    .c_swiper2{   
+                        height: 0;
+                        overflow:hidden;
+                        font-size: 0;         
+                        .swiper-slide{                           
+                        }
+                    }
+                    .thumbsSlider.swiper-slide-thumb-active{
+                        
+                    }
+                    .pagiBtn{
+                        
+                        div{
+                            
+                            &::after{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .p-pagination-wrap{
+                flex-direction: row;
+                position: unset;
+                margin-top: 5rem;
+                
+                .swiper-pagination-bullet {
+                    position: relative;
+                    flex-direction: column;
+                    margin: 0;
+                    span{
+                       width: 100%;
+                       padding: 1rem 0;
+                       text-align: center;
+                       border-radius: 0.5rem 0.5rem 0 0;
+                    }
+                    i{
+                        position: absolute;
+                        top: 100%;
+                        margin: 0;
+                        border-radius:0 0 0.5rem 0.5rem;
+                        width: 100%;
+                        padding: .5rem;
+                        &::before{
+                            content: "\F282";
+                        }
+                    }
+                }
+                a.swiper-pagination-bullet{
+                    width: 25%;
+                }
+                .placeSwiper-pagination{
+                    flex-direction: row;
+                    width: 75%;
+                    .swiper-pagination-bullet-active {
+                        
+                        span{
+                            
+                        }
+                        i{  
+                                        
+                        }
+                    }
+                }
+                
+            }
+              
+        }
+    }
     .ft{
         flex-direction: column;
         align-items: center;
@@ -467,6 +656,73 @@ $quickcolor: #3D71FF;
     }
 }
 @media (max-width: 576px) {
+    .with_place{
+        
+        .placeSwiper{
+            p{}
+            .swiper-wrapper{
+                .place-slide{
+                    
+                }
+                >.swiper-slide {
+                    
+                    .c_swiper{
+                        .swiper-slide{
+                            
+                            .thumimg{
+                                
+                                img{
+                                }
+                            }
+                        }
+                    }
+                    .c_swiper2{        
+                        .swiper-slide{                           
+                        }
+                    }
+                    .thumbsSlider.swiper-slide-thumb-active{
+                        
+                    }
+                    .pagiBtn{
+                        
+                        div{
+                            
+                            &::after{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .p-pagination-wrap{
+                
+                .swiper-pagination-bullet {
+                    font-size: 1rem;
+                    span{
+                    }
+                    i{
+                        font-size: 1rem;
+                        height: calc(100% - 1rem);
+                    }
+                }
+                a.swiper-pagination-bullet{
+                }
+                .placeSwiper-pagination{
+                    .swiper-pagination-bullet-active {
+                        
+                        span{
+                            
+                        }
+                        i{  
+                                        
+                        }
+                    }
+                }
+                
+            }
+              
+        }
+    }
     .ft{
         .ft_menu, .ft_info, .ft_copy {
             font-size: .9rem;
