@@ -85,6 +85,7 @@ $quickcolor: #3D71FF;
 .with_place{
     margin-top: 7rem;
     background: #D3DFFF;
+    h2{position: absolute; top: 4rem; left: 0; z-index: 10; }
     .placeSwiper{
         position: unset;
         p{margin: 0;}
@@ -437,25 +438,12 @@ $quickcolor: #3D71FF;
         }
     }
     .with_place{
-        
+        h2{top: 3rem;}
         .placeSwiper{
-            
-            p{}
-            .swiper-wrapper{
-                
-                >.swiper-slide {
-                    
+            .swiper-wrapper{                
+                >.swiper-slide {                    
                     .c_swiper{
-                        padding: 5.7rem 0;
-                        .swiper-slide{
-                            
-                            .thumimg{
-                                
-                                img{
-                                }
-                            }
-                            
-                        }
+                        padding: 5.7rem 0;                        
                     }
                     .c_swiper2{                            
                         left: 160px;
@@ -464,41 +452,12 @@ $quickcolor: #3D71FF;
                             img{height: 500px;}                            
                         }
                     }
-                    .thumbsSlider.swiper-slide-thumb-active{
-                        
-                    }
-                    .pagiBtn{
-                        
-                        div{
-                            
-                            &::after{
-                                
-                            }
-                        }
-                    }
                 }
             }
             .p-pagination-wrap{
-                 
-                .placeSwiper-pagination{
-                    
-                    .swiper-pagination-bullet-active {
-                        
-                        span{
-                            
-                        }
-                        i{  
-                                        
-                        }
-                    }
-                }
-                .swiper-pagination-bullet {
-                    
+                .swiper-pagination-bullet {                    
                     span{
                         width: 160px;
-                    }
-                    i{
-                        
                     }
                 }
             }
@@ -535,12 +494,11 @@ $quickcolor: #3D71FF;
         }
     }
     .with_place{
-        
+        h2{top: 1.5rem;}
         .placeSwiper{
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
-            p{}
             .swiper-wrapper{
                 .place-slide{
                     background-color: #9EB9FF;
@@ -562,30 +520,12 @@ $quickcolor: #3D71FF;
                                     margin-top: -15px;
                                 }
                             }
-                            .thumtitle{font-size: 1.2rem;font-weight:900; margin-top: .5rem;}
-                            .thumadress{font-size: 1rem;font-weight:500;}
-                            .thumtext{font-size: 0.8rem; color: #666; 
-                                }
                         }
                     }
                     .c_swiper2{   
                         height: 0;
                         overflow:hidden;
-                        font-size: 0;         
-                        .swiper-slide{                           
-                        }
-                    }
-                    .thumbsSlider.swiper-slide-thumb-active{
-                        
-                    }
-                    .pagiBtn{
-                        
-                        div{
-                            
-                            &::after{
-                                
-                            }
-                        }
+                        font-size: 0;      
                     }
                 }
             }
@@ -622,15 +562,6 @@ $quickcolor: #3D71FF;
                 .placeSwiper-pagination{
                     flex-direction: row;
                     width: 75%;
-                    .swiper-pagination-bullet-active {
-                        
-                        span{
-                            
-                        }
-                        i{  
-                                        
-                        }
-                    }
                 }
                 
             }
@@ -656,71 +587,17 @@ $quickcolor: #3D71FF;
     }
 }
 @media (max-width: 576px) {
-    .with_place{
-        
+    .with_place{        
         .placeSwiper{
-            p{}
-            .swiper-wrapper{
-                .place-slide{
-                    
-                }
-                >.swiper-slide {
-                    
-                    .c_swiper{
-                        .swiper-slide{
-                            
-                            .thumimg{
-                                
-                                img{
-                                }
-                            }
-                        }
-                    }
-                    .c_swiper2{        
-                        .swiper-slide{                           
-                        }
-                    }
-                    .thumbsSlider.swiper-slide-thumb-active{
-                        
-                    }
-                    .pagiBtn{
-                        
-                        div{
-                            
-                            &::after{
-                                
-                            }
-                        }
-                    }
-                }
-            }
-            .p-pagination-wrap{
-                
+            .p-pagination-wrap{                
                 .swiper-pagination-bullet {
                     font-size: 1rem;
-                    span{
-                    }
                     i{
                         font-size: 1rem;
                         height: calc(100% - 1rem);
                     }
-                }
-                a.swiper-pagination-bullet{
-                }
-                .placeSwiper-pagination{
-                    .swiper-pagination-bullet-active {
-                        
-                        span{
-                            
-                        }
-                        i{  
-                                        
-                        }
-                    }
-                }
-                
-            }
-              
+                }                
+            }              
         }
     }
     .ft{

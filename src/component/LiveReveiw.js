@@ -93,7 +93,7 @@ const Review = () => {
 
 
   return (
-    <section id="live_reivew" className="container-lg">
+    <section id="live_reivew" className="container-lg margin">
       <div className='d-flex justify-content-between align-items-center'>
         <h2>실시간 후기</h2>  
         <Link to="javascript:void(0)">

@@ -24,6 +24,9 @@ function Hd() {
     const [mobiletoggle, setMobiletoggle] = useState(false);
 
 
+
+
+
     useEffect(() => {
 
         const d1leng =  document.querySelectorAll('.gnb_li');
@@ -31,18 +34,15 @@ function Hd() {
         d1leng.forEach((v, i)=>{
           v.addEventListener('click', (event)=> {
                 event.preventDefault(); 
-
-                d1leng.forEach((vv, ii)=>{
-                    vv.classList.remove('showdiv');
-                     
-                });
                  
                 if (v.classList.contains('showdiv')) {
                     v.classList.remove('showdiv');
-                } else {
-                    v.classList.toggle('showdiv');
-                }
-                                         
+                    return;
+                } 
+                d1leng.forEach((vv, ii)=>{
+                    vv.classList.remove('showdiv')
+                })
+                v.classList.add('showdiv')                 
           }) 
         })
         
