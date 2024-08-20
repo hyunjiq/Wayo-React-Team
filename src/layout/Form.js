@@ -1,37 +1,65 @@
 //Form.js
-import React from "react";
+import React, { useState}from "react";
 import Calendar from "../component/Calender";
 import Formtage from "../component/Formtag";
 import "jquery-ui-dist/jquery-ui";
 import Popup from '../component/Popup'
+import { supabase } from '../data/supabaseClient';
 
 function Form() {
+    const [formData, setFormData] = useState({});
+    const [selectedDate, setSelectedDate] = useState('');
+
+    const handleFormData = (data) => {
+        setFormData(data);
+    };
+
+    const handleDateSelect = (date) => {
+        setSelectedDate(date);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const { error } = await supabase
+                .from('pet_form')
+                .insert([formData]);
+
+            if (error) {
+                throw error;
+            }
+            alert('데이터가 성공적으로 저장되었습니다!');
+        } catch (error) {
+            console.error('데이터 저장 중 오류 발생:', error.message);
+        }
+    };
+    
+
     return (
+        <section onSubmit={handleSubmit} className="form_tag d-flex justify-content-center">
+            <div className="container position-relative">
+                <div>
+                    <h2 className="pt-5 form_text">너도 아프냐 멍? 나도 아프다 냥!</h2>
+                    <div className="mt-1 mb-4 form_text">#집중케어 #펫케어 #펫팸족</div>
+                </div>
 
-        <section className="form_tag d-flex justify-content-center">
-        <div className="container position-relative">
-            <div>
-                <h2 className="pt-5 form_text">너도 아프냐 멍? 나도 아프다 냥!</h2>
-                <div className="mt-1 mb-4 form_text">#집중케어 #펫케어 #펫팸족</div>
-            </div>
-    
-            <div id="formtag" className="d-flex justify-content-between align-items-center mb-0 serviceform">
-                <div className="allbox d-flex justify-content-between container">
-                    {/* <!-- 왼쪽 달력 --> */}
-                    <Calendar />
-    
-                    {/* <!-- 폼태그 --> */}
-                    <div className="d-flex flex-column align-items-center justify-content-center form_momdiv">
-                        <Formtage />
-                        <button type="submit" className="mt-3 subbtn">구독하기</button>
+                <div id="formtag" className="d-flex justify-content-between align-items-center mb-0 serviceform">
+                    <div className="allbox d-flex justify-content-between align-items-center container">
+                        {/* 왼쪽 달력 */}
+                         <Calendar onDateSelect={handleDateSelect} />
+
+                        {/* 폼태그 */}
+                        <div className="d-flex flex-column align-items-center justify-content-center form_momdiv">
+                        <Formtage selectedDate={selectedDate} onFormDataChange={handleFormData} />
+                       
+                        </div>
                     </div>
-                </div> 
+                </div>
+               <Popup />
             </div>
-            <Popup />
-        </div>
-    </section>
-
+        </section>
     )
 }
 
-export default Form
+export default Form;

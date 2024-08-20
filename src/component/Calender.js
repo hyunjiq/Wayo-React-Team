@@ -1,6 +1,7 @@
 //Calender.js
 import React, { useState, useEffect } from 'react';
 
+
 const specialDates = new Map([
     [0, [1]],
     [1, [9, 10, 11, 12]],
@@ -75,7 +76,7 @@ const Calendar = () => {
                 <div className="date" key={i}>
                     <span 
                         className={`${condition} ${dayClass} ${specialClass}`} 
-                        onClick={specialClass !== 'gray-circle' ? () => selectDate(date) : undefined} // 주말 날짜 클릭 비활성화
+                        onClick={specialClass !== 'gray-circle' && specialClass !== 'red-circle' ? () => selectDate(date) : undefined} // 주말과 예약 불가능 날짜 클릭 비활성화
                     >
                         {date}
                     </span>
@@ -114,43 +115,42 @@ const Calendar = () => {
 
     return (
         <div className="me-2 zindex">
-        <div className="calendar">
-            <div className="header">
+            <div className="calendar d-flex flex-column justify-content-center align-items-center">
+                <div className="d-flex justify-content-center header">
                 <button className="nav-btn go-prev" onClick={prevMonth}>&lt;</button>
                 <div className="year-month go-today" onClick={goToday}>
                     {viewMonth + 1}월
                 </div>
                 <button className="nav-btn go-next" onClick={nextMonth}>&gt;</button>
-            </div>
-        
-            <div className="main">
-                <div className="days">
-                    <div className="day">일</div>
-                    <div className="day">월</div>
-                    <div className="day">화</div>
-                    <div className="day">수</div>
-                    <div className="day">목</div>
-                    <div className="day">금</div>
-                    <div className="day">토</div>
                 </div>
-                <div className="dates">
-                    {dates}
+                <div className="main">
+                    <div className="days">
+                        <div className="day">일</div>
+                        <div className="day">월</div>
+                        <div className="day">화</div>
+                        <div className="day">수</div>
+                        <div className="day">목</div>
+                        <div className="day">금</div>
+                        <div className="day">토</div>
+                    </div>
+                    <div className="dates">
+                        {dates}
+                    </div>
                 </div>
+                
             </div>
+            <div className="d-flex align-items-center ms-4 font">
+                    <p className="d-flex align-items-center me-3">
+                        <span className="d-block me-1 booking"></span>예약가능
+                    </p>
+                    <p className="d-flex align-items-center me-3">
+                        <span className="d-block me-1 notbooking"></span>예약불가능
+                    </p>
+                    <p className="d-flex align-items-center me-3">
+                        <span className="d-block me-1 rest"></span>휴무
+                    </p>
+                </div>
         </div>
-        <div className="d-flex align-items-center ms-4">
-            <p className="d-flex align-items-center me-3">
-                <span className="d-block me-1 booking"></span>예약가능
-            </p>
-            <p className="d-flex align-items-center me-3">
-                <span className="d-block me-1 notbooking"></span>예약불가능
-            </p>
-            <p className="d-flex align-items-center me-3">
-                <span className="d-block me-1 rest"></span>휴무
-            </p>
-        </div>
-    </div>
-    
     );
 };
 
