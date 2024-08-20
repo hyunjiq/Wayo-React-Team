@@ -15,7 +15,7 @@ const BannerSlider = () => {
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Autoplay, Pagination]}
             autoplay={{
-                delay: 50000,
+                delay: 3000,
                 disableOnInteraction: false,
             }}
             pagination={{ clickable: true }} 

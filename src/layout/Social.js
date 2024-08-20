@@ -27,7 +27,7 @@ function Social() {
                             {
                                 socialDB["schedule"].map((e, i)=>{
                                     return(
-                                        <li>
+                                        <li key={i}>
                                             <Sociala href="javascript:void(0)">
                                                 <Socialspan01>{e.date}</Socialspan01>
                                                 <Socialspan02>{e.event}</Socialspan02>
