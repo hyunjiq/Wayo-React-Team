@@ -7,17 +7,13 @@ function Social() {
 
     return (
     <section className="margin social_program">
-            <div className="container position-relative">
+            <div className="container">
                 <h2>사회 공헌 프로그램</h2>
                 <div className="row">
-                 
-                    {/* <!-- Swiper --> */}
-              
-                    <Socialswiper></Socialswiper>
-                         
-                   
+                        {/* <!-- Swiper --> */}
+                        <Socialswiper></Socialswiper>                  
                     {/* <!-- 프로그램 일정 --> */}
-                    <div className="col ps-0 sp_je" >
+                    <div className="col-6 ps-0" >
                         <Socialdiv>
                             <h5 className="pt-1">프로그램 일정</h5>
                             <span className="pt-1"><a href="javascript:void(0)"><h6>더보기</h6></a></span>
@@ -27,7 +23,7 @@ function Social() {
                             {
                                 socialDB["schedule"].map((e, i)=>{
                                     return(
-                                        <li key={i}>
+                                        <li>
                                             <Sociala href="javascript:void(0)">
                                                 <Socialspan01>{e.date}</Socialspan01>
                                                 <Socialspan02>{e.event}</Socialspan02>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 function Popup() {
     const [isPopupOpen, setIsPopupOpen] = useState(false); // 팝업 상태 관리
@@ -23,7 +23,7 @@ function Popup() {
             </p>
 
             {isPopupOpen && ( // 팝업이 열려 있을 때만 렌더링
-                <div className="popup d-flex justify-content-center align-items-center" style={{ display: 'flex' }}>
+                <div className="popup d-flex justify-content-center align-items-center">
                     <div className="popupContent">
                         <span className="close" onClick={handleClosePopup}>
                             <i className="bi bi-x-circle"></i>

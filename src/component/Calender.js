@@ -114,7 +114,7 @@ const Calendar = () => {
     }, []);
 
     return (
-        <div className="me-2 zindex">
+        <div className="zindex d-flex flex-column justify-content-center col-6">
             <div className="calendar d-flex flex-column justify-content-center align-items-center">
                 <div className="d-flex justify-content-center header">
                 <button className="nav-btn go-prev" onClick={prevMonth}>&lt;</button>

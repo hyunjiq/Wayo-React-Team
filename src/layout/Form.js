@@ -37,20 +37,20 @@ function Form() {
     
 
     return (
-        <section onSubmit={handleSubmit} className="form_tag d-flex justify-content-center">
+        <section onSubmit={handleSubmit} className="form_tag d-flex justify-content-center margin">
             <div className="container position-relative">
                 <div>
                     <h2 className="pt-5 form_text">너도 아프냐 멍? 나도 아프다 냥!</h2>
                     <div className="mt-1 mb-4 form_text">#집중케어 #펫케어 #펫팸족</div>
                 </div>
 
-                <div id="formtag" className="d-flex justify-content-between align-items-center mb-0 serviceform">
+                <div className="formtag d-flex justify-content-between align-items-center mb-0 serviceform">
                     <div className="allbox d-flex justify-content-between align-items-center container">
                         {/* 왼쪽 달력 */}
                          <Calendar onDateSelect={handleDateSelect} />
 
                         {/* 폼태그 */}
-                        <div className="d-flex flex-column align-items-center justify-content-center form_momdiv">
+                        <div className="col-6 d-flex flex-column align-items-center justify-content-center form_momdiv">
                         <Formtage selectedDate={selectedDate} onFormDataChange={handleFormData} />
                        
                         </div>
