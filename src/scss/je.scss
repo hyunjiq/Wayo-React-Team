@@ -1,84 +1,198 @@
-.main_slide_je{padding-top: 65px !important;}
+#main_slide_je{padding-top: 65px !important;}
 
 .je_Mainswiper {
-    background-color: #F7F8FA;
-    height: 700px;}
+  background-color: #F7F8FA;}
 
-    .mainbanner_Video,
-    .main_back,
-    .maincollabo {
-        position: relative;
-        border-radius: 350px 0 0 0;
-        border: none;
-        right: 0;
-        bottom: 0;
-        float: none;
-    }
+  .mainbanner_Video,
+  .main_back,
+  .maincollabo {
+      position: relative;
+      border: none;
+      right: 0;
+      bottom: 0;
+      float: none;
+  }
 
-    .main_back {
-        background-image: url('../../public/img/img_je/mainback_animal.png');
-        border-radius: 350px 0 0 0;
-        border: none;
-        padding: 0;
-        margin: 0;
-        width: 1242px;
-        height: 700px;
-        box-sizing: border-box;
-    }
-    .maincollabo{
-        background-image: url('../../public/img/img_je/main_collabo.png');
-        border-radius: 350px 0 0 0;
-        border: none;
-        background-repeat: no-repeat;
-        padding: 0;
-        margin: 0;
-        width: 1242px;
-        height: 700px;
-        box-sizing: border-box;  
-    }
-    .mainActing,
-    .mainvideo {
-        text-decoration: none;
-        color: #ffff;
-        background-color: #6A92FE;
-        border-radius: 30px;
-        padding: 1rem;
-        width: 212px;
-        height: 58px;
-    }
-    .mainvideo {
-        padding: 1rem;
-    }
- 
-    .swiper-pagination {
-        position: absolute;
-        text-align: center;
-        transition: .3s opacity;
-        transform: translate3d(0, 0, 0);
-        z-index: 10;}
-        
-        @media (max-width: 1200px) {
-            .je_Mainswiper {
-                height: 600px; 
-                .main_back {
-                    width: 1000px;
-                    height: 600px; 
-                }
-                .mainbannerText_en {
-                    font-size: 50px; 
-                }
-                .mainbannerText {
-                    font-size: 2.5rem; 
-                }
-            }
-        }
+  .main_back{
+      background-image: url('../../public/img/img_je/mainback_animal.png');
+      border: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 0;
+      margin: 0;
+      margin-top: 18px;
+      width: 70%;
+      height: 38rem;
+      box-sizing: border-box;
+      background-position-x: calc(70% - 2px);
+  }
+  
+
+  .maincollabo{
+      background-image: url('../../public/img/img_je/main_collabo.png');
+      border: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 0;
+      margin: 0;
+      margin-top: 18px;
+      width: 55%;
+      height: 38rem;
+      box-sizing: border-box;  
+      background-position-x: calc(55% - 2px);
+  }
+  
+  .mainActing{
+      text-decoration: none;
+      color: #ffff;
+      background-color: #6A92FE;
+      border-radius: 30px;
+      padding: 1rem;
+  }
+
+  .mainbanner_Video{
+      border-radius: 30px;
+      height: 38rem;
+      width: 50vw;
+      margin-top: 18px;
+  }
+  
+  
+  .swiper-pagination {
+      position: absolute;
+      text-align: center;
+      transition: .3s opacity;
+      transform: translate3d(0, 0, 0);
+      z-index: 10;}
+      
+
+      @media (max-width: 1200px) {
+           .main_back{
+              background-image: url('../../public/img/img_je/mainback1200.png');
+              height: 26rem;
+          } 
+          .maincollabo{
+              background-image: url('../../public/img/img_je/main_collabo1200.png');
+              height: 26rem;
+              margin-top: 0;
+          }
+
+          .mainbanner_Video{
+              width: 63vw;
+              height: 26rem;
+              margin-top: 20px;
+          }
+          
+      }
+
+      @media (max-width: 992px) {
+
+           .main_back{
+              background-image: url('../../public/img/img_je/mainback992.png');
+              height: 25rem
+          } 
+          .maincollabo{
+              background-image: url('../../public/img/img_je/main_collabo992.png');
+              height: 25rem;
+          }
+
+          .collabologo{
+              width: 16rem;
+          }
+
+          .mainbanner_Video{
+              width: 34rem;
+              height: 25rem;
+          }
+          .mainActing{
+              padding: 0.7rem;
+              font-size: 0.9rem;
+          }
+      }
+
+      @media (max-width: 768px) {
+
+          .main_back{
+             background-image: url('../../public/img/img_je/mainback992.png');
+             height: 21.25rem;
+             margin-top: 10px;
+         } 
+         .maincollabo{
+             background-image: url('../../public/img/img_je/main_collabo768.png');
+             height: 21.25rem;
+             margin-top: 20px;
+         }
+         .collabologo{
+             width: 12rem;
+         }
+
+         .mainbanner_Video{
+             width: 84vw;
+             height: 21.25rem;
+             margin-top: 10px;
+             margin-bottom: 10px;
+         }
+         .swipsubtext{
+          display: none;
+         }
+         .swiperdiv{
+          flex-direction: column-reverse;
+          text-align: center;
+         }
+         .mainActing{
+          padding: 0.6rem;
+          }
+          .hide-on-mobile {
+              display: none;
+          }
+          .swiper-pagination{
+              display: none;
+          }
+      }
+
+      @media (max-width: 568px) {
+          .mainActing{
+              display: none;
+          }
+          .main_back{
+              background-image: url('../../public/img/img_je/main_collabo320.png');
+              height: 16rem;
+          } 
+          .maincollabo{
+              background-image: url('../../public/img/img_je/main_collabo320.png');
+              height: 16rem;
+          }
+          .collabologo{
+              width: 11rem;
+          }
+
+          .mainbanner_Video{
+              height: 17rem;
+              }
+         }
+
+     @media (max-width: 320px) {
+      .main_back{
+          height: 9rem;
+      } 
+      .maincollabo{
+          height: 9rem;
+          margin-top: 20px;
+      }
+
+      .mainbanner_Video{
+          width: 84vw;
+          height: 9rem;
+          margin-top: 20px;
+          margin-bottom: 10px;
+      }
+     }
 
 //사회공헌
 .jeSwiper {
-  font-family: Noto+Sans+KR;
   border-radius: 12px;
-  margin-right: 20px;
   margin-bottom: 20px;
+  height: 38.5vh;
 }
 
 .swiperbutton{
@@ -93,47 +207,56 @@ right: 0;
   font-size: 2rem;
   color: white;
 }
-
+.swiperimg {
+height: 100%;
+overflow: hidden;
+}
 .swiperimg img{
-width: 100%;
+width: calc(100% + 8vw);
+
+
 }
 
 @media (max-width: 1200px) {
 .swiperimg img{
-  width: calc(100% + 1vw);
+width: calc(100% + 57vw);
+transform: translateX(-20%) translateY(-10%);
 }
-  .swiper-button-next,
-  .swiper-button-prev {
+.swiperbutton{
     display: none;
   }
 }
 @media (max-width: 992px){
-.social_program{
-  
-  .container{
-    max-width: none;
-    }
-}}
+.container{
+max-width: none;
+}
+}
 
 @media (max-width: 768px) {
-  .social_program{
-    .container{
-      .row{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    .col-6 {
-      flex: 0 0 auto;
-      width: 100%; 
-      max-width: 100%; 
-    }
-  }}
 
+.swiperimg img{
+  transform: translateX(-20%) translateY(-20%);
+  }
+.jeSwiper {
+  height: 37.5vh;
+  width: 78vw;
+}
+}
+
+@media (max-width: 567px) {
+  .swiperimg img{
+    transform: translateX(-20%) translateY(-20%);
+    }
+.jeSwiper {
+  height: 24.5vh;
+  width: 83vw;
+}
 }
 
 @media (max-width: 320px) {
+.jeSwiper {
+  height: 16.5vh;
+}
 
 }
     
@@ -156,56 +279,78 @@ width: 100%;
 .form_box {
   border-radius: 0.5625rem;
   background-color: white;
-  margin: 0.75rem 0 0.75rem 0.5rem;
   padding: 0.3rem;
   display: flex;
   height: 3.125rem;
-  width: 18.375rem;
+  flex: 1 1 45%;
+
 }
 
 .form_box_etc {
   border-radius: 0.5625rem;
   background-color: white;
-  margin: 0.75rem 0 0.75rem 0.5rem;
   padding: 0.3rem;
   display: flex;
   height: 3.125rem;
-  width: 37rem;
+  width: 100%;
+}
+
+.direction{
+  width: 100%;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+ padding-left: 0;
+  gap: 1rem;
 }
 
 .for_input {
   border: none;
+  font-size: 0.875rem;
 }
 
 .for_input_sele {
   border: none;
+  font-size: 0.875rem;
+  width: 50%;
 }
 
-.addressinput {
-  width: 37rem;
+.for_input_info {
+  border: none;
+  font-size: 0.875rem;
+  width: 50%;
 }
+
 
 .addressinput > .for_input {
-  width: 28rem;
+  width: 100%;
 }
+.addressinput{
+  border-radius: 0.5625rem;
+  background-color: white;
+  padding: 0.3rem;
+  display: flex;
+  height: 3.125rem;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
 
 .bi {
   font-size: 1.25rem;
 }
 
 .forLabel {
-  margin-right: 1.25rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
 }
 
 .hourSelect_text {
-  font-size: 0.9375rem;
+  font-size: 0.5rem;
   font-weight: bold;
 }
 
 .selectable {
   cursor: pointer;
-  width: 6.8125rem;
   height: 1.875rem;
   align-items: center !important;
   border-radius: 1.875rem;
@@ -227,8 +372,8 @@ width: 100%;
   background: #F7A4A5;
   padding: 0 1rem;
   border-radius: 3.125rem;
-  width: 18.75rem;
-  height: 3.75rem;
+  width: 75%;
+  height: 3.5rem;
   color: white;
 }
 
@@ -267,16 +412,13 @@ width: 100%;
 
 .zindex {
   z-index: 10;
-  margin-bottom: 1rem;
-}
-
-.calendar {
   padding: 1.25rem;
 }
 
-.main {
-  width: 33.75rem;
+.calendar{
+  max-width: 80%;
 }
+
 
 .header {
   display: flex;
@@ -394,392 +536,267 @@ width: 100%;
   color: white;
 }
 
-@media (max-width: 1200px) {
-  .form_tag>.container {
-      width: 68.75rem;
-  }
-  .zindex {
-      width: 30rem;
-      margin-right: auto;
-      
-      .calendar, .main {
-      width: auto;
-      }
-  }
-  
-  .form_momdiv {
-      width: 39.375rem;  
-      
-      .form_box {
-      margin: 0.75rem 0 0.75rem 0.8125rem;
-      }
-  }
-
-}
-
 @media (max-width: 992px) {
-  .form_tag>.container {
-    width: 55.75rem;
-}
   .allbox {
     flex-direction: column;
       align-items: center;
-      .zindex {
-        margin-right: 0;
-        width: auto; 
-        .calendar, .main {
-            width: 30rem;
-        }
-      }
-     
-      .form_box, .form_box_etc {
-          margin: 0.1875rem 0 0.1875rem 0.1875rem;
-          padding: 0.3125rem;
-          width: 32.5rem;
-      }
-      .direction {
-          flex-direction: column;
-      }
-       .selectable {
-              width: 5.6rem;
-          }
-      .subbtn {
-          height: 2.1875rem;
-      }
-      .addressinput > .for_input {
-          width: 25rem;
-      }
   }
-
-  
+  .direction {
+    flex-direction: column;
+  }
+  .selectcount > .for_input {
+    display: block;
+  }
+  .selectable {
+    display: none;
+  } 
+  .form_box, .form_box_etc{
+    justify-content: space-between;
+  }
+   .addressinput > .for_input {
+    width: 28rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .form_tag>.container {
-    width: 41.75rem;
-}
-  .form_box, .form_box_etc {
-      margin: 0.1875rem 0 0.1875rem 0.1875rem;
-      padding: 0.5rem;
-  }
- .zindex > .font {
-      font-size: 0.9375rem;
-  }
- 
-  .selectcount > .for_input {
-      display: block;
-      margin-left: 12.5rem;
-  }
-  .selectable {
-      display: none;
-  } 
-  .addressinput > .for_input {
-    width: 25rem;
-}
-}
-
-@media (max-width: 576px) {
-  .form_tag>.container {
-    width:  29.75rem;
-}
-  .form_text {
-      padding-top: 0.3125rem !important;
-  }
-  .form_momdiv {
-      width: 30rem;
-  }
-
-  .form_box, .form_box_etc {
-    margin: 0.1875rem 0 0.1875rem 0.1875rem;
-    padding: 0.5rem;
-    width: 22.5rem;
-}
- .zindex > .font {
-      font-size: 0.9375rem;
-  }
-  .selectcount > .for_input {
-    margin-left: 2.5rem;
-  }
-  .addressinput > .for_input {
-      width: 16rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .form_tag>.container {
-      width: 18.75rem;
-  }
-
-  .form_text {
-      padding-top: 0.3125rem !important;
-  }
   .zindex{
-  .calendar, .main {
-      width: 15rem;
+   padding: 0.8rem;
   }
-  .font {
-      font-size: 0.625rem;
-  }
-}
-  
-  .form_momdiv {
-      width: 17.5rem;
-      
-      .form_box, .form_box_etc {
-          margin: 0.125rem 0 0.125rem 0.125rem;
-          padding: 0.3125rem;
-          width: 15.625rem;
-      }
-  }
-  
-  .subbtn {
-      width: 13.75rem;
-  }
-  .direction, .form_box, .form_box_etc, .forLabel {
-      font-size: 0.625rem;
-  }
-  .forLabel {
-      margin-right: 0.3125rem;
+  .allbox {
+    padding: 0.7rem;
   }
   .addressinput > .for_input {
-   width: 10rem;
+    width: 24rem;
+  }
+}
+
+@media (max-width: 576px){
+  .for_input,.forLabel, .for_input_sele  {
+    font-size: 1rem;
+  }
+  .addressinput > .for_input {
+    width: 12rem;
+  }
+  .font > p{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px){
+  .for_input, .forLabel, .for_input_sele,.for_input_info {
+    font-size: 0.8rem;
+  }
+  .addressinput > .for_input {
+    width: 10rem;
+  }
+  .font > p{
+    font-size: 0.8rem;
   }
 }
 
 //팝업
 .clickableText {
-    position: relative;
-    cursor: pointer;
-    font-size: 1.25rem;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
 }
 
 .popup {
-    position: absolute;
-    bottom: 6%;
-    left: 0;
-    width: 36.875rem;
-    height: 34.4375rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 11;
-    border-radius: 1.875rem;
-    display: none;
+  position: absolute;
+  bottom: 6.3%;
+  left: 0;
+  width: 50%;
+  height: 74%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  border-radius: 1.875rem;
+  display: none;
 }
 
 .popupContent {
-    background-color: white;
-    padding: 1.25rem;
-    border-radius: 0.3125rem;
-    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
-    width: 23.5625rem;
-    height: 14.125rem;
-    border-radius: 1.875rem;
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+  width: 70%;
+  height: 35%;
+  border-radius: 1.875rem;
 }
 
 .close {
-    cursor: pointer;
-    float: right;
-    font-size: 1.25rem;
+  cursor: pointer;
+  float: right;
+  font-size: 1.25rem;
 }
 
 .fs_15 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 1200px) {
-    .clickableText, .close {
+  .clickableText, .close {
         font-size: 1rem;
-    }
-    .popup {
-        width: 31rem;
-        bottom: 5.2%;
-        left: -2.5%;
-    }
-    .popupContent {
-        width: 17.3125rem;
-        height: 11.25rem;
-    }
-    .fs_15 {
+  }
+
+  .fs_15 {
         font-size: 0.75rem;
-    }
+}
 }
 
 @media (max-width: 992px) {
-    .popup {
-        width: 42rem;
-        bottom: 3%;
-        left: 12.3%;
-    }
-    .popupContent {
-        width: 23.5625rem;
-        height: 15.625rem;
-    }
-    .fs_15 {
-        font-size: 1rem;
-        margin-top: 1.25rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .popup {
-        left: -0.5%;
-    }
-}
-
-@media (max-width: 576px) {
-    .popup {
-        width: 32.5rem;
-        bottom: 3.5%;
-        left: -4.5%;
-    }
+  .popup {
+      width: 100%;
+      height: 48%;
+      bottom:3%;
+  }
+  .fs_15 {
+      font-size: 0.75rem;
+  }
+  .bi{
+      font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 320px) {
-    .popup {
-        bottom: 3.3%;
-        width: 20rem;
-    }
-    .popupContent {
-        width: 11.0625rem;
-        height: 15.625rem;
-    }
-    .fs_15 {
-        font-size: 0.5rem;
-        margin-top: 1.25rem;
-    }
+  .fs_15 {
+      font-size: 0.4rem;
+  }
+  .bi{
+      font-size: 0.5rem;
+  }
 }
 
 
 
 
-
-    
+//앱다운로드    
 .app_download {
-            background-color: #6A92FE;
-            padding: 3.7rem 0;
-            position: relative;
-            background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_animal.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;}
-        
-            
-            .app_download:before {
-                content: "";
-                position: absolute;
-                left: 0;
-                width: 18.5rem;
-                top: 0;
-                bottom: 0;
-                background-size: 25rem 18.5rem;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
-            }
-        
-            .app_download:after {
-                content: "";
-                position: absolute;
-                right: 0px;
-                width: 18.5rem;
-                top: 0;
-                bottom: 0px;
-                background-size: 25rem 18.5rem;
-                background-repeat: no-repeat;
-                background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
-                transform: scaleX(-1);
-            }
-        
-                .app_come {
-                    font-weight: bold;
-                    font-size: 2.4rem;
-                }
-                .app_come_first {
-                    font-size: 1.8rem;
-                }
-                .app_down {
-                    background-color: #FFFFFF;
-                    border-radius: 1.9rem;
-                    width: 18.5rem;
-                    height: 3.6rem;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                }
-               .container{
-                        z-index: 1;
-                    }
-                @media (max-width: 1200px) {
-                   
-                    .jeAppbanner {
-                        justify-content: center;
-                        text-align: center;
-                        width: 43.8rem;
-                    }
-                    .app_download{
-                        background-image: none;
-        
-                    }
-                  }
-                  @media (max-width :992px) {
-                    .app_download:before, #app_download:after {
-                        width: 15rem;
-                        background-size: 19rem 15rem;
-                    }
-                    .app_come {
-                        font-size: 2rem;
-                    }
-                    .app_come_first {
-                        font-size: 1.4rem;
-                    }
-                }
+  background-color: #6A92FE;
+  padding: 3.7rem 0;
+  position: relative;
+  background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_animal.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;}
+
+  
+  .app_download:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30%;
+      top: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
+  }
+
+  .app_download:after {
+      content: "";
+      position: absolute;
+      right: 0px;
+      width: 30%;
+      top: 0;
+      bottom: 0px;
+      background-size: 25rem 18.5rem;
+      background-repeat: no-repeat;
+      background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
+      transform: scaleX(-1);
+  }
+
+      .app_come {
+          font-weight: bold;
+          font-size: 2.4rem;
+      }
+      .app_come_first {
+          font-size: 1.8rem;
+      }
+      .app_down {
+          background-color: #FFFFFF;
+          border-radius: 1.9rem;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          font-size: 1.5rem;
+          font-weight: bold;
+          padding: 0.8rem 3rem;
+      }
+     .container{
+              z-index: 1;
+          }
+      @media (max-width: 1200px) {
+         
+          .jeAppbanner {
+              justify-content: center !important;
+              text-align: center;
+          }
+          .app_download{
+              background-image: none;
+
+          }
+        }
+        @media (max-width :992px) {
+          .app_download:before, #app_download:after {
+              width: 15rem;
+              background-size: 19rem 15rem;
+          }
+          .app_come {
+              font-size: 2rem;
+          }
+          .app_come_first {
+              font-size: 1.4rem;
+          }
+          .apptext{
+              margin-right: 2rem;
+          }
+      }
+      
+        @media (max-width: 768px) {
+         
+          .jeAppbanner {
+              justify-content: center;
+              flex-direction: column;
+          }    
+          .app_download{
+              background-image: none;                
+              height: 14.4rem;
+          }
+          .app_download:before, .app_download:after {
+              bottom: 0;
+              background-size: 22rem 18rem;
+          }
+          .app_down{
+              margin-top: 0.5rem;
+              width: 16.9rem;
+              height: 3.1rem;
+              font-size: 1.3rem;
+          }
+          .app_come {
+              font-size: 2.1rem;
+          }
+        }
+
+        @media (max-width: 576px) {
                 
-                  @media (max-width: 768px) {
-                   
-                    .jeAppbanner {
-                        justify-content: center;
-                        flex-direction: column;
-                    }    
-                    .app_download{
-                        background-image: none;                
-                        height: 14.4rem;
-                    }
-                    .app_download:before, .app_download:after {
-                        bottom: 0;
-                        background-size: 22rem 18rem;
-                    }
-                    .app_down{
-                        margin-top: 0.5rem;
-                        width: 16.9rem;
-                        height: 3.1rem;
-                        font-size: 1.3rem;
-                    }
-                    .app_come {
-                        font-size: 2.1rem;
-                    }
-                  }
-        
-                  @media (max-width: 576px) {
-                          
-                    .app_download:before,
-                    .app_download:after {
-                        display: none; 
-                    }
-                    .jeAppbanner {
-                        align-items: center; 
-                    }
-                    .app_down {
-                        margin-top: 1rem;
-                        margin-left: 0.5rem; 
-                    }
-                }
-        
-                @media (max-width: 320px) {
-                    .app_come {
-                        font-size: 1.75rem;
-                    }
-                    .app_come_first {
-                        font-size: 1.125rem;
-                    }
-                }
+          .app_download:before,
+          .app_download:after {
+              display: none; 
+          }
+          .jeAppbanner {
+              align-items: center; 
+          }
+          .app_down {
+              margin-top: 1rem;
+              margin-left: 0.5rem; 
+          }
+      }
+
+      @media (max-width: 320px) {
+          .app_come {
+              font-size: 1.75rem;
+          }
+          .app_come_first {
+              font-size: 1.125rem;
+          }
+      }

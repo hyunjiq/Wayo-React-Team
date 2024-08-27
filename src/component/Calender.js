@@ -114,14 +114,14 @@ const Calendar = () => {
     }, []);
 
     return (
-        <div className="zindex d-flex flex-column justify-content-center col-6">
+        <div className="zindex d-flex flex-column align-items-center justify-content-center col-lg-6">
             <div className="calendar d-flex flex-column justify-content-center align-items-center">
                 <div className="d-flex justify-content-center header">
-                <button className="nav-btn go-prev" onClick={prevMonth}>&lt;</button>
-                <div className="year-month go-today" onClick={goToday}>
+                    <button className="nav-btn go-prev" onClick={prevMonth}>&lt;</button>
+                    <div className="year-month go-today" onClick={goToday}>
                     {viewMonth + 1}월
-                </div>
-                <button className="nav-btn go-next" onClick={nextMonth}>&gt;</button>
+                    </div>
+                    <button className="nav-btn go-next" onClick={nextMonth}>&gt;</button>
                 </div>
                 <div className="main">
                     <div className="days">
@@ -153,5 +153,6 @@ const Calendar = () => {
         </div>
     );
 };
+
 
 export default Calendar;

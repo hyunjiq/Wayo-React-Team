@@ -133,22 +133,23 @@ function Form() {
   };
 
   return  (
-    <form onSubmit={handleSubmit} className="d-flex flex-column justify-content-center align-items-center m-0">
-    <ul className="d-flex direction p-0 m-0">
-      <li className="d-flex align-items-center form_box">
-        <label htmlFor="datepicker" className="forLabel">선택일자</label>
+    <form onSubmit={handleSubmit} className="d-flex flex-column justify-content-center align-items-center m-0 w-100">
+    <ul className="d-flex direction">
+      <li className="d-flex align-items-center form_box col-lg-6">
+        <label htmlFor="datepicker" className="col-lg-4 forLabel">선택일자</label>
         <input
-          className="for_input_sele"
+          className="col-lg-8 for_input_sele"
           type="text"
           id="datepicker"
           name="w_day"
-          placeholder="날짜를 선택하세요"
+          placeholder="날짜 선택"
           value={formData.w_day}
           onChange={handleChange}
         />
       </li>
-      <li className="d-flex align-items-center form_box">
+      <li className="d-flex align-items-center form_box col-lg-6">
         <label htmlFor="hourSelectStart" className="forLabel">희망시간</label>
+        <div className="d-flex">
         <select
           className="for_input"
           id="hourSelectStart"
@@ -160,7 +161,7 @@ function Form() {
             <option key={i + 10} value={i + 10}>{i + 10}</option>
           ))}
         </select>
-        <span className="mx-1 hourSelect_text}">:</span>
+        <span className="hourSelect_text">:</span>
         <select
           className="for_input"
           id="miuhourSelectStart"
@@ -171,7 +172,7 @@ function Form() {
           <option value="00">00</option>
           <option value="30">30</option>
         </select>
-        <span className="mx-1 hourSelect_text">~</span>
+        <span className="hourSelect_text">~</span>
         <select
           className="for_input"
           id="hourSelectEnd"
@@ -183,7 +184,7 @@ function Form() {
             <option key={i + 10} value={i + 10}>{i + 10}</option>
           ))}
         </select>
-        <span className="mx-1 hourSelect_text">:</span>
+        <span className="hourSelect_text">:</span>
         <select
           className="for_input"
           id="miuhourSelectEnd"
@@ -193,15 +194,15 @@ function Form() {
         >
           <option value="00">00</option>
           <option value="30">30</option>
-        </select>
+        </select></div>
       </li>
     </ul>
 
-    <ul className="d-flex direction p-0 m-0">
-      <li className="d-flex align-items-center form_box">
+    <ul className="d-flex direction">
+      <li className="d-flex align-items-center form_box col-lg-6">
         <label htmlFor="petSelect" className="forLabel">반려동물</label>
         <select
-          className="ms-auto for_input"
+          className="for_input"
           id="petSelect"
           name="w_animaltype"
           placeholder="종류"
@@ -214,16 +215,16 @@ function Form() {
           <option value="a">모두</option>
         </select>
       </li>
-      <li className="d-flex align-items-center form_box">
+      <li className="d-flex align-items-center form_box col-lg-6">
         <label htmlFor="petCount" className="forLabel">반려동물 수</label>
         <select
-          className="ms-auto for_input"
+          className="for_input"
           id="petCount"
           name="w_numberofpets"
           value={formData.w_numberofpets}
           onChange={handleChange}
         >
-          <option value="">모두 몇마리인가요?</option>
+          <option value="">선택</option>
           <option value="1">1마리</option>
           <option value="2">2마리</option>
           <option value="3">3마리</option>
@@ -233,40 +234,40 @@ function Form() {
       </li>
     </ul>
 
-    <ul className="d-flex form_box_etc">
-      <li className="d-flex align-items-center">
+    <ul className="direction">
+      <li className="d-flex align-items-center form_box_etc">
         <label htmlFor="service" className="forLabel">필요서비스</label>
-        <div className="d-flex align-items-center justify-content-end" name="w_service">
+        <div className="d-flex align-items-center justify-content-center col-lg-10" name="w_service">
           <input
             type="button"
             value="#산책"
             name="wk"
-            className="ms-2 pb-1 selectable ${isSelected('#산책', selectedServices) ? formcss.selected : ''}"
+            className={`col-3 pb-1 selectable ${isSelected('#산책', selectedServices) ? isSelected : ''}`}
             onClick={() => toggleService('#산책', selectedServices, setSelectedServices, setFormData)}
           />
           <input
             type="button"
             value="#목욕"
             name="wb"
-            className="ms-1 pb-1 selectable ${isSelected('#목욕', selectedServices) ? formcss.selected : ''}"
+            className={`col-3 pb-1 selectable ${isSelected('#목욕', selectedServices) ? isSelected : ''}`}
             onClick={() => toggleService('#목욕', selectedServices, setSelectedServices, setFormData)}
           />
           <input
             type="button"
             value="#건강검진"
             name="wh"
-            className="ms-1 pb-1 selectable ${isSelected('#건강검진', selectedServices) ? formcss.selected : ''}"
+            className={`col-3 pb-1 selectable ${isSelected('#건강검진', selectedServices) ? isSelected : ''}`}
             onClick={() => toggleService('#건강검진', selectedServices, setSelectedServices, setFormData)}
           />
           <input
             type="button"
             value="#돌봄"
             name="wc"
-            className="ms-1 pb-1 selectable ${isSelected('#돌봄', selectedServices) ? formcss.selected : ''}"
+            className={`col-3 pb-1 selectable ${isSelected('#돌봄', selectedServices) ? isSelected : ''}`}
             onClick={() => toggleService('#돌봄', selectedServices, setSelectedServices, setFormData)}
           />
         </div>
-        <div className="d-flex align-items-center justify-content-center selectcount">
+      <div className="d-flex align-items-center justify-content-center selectcount">
           <select className="for_input" id="serviceCount" name="w_service" onChange={handleChange}>
             <option value="">필요서비스를 선택하세요</option>
             <option value="#산책">산책</option>
@@ -276,52 +277,54 @@ function Form() {
             <option value="#상담 후 결정">상담 후 결정</option>
           </select>
         </div>
-      </li>
+      </li>   
+        
+      <li className="d-flex align-items-center addressinput">
+          <label htmlFor="sample5_address" className="forLabel me-3">주소</label>
+          <input
+            type="text"
+            id="sample5_address"
+            className="for_input"
+            placeholder="상세주소도 함께 입력해주세요"
+            value={address} // 주소 상태값
+            onChange={(e) => {
+              setAddress(e.target.value); // 주소 입력 변경
+              setFormData(prevFormData => ({ ...prevFormData, w_address: e.target.value })); // formData의 주소 업데이트
+            }}
+          />
+          <button
+            type="button"
+            onClick={sample5_execDaumPostcode}
+            style={{ border: 'none', backgroundColor: 'transparent' }}
+          >
+            <i className="bi bi-search"></i>
+          </button>
+        </li>
     </ul>
 
-    <div className="d-flex align-items-center form_box addressinput">
-      <label htmlFor="sample5_address" className="forLabel me-3">주소</label>
-      <input
-        type="text"
-        id="sample5_address"
-        className="me-3 for_input"
-        placeholder="상세주소도 함께 입력해주세요"
-        value={address} // 주소 상태값
-        onChange={(e) => {
-          setAddress(e.target.value); // 주소 입력 변경
-          setFormData(prevFormData => ({ ...prevFormData, w_address: e.target.value })); // formData의 주소 업데이트
-        }}
-      />
-      <button
-        type="button"
-        onClick={sample5_execDaumPostcode}
-        style={{ border: 'none', backgroundColor: 'transparent' }}
-      >
-        <i className="bi bi-search"></i>
-      </button>
-    </div>
+ 
 
-    <ul className="d-flex direction p-0 m-0">
-      <li className="d-flex align-items-center form_box">
-        <label htmlFor="input5" className="forLabel">보호자</label>
+    <ul className="d-flex direction">
+      <li className="d-flex align-items-center form_box col-lg-6">
+        <label htmlFor="input5" className="col-lg-4 forLabel">보호자</label>
         <input
-          className="for_input"
+          className="col-lg-8 for_input_info"
           type="text"
           id="input5"
           name="w_name"
-          placeholder="성함을 적어주세요"
+          placeholder="이름 작성"
           value={formData.w_name}
           onChange={handleChange}
         />
       </li>
-      <li className="d-flex align-items-center form_box">
-        <label htmlFor="input6" className="forLabel">연락처</label>
+      <li className="d-flex align-items-center form_box col-lg-6">
+        <label htmlFor="input6" className="col-lg-4 forLabel">연락처</label>
         <input
-          className="for_input"
+          className="col-lg-8 for_input_info"
           type="text"
           id="input6"
           name="w_ph"
-          placeholder="연락처를 적어주세요"
+          placeholder="연락처 작성"
           value={formData.w_ph}
           onChange={handleChange}
         />

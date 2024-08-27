@@ -17,7 +17,7 @@ function Header() {
     return (
         <>
             <Hd/>
-            {/* <Mainb/> */}
+            <Mainb/>
             <Mainservice msdata={data.mainservice} keyid='main_service'></Mainservice>
             <Livereview></Livereview>
             <Withplace></Withplace>

@@ -4,9 +4,8 @@ import Slider from '../component/Mainbanner'
 
 
 function Mainb() {
-
     return (
-        <section className="main_slide_je">
+        <section id="main_slide_je">
         <div className="swiper mySwiper je_Mainswiper">
             <div className="swiper-wrapper">
                 <Slider></Slider>
