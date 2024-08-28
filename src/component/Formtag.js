@@ -106,7 +106,7 @@ function Form() {
       document.getElementById("input6")?.removeEventListener("keypress", isNumberKey);
       document.getElementById("input5")?.removeEventListener("keypress", isCharacterKey);
     };
-  }, []);
+  }, [formData.w_day]);
 
   useEffect(() => {
     const loadDaumPostcodeScript = () => {
@@ -135,8 +135,8 @@ function Form() {
   return  (
     <form onSubmit={handleSubmit} className="d-flex flex-column justify-content-center align-items-center m-0 w-100">
     <ul className="d-flex direction">
-      <li className="d-flex align-items-center form_box col-lg-6">
-        <label htmlFor="datepicker" className="col-lg-4 forLabel">선택일자</label>
+      <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+        <label htmlFor="datepicker" className="col-lg-4 col-ms-4 forLabel">선택일자</label>
         <input
           className="col-lg-8 for_input_sele"
           type="text"
@@ -147,7 +147,7 @@ function Form() {
           onChange={handleChange}
         />
       </li>
-      <li className="d-flex align-items-center form_box col-lg-6">
+      <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
         <label htmlFor="hourSelectStart" className="forLabel">희망시간</label>
         <div className="d-flex">
         <select
@@ -199,7 +199,7 @@ function Form() {
     </ul>
 
     <ul className="d-flex direction">
-      <li className="d-flex align-items-center form_box justify-content-between col-lg-6">
+      <li className="d-flex align-items-center form_box justify-content-between col-lg-6 col-ms-6">
         <label htmlFor="petSelect" className="forLabel">반려동물</label>
         <select
           className="for_input"
@@ -215,7 +215,7 @@ function Form() {
           <option value="a">모두</option>
         </select>
       </li>
-      <li className="d-flex align-items-center justify-content-between form_box col-lg-6">
+      <li className="d-flex align-items-center justify-content-between form_box col-lg-6 col-ms-6">
         <label htmlFor="petCount" className="forLabel">반려동물 수</label>
         <select
           className="for_input"
@@ -237,7 +237,7 @@ function Form() {
     <ul className="direction">
       <li className="d-flex align-items-center form_box_etc">
         <label htmlFor="service" className="forLabel">필요서비스</label>
-        <div className="d-flex align-items-center justify-content-center col-lg-10" name="w_service">
+        <div className="d-flex align-items-center justify-content-center col-lg-10 col-ms-10" name="w_service">
           <input
             type="button"
             value="#산책"
@@ -279,7 +279,7 @@ function Form() {
         </div>
       </li>   
         
-      <li className="d-flex align-items-center addressinput">
+      <li className="d-flex align-items-center justify-content-between addressinput">
           <label htmlFor="sample5_address" className="forLabel me-3">주소</label>
           <input
             type="text"
@@ -305,8 +305,8 @@ function Form() {
  
 
     <ul className="d-flex direction">
-      <li className="d-flex align-items-center form_box col-lg-6">
-        <label htmlFor="input5" className="col-lg-4 forLabel">보호자</label>
+      <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+        <label htmlFor="input5" className="col-ms-4 forLabel">보호자</label>
         <input
           className="col-lg-8 for_input_info"
           type="text"
@@ -317,8 +317,8 @@ function Form() {
           onChange={handleChange}
         />
       </li>
-      <li className="d-flex align-items-center form_box col-lg-6">
-        <label htmlFor="input6" className="col-lg-4 forLabel">연락처</label>
+      <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+        <label htmlFor="input6" className="col-ms-4 forLabel">연락처</label>
         <input
           className="col-lg-8 for_input_info"
           type="text"

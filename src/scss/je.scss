@@ -130,7 +130,7 @@
 
          .mainbanner_Video{
              width: 84vw;
-             height: 21.25rem;
+             height: 19.25rem;
              margin-top: 10px;
              margin-bottom: 10px;
          }
@@ -159,6 +159,7 @@
           .main_back{
               background-image: url('../../public/img/img_je/mainback320.png');
               height: 13rem;
+              margin-top: 55px;
           } 
           .maincollabo{
               background-image: url('../../public/img/img_je/main_collabo320.png');
@@ -196,8 +197,7 @@
 //사회공헌
 .jeSwiper {
   border-radius: 12px;
-  margin-bottom: 20px;
-  height: 37.5vh;
+  height: 21.3rem;
 }
 
 .swiperbutton{
@@ -217,7 +217,12 @@ height: 100%;
 overflow: hidden;
 }
 .swiperimg img{
-width: calc(100% + 10vw);
+width: calc(100% + 11vw);
+}
+.custom-flex {
+  flex-direction: row;
+}
+.proinfo{
 }
 
 @media (max-width: 1200px) {
@@ -229,33 +234,32 @@ width: calc(100% + 10vw);
        display: none;
      }
  }
- @media (max-width: 992px){
-  .container{
-   max-width: none;
-  }
- }
- 
+
  @media (max-width: 768px) {
-   .swiperimg img{
-     transform: translateX(-20%) translateY(-20%);
-     }
-   .jeSwiper {
-     height: 32.5vh;
-     width: 79vw;
-   }
- }
-
+  .swiperimg img {
+    transform: translateX(-20%) translateY(-20%);
+  }
+  .proinfo{ width: auto !important;} 
+  .jeSwiper {
+    width: 95.25vw !important;
+    margin-bottom: 20px;
+    height: 17rem;
+  } 
+  .custom-flex {
+    flex-direction: column;
+  }
+}
  @media (max-width: 567px) {
-
-   .jeSwiper {
-     height: 25.5vh;
-   }
+  .swiperimg img{
+    transform: translateX(-20%) translateY(-20%);
+    }
+  .jeSwiper {
+    height: 12rem;
+  }
  }
 
  @media (max-width: 320px) {
-   .jeSwiper {
-     height: 16.5vh;
- }
+
 
  }
     
@@ -307,16 +311,11 @@ width: calc(100% + 10vw);
   font-size: 0.875rem;
 }
 
-.for_input_sele {
+.for_input_sele,.for_input_info {
   border: none;
   font-size: 0.875rem;
   width: 50%;
-}
-
-.for_input_info {
-  border: none;
-  font-size: 0.875rem;
-  width: 50%;
+  text-align: end;
 }
 
 
@@ -534,13 +533,27 @@ width: calc(100% + 10vw);
   opacity: 50%;
   color: white;
 }
+.zindex > div:nth-child(2){
+  align-items: flex-start;
+}
+@media (min-width: 993px){
+.col-lg-10{
+width: 100%;
+}
+}
 
 @media (max-width: 992px) {
   .allbox {
+    .col-ms-6{
+      width: 100%;
+    }
+    .col-lg-10{
+      width: 0;
+    }
     flex-direction: column;
-      align-items: center;
-  }
-  .direction {
+    align-items: center;
+    
+    .direction {
     flex-direction: column;
   }
   .selectcount > .for_input {
@@ -555,6 +568,8 @@ width: calc(100% + 10vw);
    .addressinput > .for_input {
     width: 28rem;
   }
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -563,31 +578,37 @@ width: calc(100% + 10vw);
   }
   .allbox {
     padding: 0.7rem;
-  }
-  .addressinput > .for_input {
+    
+    .addressinput > .for_input {
     width: 24rem;
   }
+  }
+  
 }
 
 @media (max-width: 576px){
-  .for_input,.forLabel, .for_input_sele  {
+  .allbox{
+    .for_input,.forLabel, .for_input_sele  {
     font-size: 1rem;
   }
   .addressinput > .for_input {
     width: 12rem;
   }
+  } 
   .font > p{
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 320px){
+ .allbox{
   .for_input, .forLabel, .for_input_sele,.for_input_info {
     font-size: 0.8rem;
   }
   .addressinput > .for_input {
     width: 10rem;
   }
+ } 
   .font > p{
     font-size: 0.8rem;
   }

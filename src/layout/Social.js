@@ -7,13 +7,13 @@ function Social() {
 
     return (
         <section id="social_program" className="margin">
-                <div className="container">
+                <div className="container-lg">
                     <h2>사회 공헌 프로그램</h2>
-                    <div className="d-flex flex-column flex-md-row">
+                    <div className="d-flex custom-flex">
                             {/* <!-- Swiper --> */}
                             <Socialswiper></Socialswiper>                  
                         {/* <!-- 프로그램 일정 --> */}
-                        <div className="col-md-6 ps-3" >
+                        <div className="col-md-6 ps-md-3 proinfo" >
                             <Socialdiv>
                                 <h5 className="pt-1">프로그램 일정</h5>
                                 <span className="pt-1"><a href="javascript:void(0)"><h6>더보기</h6></a></span>

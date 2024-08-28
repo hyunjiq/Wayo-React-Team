@@ -16,7 +16,7 @@ function Popup() {
     return (
         <>
            <p 
-                className="fw-bold clickableText"// 'styles'를 'popup'으로 변경
+                className="ms-2 fw-bold clickableText"// 'styles'를 'popup'으로 변경
                 onClick={handleTextClick} // 클릭 이벤트 핸들러 추가
             >
                 <i className="bi bi-question-circle"></i>집중케어 정기구독이란 

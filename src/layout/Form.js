@@ -50,7 +50,7 @@ function Form() {
                          <Calendar onDateSelect={handleDateSelect} />
 
                         {/* 폼태그 */}
-                        <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center form_momdiv">
+                        <div className="col-lg-6 col-ms-6 d-flex flex-column align-items-center justify-content-center form_momdiv">
                         <Formtage selectedDate={selectedDate} onFormDataChange={handleFormData} />
                        
                         </div>

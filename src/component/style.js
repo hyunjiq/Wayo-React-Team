@@ -39,7 +39,7 @@ export const Ptext02 = styled.p`
     }
     @media (max-width: 992px) {
         font-size: 1.6rem;
-        line-height: 1.3rem;
+        line-height: 1.8rem;
 
     }
     @media (max-width: 567px) {
