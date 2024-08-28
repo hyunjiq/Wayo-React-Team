@@ -87,7 +87,6 @@ $quickcolor: #3D71FF;
     background: #D3DFFF;
     h2{position: absolute; top: 4rem; left: 0; z-index: 10; }
     .placeSwiper{
-        position: unset;
         p{margin: 0;}
         .swiper-wrapper{
             z-index: 12;
@@ -495,10 +494,14 @@ $quickcolor: #3D71FF;
     }
     .with_place{
         h2{top: 1.5rem;}
-        .placeSwiper{
+        .place-bg{
+            padding: 0;
+        }
+        .placeSwiper{            
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
+            
             .swiper-wrapper{
                 .place-slide{
                     background-color: #9EB9FF;

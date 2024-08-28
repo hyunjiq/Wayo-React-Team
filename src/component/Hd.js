@@ -51,7 +51,7 @@ function Hd() {
 
     return (
         
-        <header className="hd d-flex justify-content-between position-fixed align-items-center">
+        <header className="hd d-flex justify-content-between position-sticky align-items-center">
         <h1 className="mb-0 position-relative">
           <a className="d-block" href="#">
             <img className="d-block" src={logo} alt="와요로고"/>

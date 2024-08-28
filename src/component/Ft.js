@@ -1,6 +1,7 @@
 import React from 'react'
 import { Styleicon } from './style';
 import logo from "../svg/logo.svg"
+import { Link } from 'react-router-dom';
 
 function Ft() {
     return (
@@ -8,10 +9,10 @@ function Ft() {
         <div className="ft container d-flex px-0">
             <div className="ft_right">
                 <ul className="ft_menu mb-3 ps-0 d-flex">
-                    <li className="pe-2 ft_menu_li"><a href="">고객센터</a></li>
-                    <li className="px-2 ft_menu_li"><a href="">개인정보처리방침</a></li>
-                    <li className="px-2 ft_menu_li"><a href="">이용약관</a></li>
-                    <li className="ps-2 ft_menu_li border-0"><a href="">공지사항</a></li>
+                    <li className="pe-2 ft_menu_li"><Link>고객센터</Link></li>
+                    <li className="px-2 ft_menu_li"><Link>개인정보처리방침</Link></li>
+                    <li className="px-2 ft_menu_li"><Link>이용약관</Link></li>
+                    <li className="ps-2 ft_menu_li border-0"><Link>공지사항</Link></li>
                 </ul>
                 <ul className="ft_info mb-3 ps-0">
                     <li className="ft-m">
@@ -25,17 +26,17 @@ function Ft() {
                 <p className="ft_copy mb-3">© 2020 Pet People Inc.</p>
                 <ul className="ft-icon ps-0 d-flex">
                     <li className="me-2" >
-                        <a className="icon-position" target='_blank' href="http://pf.kakao.com/_sxaVfxj">
+                        <a className="icon-position" target='_blank' href="http://pf.kakao.com/_sxaVfxj" rel="noopener noreferrer">
                             <Styleicon content='\F268'><span className="visually-hidden">카카오상담</span></Styleicon>
                         </a>
                     </li>
                     <li className="me-2">
-                        <a target='_blank' href="https://www.youtube.com/@TV-pi8gs">
+                        <a target='_blank' href="https://www.youtube.com/@TV-pi8gs" rel="noopener noreferrer">
                             <Styleicon content='\F62B'><span className="visually-hidden">유튜브보기</span></Styleicon>
                         </a>
                     </li>
                     <li>
-                        <a target='_blank'href="https://www.instagram.com/greenart_official/?igshid=YmMyMTA2M2Y%3D">
+                        <a target='_blank' href="https://www.instagram.com/greenart_official/?igshid=YmMyMTA2M2Y%3D" rel="noopener noreferrer">
                             <Styleicon content='\F437'><span className="visually-hidden">인스타그램</span></Styleicon>
                         </a>
                     </li>

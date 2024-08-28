@@ -9,21 +9,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
 function Withplace() {
-  // 상태 변수로 썸네일 스와이퍼 인스턴스 관리
   const [thumbsSwipers, setThumbsSwipers] = useState([]);
-
-  // useEffect(() => {
-  //   if (thumbsSwipers.length === data.place.length) {
-  //     thumbsSwipers.forEach((swiper) => {
-  //       swiper.autoplay.start();
-  //     });
-  //   }
-  // }, [thumbsSwipers]);
 
   return (
     <section className="margin with_place">      
-      <div className="place-bg container-md px-0 d-flex justify-content-end position-relative">
-        <h2>플레이스</h2>
+      <div className="place-bg container-lg d-flex justify-content-end position-relative">
+        <h2 className='container-lg mb-0'>플레이스</h2>
         <Swiper
           allowTouchMove={false}
           modules={[Pagination]}
@@ -50,20 +41,15 @@ function Withplace() {
                 modules={[FreeMode, Thumbs]}                
                 className="c_swiper2"              
                 thumbs={{ swiper: thumbsSwipers[i] }} 
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                }}
                 breakpoints={{
                   0: {
-                    autoplay: false,
                     loop:false
                   },
                   768: {
+                    loop:true,
                     autoplay: {
                       delay: 4000,
-                      disableOnInteraction: false,
-                      loop:true
+                      disableOnInteraction: false,                      
                     }
                   }
                 }}
@@ -89,11 +75,7 @@ function Withplace() {
                 slidesPerView={3}
                 loop={true}
                 freeMode={true}
-                watchSlidesProgress={true}   
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                }}              
+                watchSlidesProgress={true}          
                 navigation={{                 
                   nextEl: '.pagiBtn .swiper-button-next',
                   prevEl: '.pagiBtn .swiper-button-prev',                     
@@ -106,42 +88,23 @@ function Withplace() {
                   0:{
                     slidesPerView: 1.5, 
                     centeredSlides: true,
-                    autoplay: false,
                     loop:false,
                     allowTouchMove:true
                   },
                   576: {
                     slidesPerView: 2, 
                     centeredSlides: true,
-                    autoplay: false,
                     loop:false,
                     allowTouchMove:true
                   },
                   768: {
-                    slidesPerView: 1, 
-                    centeredSlides: false,
-                    autoplay: {
-                      delay: 4000,
-                      disableOnInteraction: false,
-                    },
-                    loop:true
-                  },
-                  991: {
                     slidesPerView: 2, 
                     centeredSlides: false,
-                    autoplay: {
-                      delay: 4000,
-                      disableOnInteraction: false,
-                    },
                     loop:true
                   },
                   1400: {
                     slidesPerView: 3, 
                     centeredSlides: false,
-                    autoplay: {
-                      delay: 4000,
-                      disableOnInteraction: false,
-                    },
                     loop:true
                   }
                 }}                           
