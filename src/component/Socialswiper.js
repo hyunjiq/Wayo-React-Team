@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import 'swiper/css'; 
 import socialDB from '../data/db.json'
 import {Swieprdiv01,Swieprdiv02} from '../component/style'
 

@@ -6,7 +6,7 @@ function App() {
     return (
         <section className="app_download position-relative d-flex align-items-center">
        
-        <div className="container d-flex align-items-center justify-content-between jeAppbanner">
+        <div className="container d-flex align-items-center jeAppbanner">
             <div className="d-flex flex-column align-items-center apptext">
                 <h4 className="d-flex app_come">펫토피아로 와요</h4>
                 <h6 className="app_come_first">첫 회원가입시 2000P 적립</h6>

@@ -54,10 +54,10 @@ function Form() {
         .insert([formData]);
   
       if (error) throw error;
-      alert('감사합니다. "예약 확정 확인 문자"가 전송될 예정입니다!');
+      alert('감사합니다. "예약 확인 문자"가 전송될 예정입니다!');
     } catch (error) {
       console.error('데이터 제출 중 오류 발생:', error.message);
-      alert('데이터 제출에 실패했습니다.');
+      alert('모든 정보를 입력해주세요.');
     }
   };
 
@@ -106,7 +106,7 @@ function Form() {
       document.getElementById("input6")?.removeEventListener("keypress", isNumberKey);
       document.getElementById("input5")?.removeEventListener("keypress", isCharacterKey);
     };
-  }, [formData.w_day]);
+  }, []);
 
   useEffect(() => {
     const loadDaumPostcodeScript = () => {
@@ -199,7 +199,7 @@ function Form() {
     </ul>
 
     <ul className="d-flex direction">
-      <li className="d-flex align-items-center form_box col-lg-6">
+      <li className="d-flex align-items-center form_box justify-content-between col-lg-6">
         <label htmlFor="petSelect" className="forLabel">반려동물</label>
         <select
           className="for_input"
@@ -215,7 +215,7 @@ function Form() {
           <option value="a">모두</option>
         </select>
       </li>
-      <li className="d-flex align-items-center form_box col-lg-6">
+      <li className="d-flex align-items-center justify-content-between form_box col-lg-6">
         <label htmlFor="petCount" className="forLabel">반려동물 수</label>
         <select
           className="for_input"
@@ -242,28 +242,28 @@ function Form() {
             type="button"
             value="#산책"
             name="wk"
-            className={`col-3 pb-1 selectable ${isSelected('#산책', selectedServices) ? isSelected : ''}`}
+            className={`col-3 pb-1 selectable ${isSelected('#산책', selectedServices) ? 'Selected' : ''}`}
             onClick={() => toggleService('#산책', selectedServices, setSelectedServices, setFormData)}
           />
           <input
             type="button"
             value="#목욕"
             name="wb"
-            className={`col-3 pb-1 selectable ${isSelected('#목욕', selectedServices) ? isSelected : ''}`}
+            className={`col-3 pb-1 selectable ${isSelected('#목욕', selectedServices) ? 'Selected' : ''}`}
             onClick={() => toggleService('#목욕', selectedServices, setSelectedServices, setFormData)}
           />
           <input
             type="button"
             value="#건강검진"
             name="wh"
-            className={`col-3 pb-1 selectable ${isSelected('#건강검진', selectedServices) ? isSelected : ''}`}
+            className={`col-3 pb-1 selectable ${isSelected('#건강검진', selectedServices) ? 'Selected' : ''}`}
             onClick={() => toggleService('#건강검진', selectedServices, setSelectedServices, setFormData)}
           />
           <input
             type="button"
             value="#돌봄"
             name="wc"
-            className={`col-3 pb-1 selectable ${isSelected('#돌봄', selectedServices) ? isSelected : ''}`}
+            className={`col-3 pb-1 selectable ${isSelected('#돌봄', selectedServices) ? 'Selected' : ''}`}
             onClick={() => toggleService('#돌봄', selectedServices, setSelectedServices, setFormData)}
           />
         </div>

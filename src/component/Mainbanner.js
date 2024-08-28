@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-import 'swiper/css'; 
-import '../scss/je.scss';
 import mainbDB from '../data/db.json'
 import {Mswiper, Ptext02,Ptext03 } from '../component/style'
 import { Link } from 'react-router-dom';
@@ -14,10 +12,10 @@ const BannerSlider = () => {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Autoplay, Pagination]}
-            // autoplay={{
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // }}
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}
             pagination={{ clickable: true }} 
         >
             {mainbDB["banner01"].map((v, i) => {
@@ -28,7 +26,7 @@ const BannerSlider = () => {
                     <SwiperSlide key={`banner01${i}`}>
                         <div className='d-flex align-items-center justify-content-around swiperdiv'>
                             <Mswiper>
-                                <div className="mb-4">
+                                <div className="mb-4 mswipercls">
                                     {i === 2 && subtextArray.length > 0 ? ( <img src="/img/img_je/main_collabo_txt.png" alt="콜라보로고" className='collabologo mb-3'/>) : null}
                                     <Ptext02>{textArray[0]}</Ptext02>
                                     <Ptext02>{textArray[1]}</Ptext02>

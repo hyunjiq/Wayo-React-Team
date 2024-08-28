@@ -38,7 +38,7 @@ function Form() {
 
     return (
         <section onSubmit={handleSubmit} className="form_tag d-flex justify-content-center margin">
-            <div className="formcss.container position-relative">
+            <div className="position-relative">
                 <div>
                     <h2 className="pt-5 form_text">너도 아프냐 멍? 나도 아프다 냥!</h2>
                     <div className="mt-1 mb-4 form_text">#집중케어 #펫케어 #펫팸족</div>
