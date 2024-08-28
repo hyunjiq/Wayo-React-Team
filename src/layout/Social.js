@@ -2,6 +2,7 @@ import React from 'react';
 import socialDB from '../data/db.json'
 import Socialswiper from '../component/Socialswiper'
 import {Socialdiv, Socialul, Sociala, Socialspan01,Socialspan02,Socialspan03} from '../component/style'
+import { Link } from 'react-router-dom';
 
 function Social() {
 
@@ -16,7 +17,7 @@ function Social() {
                         <div className="col-md-6 ps-md-3 proinfo" >
                             <Socialdiv>
                                 <h5 className="pt-1">프로그램 일정</h5>
-                                <span className="pt-1"><a href="javascript:void(0)"><h6>더보기</h6></a></span>
+                                <span className="pt-1"><Link to="more_info"><h6>더보기</h6></Link></span>
                             </Socialdiv>
                         
                             <Socialul>
@@ -24,9 +25,9 @@ function Social() {
                                     socialDB["schedule"].map((e, i)=>{
                                         return(
                                             <li>
-                                                <Sociala href="javascript:void(0)">
+                                                <Sociala>
                                                     <Socialspan01>{e.date}</Socialspan01>
-                                                    <Socialspan02>{e.event}</Socialspan02>
+                                                    <Socialspan02 to="event_info">{e.event}</Socialspan02>
                                                     <Socialspan03></Socialspan03>
                                                 </Sociala>
                                             

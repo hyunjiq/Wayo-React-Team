@@ -12,7 +12,7 @@ function App() {
                 <h6 className="app_come_first">첫 회원가입시 2000P 적립</h6>
             </div>
             <div>
-                <Link to="/" className="app_down d-flex">어플 다운로드</Link>
+                <Link to="appdownload" className="app_down d-flex">어플 다운로드</Link>
             </div>    
         </div> 
     </section>

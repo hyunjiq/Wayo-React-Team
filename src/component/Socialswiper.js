@@ -26,7 +26,7 @@ const Banner = () => {
                 <SwiperSlide key={i} className='swiperimg'>
                             <Swieprdiv01></Swieprdiv01>
                             <Swieprdiv02>{v.text}</Swieprdiv02>
-                            <img src={v.src} /> 
+                            <img src={v.src} alt="사회공헌활동"/> 
                     </SwiperSlide>
                 ))
             }

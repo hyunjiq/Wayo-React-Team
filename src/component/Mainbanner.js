@@ -9,8 +9,6 @@ const BannerSlider = () => {
         <Swiper
             spaceBetween={50}
             slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             modules={[Autoplay, Pagination]}
             autoplay={{
                 delay: 3000,
@@ -42,7 +40,7 @@ const BannerSlider = () => {
                              {v.btn ? (
                                 <div>
                                     <Link
-                                    to={"javascript:void(0)"}
+                                    to={"gotoinfo"}
                                     className={`mainActing ${ i === 2 ? "hide-on-mobile" : ""}`}
                                     >
                                     {v.btn}

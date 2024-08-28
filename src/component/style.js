@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 //부트스트랩 아이콘
 export const Styleicon = styled.i`
@@ -85,7 +86,7 @@ padding-right:0;
 padding-left : 0;
 `;
 
-export const Sociala = styled.a`
+export const Sociala = styled.div`
     margin-bottom: 13px;
     background-color: #f7f8fa;
     border-radius: 12px;
@@ -97,10 +98,10 @@ export const Sociala = styled.a`
     padding-left: 1.5rem;
 `;
 
-export const Socialspan01 = styled.a`
+export const Socialspan01 = styled.span`
 font-size: 0.6rem;
 `
-export const Socialspan02 = styled.a`
+export const Socialspan02 = styled(Link)`
 margin-right:-1.25rem;
 font-size: 1rem;
  &:hover{
@@ -110,7 +111,7 @@ font-size: 1rem;
     font-size: 0.8rem;
  }
 `
-export const Socialspan03 = styled.a`
+export const Socialspan03 = styled.span`
 padding-right:1.5rem;
 padding-bottom:1.5rem;
 `

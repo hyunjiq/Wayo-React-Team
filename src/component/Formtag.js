@@ -1,7 +1,7 @@
 // Formtage.js
 import React, { useState, useEffect } from "react";
 import $ from "jquery";
-import "jquery-ui-dist/jquery-ui";
+import 'jquery-ui-dist/jquery-ui.css';
 import { supabase } from '../data/supabaseClient';
 
 function Form() {
@@ -135,201 +135,215 @@ function Form() {
   return  (
     <form onSubmit={handleSubmit} className="d-flex flex-column justify-content-center align-items-center m-0 w-100">
     <ul className="d-flex direction">
-      <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
-        <label htmlFor="datepicker" className="col-lg-4 col-ms-4 forLabel">선택일자</label>
-        <input
-          className="col-lg-8 for_input_sele"
-          type="text"
-          id="datepicker"
-          name="w_day"
-          placeholder="날짜 선택"
-          value={formData.w_day}
-          onChange={handleChange}
-        />
-      </li>
-      <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
-        <label htmlFor="hourSelectStart" className="forLabel">희망시간</label>
-        <div className="d-flex">
-        <select
-          className="for_input"
-          id="hourSelectStart"
-          name="start_hour"
-          value={formData.start_hour}
-          onChange={handleChange}
-        >
-          {[...Array(10).keys()].map(i => (
-            <option key={i + 10} value={i + 10}>{i + 10}</option>
-          ))}
-        </select>
-        <span className="hourSelect_text">:</span>
-        <select
-          className="for_input"
-          id="miuhourSelectStart"
-          name="start_minute"
-          value={formData.start_minute}
-          onChange={handleChange}
-        >
-          <option value="00">00</option>
-          <option value="30">30</option>
-        </select>
-        <span className="hourSelect_text">~</span>
-        <select
-          className="for_input"
-          id="hourSelectEnd"
-          name="end_hour"
-          value={formData.end_hour}
-          onChange={handleChange}
-        >
-          {[...Array(10).keys()].map(i => (
-            <option key={i + 10} value={i + 10}>{i + 10}</option>
-          ))}
-        </select>
-        <span className="hourSelect_text">:</span>
-        <select
-          className="for_input"
-          id="miuhourSelectEnd"
-          name="end_minute"
-          value={formData.end_minute}
-          onChange={handleChange}
-        >
-          <option value="00">00</option>
-          <option value="30">30</option>
-        </select></div>
-      </li>
+  <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+    <label htmlFor="datepicker" className="col-lg-4 col-ms-4 forLabel">선택일자</label>
+    <input
+      className="col-lg-8 for_input_sele"
+      type="text"
+      id="datepicker"
+      name="w_day"
+      placeholder="날짜 선택"
+      value={formData.w_day}
+      onChange={handleChange}
+    />
+  </li>
+  <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+    <label htmlFor="hourSelectStart" className="forLabel">희망시간</label>
+    <div className="d-flex">
+      <select
+        className="for_input"
+        id="hourSelectStart"
+        name="start_hour"
+        value={formData.start_hour}
+        onChange={handleChange}
+      >
+        {[...Array(10).keys()].map(i => (
+          <option key={i + 10} value={i + 10}>{i + 10}</option>
+        ))}
+      </select>
+      <span className="hourSelect_text">:</span>
+      <select
+        className="for_input"
+        id="minuteSelectStart"
+        name="start_minute"
+        value={formData.start_minute}
+        onChange={handleChange}
+      >
+        <option value="00">00</option>
+        <option value="30">30</option>
+      </select>
+      <span className="hourSelect_text">~</span>
+      <select
+        className="for_input"
+        id="hourSelectEnd"
+        name="end_hour"
+        value={formData.end_hour}
+        onChange={handleChange}
+      >
+        {[...Array(10).keys()].map(i => (
+          <option key={i + 10} value={i + 10}>{i + 10}</option>
+        ))}
+      </select>
+      <span className="hourSelect_text">:</span>
+      <select
+        className="for_input"
+        id="minuteSelectEnd"
+        name="end_minute"
+        value={formData.end_minute}
+        onChange={handleChange}
+      >
+        <option value="00">00</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+  </li>
     </ul>
 
+
     <ul className="d-flex direction">
-      <li className="d-flex align-items-center form_box justify-content-between col-lg-6 col-ms-6">
-        <label htmlFor="petSelect" className="forLabel">반려동물</label>
-        <select
-          className="for_input"
-          id="petSelect"
-          name="w_animaltype"
-          placeholder="종류"
-          value={formData.w_animaltype}
-          onChange={handleChange}
-        >
-          <option value="" disabled hidden>종류</option>
-          <option value="d">강아지</option>
-          <option value="c">고양이</option>
-          <option value="a">모두</option>
-        </select>
-      </li>
-      <li className="d-flex align-items-center justify-content-between form_box col-lg-6 col-ms-6">
-        <label htmlFor="petCount" className="forLabel">반려동물 수</label>
-        <select
-          className="for_input"
-          id="petCount"
-          name="w_numberofpets"
-          value={formData.w_numberofpets}
-          onChange={handleChange}
-        >
-          <option value="">선택</option>
-          <option value="1">1마리</option>
-          <option value="2">2마리</option>
-          <option value="3">3마리</option>
-          <option value="4">4마리</option>
-          <option value="5+">5마리 이상</option>
-        </select>
-      </li>
+  <li className="d-flex align-items-center form_box justify-content-between col-lg-6 col-ms-6">
+    <label htmlFor="petSelect" className="forLabel">반려동물</label>
+    <select
+      className="for_input"
+      id="petSelect"
+      name="w_animaltype"
+      value={formData.w_animaltype}
+      onChange={handleChange}
+    >
+      <option value="" disabled hidden>종류</option>
+      <option value="d">강아지</option>
+      <option value="c">고양이</option>
+      <option value="a">모두</option>
+    </select>
+  </li>
+
+  <li className="d-flex align-items-center justify-content-between form_box col-lg-6 col-ms-6">
+    <label htmlFor="petCount" className="forLabel">반려동물 수</label>
+    <select
+      className="for_input"
+      id="petCount"
+      name="w_numberofpets"
+      value={formData.w_numberofpets}
+      onChange={handleChange}
+    >
+      <option value="">선택</option>
+      <option value="1">1마리</option>
+      <option value="2">2마리</option>
+      <option value="3">3마리</option>
+      <option value="4">4마리</option>
+      <option value="5+">5마리 이상</option>
+    </select>
+  </li>
     </ul>
 
     <ul className="direction">
-      <li className="d-flex align-items-center form_box_etc">
-        <label htmlFor="service" className="forLabel">필요서비스</label>
-        <div className="d-flex align-items-center justify-content-center col-lg-10 col-ms-10" name="w_service">
-          <input
-            type="button"
-            value="#산책"
-            name="wk"
-            className={`col-3 pb-1 selectable ${isSelected('#산책', selectedServices) ? 'Selected' : ''}`}
-            onClick={() => toggleService('#산책', selectedServices, setSelectedServices, setFormData)}
-          />
-          <input
-            type="button"
-            value="#목욕"
-            name="wb"
-            className={`col-3 pb-1 selectable ${isSelected('#목욕', selectedServices) ? 'Selected' : ''}`}
-            onClick={() => toggleService('#목욕', selectedServices, setSelectedServices, setFormData)}
-          />
-          <input
-            type="button"
-            value="#건강검진"
-            name="wh"
-            className={`col-3 pb-1 selectable ${isSelected('#건강검진', selectedServices) ? 'Selected' : ''}`}
-            onClick={() => toggleService('#건강검진', selectedServices, setSelectedServices, setFormData)}
-          />
-          <input
-            type="button"
-            value="#돌봄"
-            name="wc"
-            className={`col-3 pb-1 selectable ${isSelected('#돌봄', selectedServices) ? 'Selected' : ''}`}
-            onClick={() => toggleService('#돌봄', selectedServices, setSelectedServices, setFormData)}
-          />
-        </div>
-      <div className="d-flex align-items-center justify-content-center selectcount">
-          <select className="for_input" id="serviceCount" name="w_service" onChange={handleChange}>
-            <option value="">필요서비스를 선택하세요</option>
-            <option value="#산책">산책</option>
-            <option value="#목욕">목욕</option>
-            <option value="#건강검진">건강검진</option>
-            <option value="#돌봄">돌봄</option>
-            <option value="#상담 후 결정">상담 후 결정</option>
-          </select>
-        </div>
-      </li>   
-        
-      <li className="d-flex align-items-center justify-content-between addressinput">
-          <label htmlFor="sample5_address" className="forLabel me-3">주소</label>
-          <input
-            type="text"
-            id="sample5_address"
-            className="for_input"
-            placeholder="상세주소도 함께 입력해주세요"
-            value={address} // 주소 상태값
-            onChange={(e) => {
-              setAddress(e.target.value); // 주소 입력 변경
-              setFormData(prevFormData => ({ ...prevFormData, w_address: e.target.value })); // formData의 주소 업데이트
-            }}
-          />
-          <button
-            type="button"
-            onClick={sample5_execDaumPostcode}
-            style={{ border: 'none', backgroundColor: 'transparent' }}
-          >
-            <i className="bi bi-search"></i>
-          </button>
-        </li>
-    </ul>
+  <li className="d-flex align-items-center form_box_etc">
+    <label htmlFor="service" className="forLabel">필요서비스</label>
+    <div className="d-flex align-items-center justify-content-center col-lg-10 col-ms-10">
+      <input
+        id="service"
+        type="button"
+        value="#산책"
+        name="wk"
+        className={`col-3 pb-1 selectable ${isSelected('#산책', selectedServices) ? 'Selected' : ''}`}
+        onClick={() => toggleService('#산책', selectedServices, setSelectedServices, setFormData)}
+      />
+      <input
+      id="service"
+        type="button"
+        value="#목욕"
+        name="wb"
+        className={`col-3 pb-1 selectable ${isSelected('#목욕', selectedServices) ? 'Selected' : ''}`}
+        onClick={() => toggleService('#목욕', selectedServices, setSelectedServices, setFormData)}
+      />
+      <input
+      id="service"
+        type="button"
+        value="#건강검진"
+        name="wh"
+        className={`col-3 pb-1 selectable ${isSelected('#건강검진', selectedServices) ? 'Selected' : ''}`}
+        onClick={() => toggleService('#건강검진', selectedServices, setSelectedServices, setFormData)}
+      />
+      <input
+      id="service"
+        type="button"
+        value="#돌봄"
+        name="wc"
+        className={`col-3 pb-1 selectable ${isSelected('#돌봄', selectedServices) ? 'Selected' : ''}`}
+        onClick={() => toggleService('#돌봄', selectedServices, setSelectedServices, setFormData)}
+      />
+    </div>
+
+    <div className="d-flex align-items-center justify-content-center selectcount">
+      <select
+        className="for_input"
+        id="serviceCount" 
+        name="w_service"
+        onChange={handleChange}
+      >
+        <option value="">필요서비스를 선택하세요</option>
+        <option value="#산책">산책</option>
+        <option value="#목욕">목욕</option>
+        <option value="#건강검진">건강검진</option>
+        <option value="#돌봄">돌봄</option>
+        <option value="#상담 후 결정">상담 후 결정</option>
+      </select>
+    </div>
+  </li>   
+  
+  <li className="d-flex align-items-center justify-content-between addressinput">
+    <label htmlFor="sample5_address" className="forLabel me-3">주소</label>
+    <input
+      type="text"
+      id="sample5_address"
+      className="for_input"
+      placeholder="상세주소도 함께 입력해주세요"
+      value={address}  // 주소 상태값
+      onChange={(e) => {
+        setAddress(e.target.value);  // 주소 입력 변경
+        setFormData(prevFormData => ({ ...prevFormData, w_address: e.target.value }));  // formData의 주소 업데이트
+      }}
+    />
+    <button
+      type="button"
+      onClick={sample5_execDaumPostcode}
+      style={{ border: 'none', backgroundColor: 'transparent' }}
+    >
+      <i className="bi bi-search"></i>
+    </button>
+  </li>
+</ul>
 
  
 
-    <ul className="d-flex direction">
-      <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
-        <label htmlFor="input5" className="col-ms-4 forLabel">보호자</label>
-        <input
-          className="col-lg-8 for_input_info"
-          type="text"
-          id="input5"
-          name="w_name"
-          placeholder="이름 작성"
-          value={formData.w_name}
-          onChange={handleChange}
-        />
-      </li>
-      <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
-        <label htmlFor="input6" className="col-ms-4 forLabel">연락처</label>
-        <input
-          className="col-lg-8 for_input_info"
-          type="text"
-          id="input6"
-          name="w_ph"
-          placeholder="연락처 작성"
-          value={formData.w_ph}
-          onChange={handleChange}
-        />
-      </li>
-    </ul>
+<ul className="d-flex direction">
+  <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+    <label htmlFor="w_name" className="col-ms-4 forLabel">보호자</label>
+    <input
+      className="col-lg-8 for_input_info"
+      type="text"
+      id="w_name"  // id와 name이 동일하게 설정되어 있습니다.
+      name="w_name"
+      placeholder="이름 작성"
+      value={formData.w_name}
+      onChange={handleChange}
+    />
+  </li>
+
+  <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+    <label htmlFor="w_ph" className="col-ms-4 forLabel">연락처</label>
+    <input
+      className="col-lg-8 for_input_info"
+      type="text"
+      id="w_ph"  // id와 name이 동일하게 설정되어 있습니다.
+      name="w_ph"
+      placeholder="연락처 작성"
+      value={formData.w_ph}
+      onChange={handleChange}
+    />
+  </li>
+</ul>
+
 
     <button type="submit" className="mt-3 subbtn">구독하기</button>
   </form>
