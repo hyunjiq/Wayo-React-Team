@@ -1,7 +1,17 @@
+#main_slide_je{
+  height: auto;
+  background-color: #F7F8FA;
+}
 .je_Mainswiper {
   background-color: #F7F8FA;}
 
-  .mainbanner_Video,
+.swiperdiv{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.swiper{
+    height: 100%;
+}
   .main_back,
   .maincollabo {
       position: relative;
@@ -10,34 +20,42 @@
       bottom: 0;
       float: none;
   }
+  .mauto{
+    margin: 0;
+    @media (max-width:768px) {
+      margin: 0 auto;
+    }
+  }
 
   .main_back{
-      background-image: url('../../public/img/img_je/mainback_animal.png');
+      background-image: url('../../public/img/img_sh/main_banner1.jpg');
       border: none;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       padding: 0;
       margin: 0;
-      margin-top: 18px;
-      width: 70%;
-      height: 38rem;
+      // margin-top: 18px;
+      width: 100%;
+      height: 33rem;
       box-sizing: border-box;
-      background-position-x: calc(70% - 2px);
+      border-radius: 50px;
+      background-position: center;
   }
   
 
   .maincollabo{
-      background-image: url('../../public/img/img_je/main_collabo.png');
+      background-image: url('../../public/img/img_sh/main_event.jpg');
       border: none;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       padding: 0;
       margin: 0;
-      margin-top: 18px;
-      width: 55%;
-      height: 38rem;
+      // margin-top: 18px;
+      width: 100%;
+      height: 33rem;
       box-sizing: border-box;  
-      background-position-x: calc(55% - 2px);
+      background-position: center;
+      border-radius: 50px;
   }
   
   .mainActing{
@@ -45,14 +63,21 @@
       color: #ffff;
       background-color: #6A92FE;
       border-radius: 30px;
-      padding: 1rem;
+      padding: .5rem;
+      min-width: 200px;
+      display: block;
+      text-align: center;
   }
 
   .mainbanner_Video{
-      border-radius: 30px;
-      height: 38rem;
-      width: 50vw;
-      margin-top: 18px;
+      height: 100%;
+     width: 100%;
+      position: absolute;
+      border-radius: 50px;
+      top: 0;
+      left: 0;
+      // width: 50vw;
+      // margin-top: 18px;
   }
   
   
@@ -61,49 +86,58 @@
       text-align: center;
       transition: .3s opacity;
       transform: translate3d(0, 0, 0);
-      z-index: 10;}
+      z-index: 10;
+    }
+
+  .video{
+    padding-bottom: 56.25%;
+    position: relative;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
       
-.mswipercls{
-
-}
+  .m_{
+    max-width: 800px;
+  
+  }
+  .h-3{
+    height: 2.5rem;
+  }
+      @media (max-width:1440px) {
+        .main_back,.maincollabo{
+          height: 27rem;
+        }
+     
+      }
       @media (max-width: 1200px) {
-           .main_back{
-              background-image: url('../../public/img/img_je/mainback1200.png');
-              height: 26rem;
+          .main_back, .maincollabo{
+             
+            height: 23rem;
           } 
-          .maincollabo{
-              background-image: url('../../public/img/img_je/main_collabo1200.png');
-              height: 26rem;
-              margin-top: 0;
+          .swiperdiv{
+            padding-left: 2rem;
+            padding-right: 2rem;
           }
-
-          .mainbanner_Video{
-              width: 63vw;
-              height: 26rem;
-              margin-top: 20px;
-          }
-          
+      
       }
 
+      @media (max-width:1024px) {
+        .main_back, .maincollabo{
+            height: 17rem;
+        } 
+      }
       @media (max-width: 992px) {
 
-           .main_back{
-              background-image: url('../../public/img/img_je/mainback992.png');
-              height: 25rem
+           .main_back, .maincollabo{
+             
+              height: 15rem
           } 
-          .maincollabo{
-              background-image: url('../../public/img/img_je/main_collabo992.png');
-              height: 25rem;
-          }
-
           .collabologo{
               width: 16rem;
           }
 
-          .mainbanner_Video{
-              width: 34rem;
-              height: 25rem;
-          }
+
           .mainActing{
               padding: 0.7rem;
               font-size: 0.9rem;
@@ -111,33 +145,26 @@
       }
 
       @media (max-width: 768px) {
-
-          .main_back{
-             background-image: url('../../public/img/img_je/mainback992.png');
-             height: 19.25rem;
-             margin-top: 30px;
-         } 
-         .maincollabo{
-             background-image: url('../../public/img/img_je/main_collabo768.png');
-             height: 21.25rem;
-             margin-top: 20px;
-         }
-         .collabologo{
-             width: 12rem;
+        .main_back, .maincollabo{
+          height: 50vw;
+      } 
+        .col-12 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+        .collabologo{
+            width: 12rem;
          }
 
-         .mainbanner_Video{
-             width: 84vw;
-             height: 19.25rem;
-             margin-top: 10px;
-             margin-bottom: 10px;
-         }
-         .swipsubtext{
+        .swipsubtext{
           display: none;
-         }
+        }
          .swiperdiv{
           flex-direction: column-reverse;
           text-align: center;
+          padding-left: 3rem;
+          padding-right: 6rem;
+
          }
          .mainActing{
           padding: 0.6rem;
@@ -150,18 +177,18 @@
           }
       }
 
-      @media (max-width: 568px) {
+      @media (max-width: 575px) {
           .mainActing{
               display: none;
           }
           .main_back{
-              background-image: url('../../public/img/img_je/mainback320.png');
-              height: 13rem;
-              margin-top: 55px;
+              //background-image: url('../../public/img/img_je/mainback320.png');
+              //height: 13rem;
+              //margin-top: 55px;
           } 
           .maincollabo{
-              background-image: url('../../public/img/img_je/main_collabo320.png');
-              height: 13rem;
+             // background-image: url('../../public/img/img_je/main_collabo320.png');
+              //height: 13rem;
           }
           .collabologo{
               width: 11rem;
@@ -171,7 +198,7 @@
               height: 16rem;
               }
           .mswipercls{
-            margin-top: 1rem;
+            //margin-top: 1rem;
           }
          }
 
@@ -181,14 +208,14 @@
       } 
       .maincollabo{
           height: 9rem;
-          margin-top: 20px;
+          //margin-top: 20px;
       }
 
       .mainbanner_Video{
           width: 84vw;
           height: 9rem;
-          margin-top: 20px;
-          margin-bottom: 10px;
+          //margin-top: 20px;
+          //margin-bottom: 10px;
       }
      }
 

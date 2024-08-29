@@ -33,7 +33,7 @@ function Ms(props) {
                 { loading ? <p>Loading...</p> :
                     data.mainservice.map((v, i)=>{
                         return(
-                            <li className={`col-lg-3 col-6 mb-3 ${i % 2 === 1 ? 'mt-lg-5' : ''}`}>
+                            <li className={`col-lg-3 col-6 mb-3 ${i % 2 === 1 ? 'mt-lg-5' : ''}`} key={`ms${i}`}>
                                 <Link to="#" className="d-block">
                                     <Msimg src={v.src} alt={v.alt}/>
                                     <Msspan className="ms_div">{v.text}</Msspan>

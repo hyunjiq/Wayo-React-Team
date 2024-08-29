@@ -83,7 +83,7 @@ const Review = () => {
       loadMap();
     } else {
       const script = document.createElement('script');
-      script.src = 'https://dapi.kakao.com/v2/maps/sdk.js?appkey=cbf43aca99602e13060b091b108f14dc';
+      script.src = '//dapi.kakao.com/v2/maps/sdk.js?appkey=cbf43aca99602e13060b091b108f14dc';
       script.onload = loadMap;
       document.head.appendChild(script);
     }
@@ -96,7 +96,7 @@ const Review = () => {
     <section id="live_reivew" className="container-lg margin">
       <div className='d-flex justify-content-between align-items-center'>
         <h2>실시간 후기</h2>  
-        <Link to="javascript:void(0)">
+        <Link to="#">
           <p className='m-0 fw-semibold d-none d-md-block'>지역별 더보기 +</p>
         </Link>
       </div>
@@ -127,7 +127,7 @@ const Review = () => {
                   <p>{review.region}</p>
                   <p className="review_txt">{review.review}</p>
                 </div>
-                <Link to="javascript:void(0)" className="morebtn">더보기</Link>
+                <Link to="#" className="morebtn">더보기</Link>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -138,7 +138,7 @@ const Review = () => {
             currentReviews.slice(0, 3).map((v,i)=>{
               return(
                 <>
-                <div className='m_review d-md-none'>
+                <div className='m_review d-md-none' key={`index${i}`}>
                   <div className="d-flex align-items-center">
                     <img src={v.src} className="img" alt="프로필사진" />
                     <div className="mx-4">
