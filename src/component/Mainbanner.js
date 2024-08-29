@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 
 const BannerSlider = () => {
     return (
+        <div className='container-xl px-md-5'>
         <Swiper
-            spaceBetween={50}
+            // spaceBetween={50}
             slidesPerView={1}
             modules={[Autoplay, Pagination]}
             // autoplay={{
@@ -23,7 +24,7 @@ const BannerSlider = () => {
                 return (
                     <SwiperSlide key={`banner01${i}`}>
                         <div className='d-flex align-items-center justify-content-center swiperdiv'>
-                            <Mswiper className='col-md-4 d-flex flex-column align-items-start justify-content-center gap-4 '> 
+                            <Mswiper className='col-md-6 d-flex flex-column align-items-start justify-content-center gap-4 '> 
                                 <div className="mauto">
                                     {i === 2 && subtextArray.length > 0 ? ( 
                                     <div className='d-flex justify-content-center align-items-center'>
@@ -56,13 +57,13 @@ const BannerSlider = () => {
                             </Mswiper>
                             {i === 0 && textArray[0] ? (
                                     <>
-                                        <div className='col-md-6 col-12 py-5'>
+                                        <div className='col-md-7 col-12 main_banner py-4'>
                                             <div className="main_back"></div>
                                         </div>
                                     </>
                                     ) : i === 1 && textArray.length > 1 ? (
-                                        <div className='col-md-6 col-12 py-5 m_'>
-                                            <div className='video_wrap'>
+                                        <div className='col-md-7 col-12 m_ py-4'>
+                                            <div className='video_wrap main_banner'>
                                                 <div className='video'>
                                                     <iframe
                                                     
@@ -79,7 +80,7 @@ const BannerSlider = () => {
                                         </div>
                                     ) : i === 2 && subtextArray.length > 0 ? (
                                         <>  
-                                            <div className='col-md-6 col-12 py-5'>
+                                            <div className='col-md-7 col-12 main_banner py-4'>
                                                  <div className="maincollabo"> </div>
                                             </div>
                                         </>
@@ -91,6 +92,7 @@ const BannerSlider = () => {
             })}
           
         </Swiper>
+        </div>
     );
 }
 

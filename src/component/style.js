@@ -19,6 +19,7 @@ export const Styleicon = styled.i`
 `
 
 // 메인배너
+
 export const Mswiper = styled.div`
  //padding: 160px 0px 84px 68px;
  @media (max-width: 768px) {
@@ -31,23 +32,27 @@ export const Ptext02 = styled.p`
     color: #3D71FF;
     font-weight: bold;
     font-size: 2.5vw;
-    line-height: 2;
+    line-height: 1.2;
 
     @media (max-width: 1200px) {
         font-size: 2.2vw;
         line-height: 1.5;
     }
     @media (max-width: 992px) {
-        font-size: 1.6rem;
+        font-size: 3.2vw;
         //line-height: 1.8rem;
 
     }
-    @media (max-width: 567px) {
-        font-size: 1.3rem;
+    @media (max-width: 768px) {
+        font-size: 5vw
         //line-height: 1rem;
     }
-    @media (max-width: 320px) {
-        font-size: 1rem;
+    @media (max-width: 575x) {
+        font-size: 5vw
+        //line-height: 1rem;
+    }
+    @media (max-width: 375px) {
+        font-size: 6vw
  
     }
 `;
@@ -55,16 +60,16 @@ export const Ptext02 = styled.p`
 export const Ptext03 = styled.p`
 /* mainbannerText_kr */
 
-    line-height: 2;
+    line-height: 1.5;
     color: #3D71FF;
-    font-size: 0.9rem;
+    font-size: 1.2vw;
 
     @media (max-width: 1200px) {
-        font-size: 0.8rem;
+        font-size: 1.5vw;
     }
     @media (max-width: 992px) {
-        font-size: 0.6rem;
-        line-height: 0.7rem;
+        font-size: 
+        line-height: 
     }
 `;
 

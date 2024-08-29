@@ -12,6 +12,7 @@
 .swiper{
     height: 100%;
 }
+
   .main_back,
   .maincollabo {
       position: relative;
@@ -26,38 +27,44 @@
       margin: 0 auto;
     }
   }
+  
+  .main_banner{
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .main_back, .maincollabo{
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 25rem;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-position: center;
+  }
   .main_back{
-      background-image: url('../../public/img/img_sh/main_banner1.jpg');
-      border: none;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding: 0;
-      margin: 0;
-      // margin-top: 18px;
-      width: 100%;
-      height: 33rem;
-      box-sizing: border-box;
-      border-radius: 50px;
-      background-position: center;
+    background-image: url('../../public/img/img_sh/main_banner1.jpg');
   }
   
 
   .maincollabo{
-      background-image: url('../../public/img/img_sh/main_event.jpg');
-      border: none;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding: 0;
-      margin: 0;
-      // margin-top: 18px;
-      width: 100%;
-      height: 33rem;
-      box-sizing: border-box;  
-      background-position: center;
-      border-radius: 50px;
+    background-image: url('../../public/img/img_sh/main_event.jpg');
   }
-  
+  .video{
+    //padding-bottom: 56.25%;
+    position: relative;
+    //padding-top: 30px;
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    
+  }
   .mainActing{
       text-decoration: none;
       color: #ffff;
@@ -71,7 +78,7 @@
 
   .mainbanner_Video{
       height: 100%;
-     width: 100%;
+      width: 100%;
       position: absolute;
       border-radius: 50px;
       top: 0;
@@ -89,13 +96,7 @@
       z-index: 10;
     }
 
-  .video{
-    padding-bottom: 56.25%;
-    position: relative;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-  }
+
       
   .m_{
     max-width: 800px;
@@ -103,36 +104,44 @@
   }
   .h-3{
     height: 2.5rem;
+    @media (max-width:992px) {
+      height: 2rem;
+    }
   }
       @media (max-width:1440px) {
         .main_back,.maincollabo{
-          height: 27rem;
+         
         }
      
       }
       @media (max-width: 1200px) {
           .main_back, .maincollabo{
              
-            height: 23rem;
+            //height: 23rem;
           } 
           .swiperdiv{
-            padding-left: 2rem;
-            padding-right: 2rem;
+    
           }
       
       }
 
       @media (max-width:1024px) {
-        .main_back, .maincollabo{
-            height: 17rem;
+        .main_back, .maincollabo,.video{
+            height: 20rem;
         } 
+        .main_banner {
+          height: 460px;
+        }
       }
       @media (max-width: 992px) {
 
-           .main_back, .maincollabo{
-             
-              height: 15rem
+          .main_back, .maincollabo,.video{
+            height: 16rem
           } 
+
+          .main_banner {
+            height: 380px;
+          }
           .collabologo{
               width: 16rem;
           }
@@ -145,25 +154,31 @@
       }
 
       @media (max-width: 768px) {
-        .main_back, .maincollabo{
+        .main_back, .maincollabo, .video{
           height: 50vw;
-      } 
+        } 
+        
+        .mainbanner_Video{
+          height: 88%;
+        }
         .col-12 {
-            flex: 0 0 auto;
-            width: 100%;
+            flex: 0 0 auto !important;
+            width: 100% !important;
         }
         .collabologo{
             width: 12rem;
          }
-
+         .maincollabo{
+          background-position: center 30%;
+        }
         .swipsubtext{
           display: none;
         }
          .swiperdiv{
           flex-direction: column-reverse;
           text-align: center;
-          padding-left: 3rem;
-          padding-right: 6rem;
+          padding-left: 0;
+          padding-right: 0;
 
          }
          .mainActing{
@@ -178,10 +193,14 @@
       }
 
       @media (max-width: 575px) {
-          .mainActing{
-              display: none;
+        .mainActing{
+            display: none;
           }
-          .main_back{
+
+        .main_back, .maincollabo, .video {
+          height: 100vw;
+        }
+        .main_back{
               //background-image: url('../../public/img/img_je/mainback320.png');
               //height: 13rem;
               //margin-top: 55px;
@@ -195,7 +214,7 @@
           }
 
           .mainbanner_Video{
-              height: 16rem;
+              //height: 16rem;
               }
           .mswipercls{
             //margin-top: 1rem;
@@ -204,16 +223,16 @@
 
      @media (max-width: 320px) {
       .main_back{
-          height: 9rem;
+          //height: 9rem;
       } 
       .maincollabo{
-          height: 9rem;
+          //height: 9rem;
           //margin-top: 20px;
       }
 
       .mainbanner_Video{
-          width: 84vw;
-          height: 9rem;
+          //width: 84vw;
+          //height: 9rem;
           //margin-top: 20px;
           //margin-bottom: 10px;
       }
