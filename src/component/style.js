@@ -44,8 +44,8 @@ export const Ptext02 = styled.p`
 
     }
     @media (max-width: 768px) {
-        font-size: 5vw
-        //line-height: 1rem;
+        font-size: 5vw;
+        white-space: nowrap;
     }
     @media (max-width: 575x) {
         font-size: 5vw
