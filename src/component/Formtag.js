@@ -297,7 +297,7 @@ function Form() {
       type="text"
       id="sample5_address"
       className="for_input"
-      placeholder="상세주소도 함께 입력해주세요"
+      placeholder="상세주소도 입력해주세요"
       value={address}  // 주소 상태값
       onChange={(e) => {
         setAddress(e.target.value);  // 주소 입력 변경
