@@ -61,16 +61,13 @@ export const Ptext03 = styled.p`
 /* mainbannerText_kr */
 
     line-height: 1.5;
-    color: #3D71FF;
+    color: #333;
     font-size: 1.2vw;
 
     @media (max-width: 1200px) {
         font-size: 1.5vw;
     }
-    @media (max-width: 992px) {
-        font-size: 
-        line-height: 
-    }
+ 
 `;
 
 //사회공헌
