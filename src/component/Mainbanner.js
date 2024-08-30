@@ -9,13 +9,15 @@ const BannerSlider = () => {
         <div className='container-xl px-md-5'>
         <Swiper
             // spaceBetween={50}
-            slidesPerView={1}
+            loop={true}
+            //slidesPerView={'auto'}
             modules={[Autoplay, Pagination]}
-            // autoplay={{
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // }}
-            pagination={{ clickable: true }} 
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+        
         >
             {mainbDB["banner01"].map((v, i) => {
                 const textArray = v.text.split('|');

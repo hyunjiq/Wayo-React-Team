@@ -27,7 +27,8 @@ const Review = () => {
       const mapContainer = document.getElementById('map');
       const mapOption = {
         center: centerLatLng,
-        level: 9
+        level: 9,
+        disableDoubleClickZoom: true
       };
 
       const map = new kakao.maps.Map(mapContainer, mapOption);
