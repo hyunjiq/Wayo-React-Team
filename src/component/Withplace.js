@@ -97,7 +97,7 @@ function Withplace() {
                     loop:false,
                     allowTouchMove:true
                   },
-                  768: {
+                  769: {
                     slidesPerView: 2, 
                     centeredSlides: false,
                     loop:true
@@ -108,7 +108,7 @@ function Withplace() {
                     loop:true
                   }
                 }}                           
-                className="c_swiper col-md-6 d-flex"
+                className="c_swiper d-flex"
               >
                 {v.map((vvv, iii) => (
                   <SwiperSlide key={`SwiperSlideee${iii}`} className="thumbsSlider">

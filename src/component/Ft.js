@@ -15,9 +15,9 @@ function Ft() {
                     <li className="ps-2 ft_menu_li border-0"><Link>공지사항</Link></li>
                 </ul>
                 <ul className="ft_info mb-3 ps-0">
-                    <li className="">ReactApp으로 구현한 방문 펫시터&nbsp;서비스 "와요" 리뉴얼 프로젝트</li>
+                    <li className="ft-576"><span>ReactApp으로 구현한 방문 펫시터 서비스</span><span>"와요" 리뉴얼 프로젝트</span></li>
                     <li>팀명 : 펫토피아 | 독립형 홈페이지</li>
-                    <li className=""><span>이현지 edalnim12@gmail.com&nbsp;</span><span>문세현 hyun_022@naver.com&nbsp;</span><span>정주은 : judms0314@gmail.com</span></li>
+                    <li className="ft-992"><span>이현지 edalnim12@gmail.com&nbsp;</span><span>문세현 hyun_022@naver.com&nbsp;</span><span>정주은 judms0314@gmail.com</span></li>
                 </ul>
                 <p className="ft_copy mb-3">© 2020 Pet People Inc.</p>
                 <ul className="ft-icon ps-0 d-flex">

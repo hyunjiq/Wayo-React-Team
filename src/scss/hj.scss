@@ -99,6 +99,8 @@ $quickcolor: #3D71FF;
                     padding: 8.5rem 0;
                     align-items:end;
                     flex-direction: column-reverse;
+                    flex: 0 0 auto;
+                    width: 50%;
                     .swiper-slide{
                         background: #fff;
                         padding: 2rem 0;
@@ -265,6 +267,9 @@ $quickcolor: #3D71FF;
     justify-content:space-between;
     transition: .5s;
     .ft_right{
+        .ft-576{
+            margin-bottom: 10px;
+        }
         .ft_menu, .ft_info, .ft_copy {
             transition: .5s;
         }
@@ -468,10 +473,10 @@ $quickcolor: #3D71FF;
     .ft{
         .ft_right{
             .ft_info{
-                li{
+                .ft-992{
                     span{
-                        display: block
-                    };
+                        display: block;
+                    }
                 }
             }
         }
@@ -510,6 +515,7 @@ $quickcolor: #3D71FF;
                 >.swiper-slide {
                     
                     .c_swiper{
+                        width: 100%;
                         align-items: center;
                         flex-direction: column;
                         .swiper-slide{
@@ -604,6 +610,12 @@ $quickcolor: #3D71FF;
         }
     }
     .ft{
+        .ft-576{
+            text-align: center;
+            span{
+                display: block;
+            }
+        }
         .ft_menu, .ft_info, .ft_copy {
             font-size: .9rem;
         }
