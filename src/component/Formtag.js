@@ -135,7 +135,7 @@ function Form() {
   return  (
     <form onSubmit={handleSubmit} className="d-flex flex-column justify-content-center align-items-center m-0 w-100">
     <ul className="d-flex direction">
-  <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+  <li className="d-flex align-items-center justify-content-between form_box col-lg-6 col-ms-6">
     <label htmlFor="datepicker" className="col-lg-4 col-ms-4 forLabel">선택일자</label>
     <input
       className="col-lg-8 for_input_sele"
@@ -147,7 +147,7 @@ function Form() {
       onChange={handleChange}
     />
   </li>
-  <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+  <li className="d-flex align-items-center justify-content-between  form_box col-lg-6 col-ms-6">
     <label htmlFor="hourSelectStart" className="forLabel">희망시간</label>
     <div className="d-flex">
       <select
@@ -317,7 +317,7 @@ function Form() {
  
 
 <ul className="d-flex direction">
-  <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+  <li className="d-flex align-items-center justify-content-between  form_box col-lg-6 col-ms-6">
     <label htmlFor="w_name" className="col-ms-4 forLabel">보호자</label>
     <input
       className="col-lg-8 for_input_info"
@@ -330,7 +330,7 @@ function Form() {
     />
   </li>
 
-  <li className="d-flex align-items-center form_box col-lg-6 col-ms-6">
+  <li className="d-flex align-items-center justify-content-between form_box col-lg-6 col-ms-6">
     <label htmlFor="w_ph" className="col-ms-4 forLabel">연락처</label>
     <input
       className="col-lg-8 for_input_info"
