@@ -56,7 +56,8 @@ const Calendar = () => {
 
             // 오늘 날짜 확인
             const today = new Date();
-            const isToday = today.getDate() === date && today.getMonth() === viewMonth && today.getFullYear() === viewYear;
+            const isToday = condition === 'this' && today.getDate() === date && today.getMonth() === viewMonth && today.getFullYear() === viewYear;
+
 
             // 주말 날짜에 회색 원을 적용하고 클릭할 수 없도록 설정
             if (dayClass) {
